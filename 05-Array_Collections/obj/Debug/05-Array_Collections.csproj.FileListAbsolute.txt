@@ -1,0 +1,7 @@
+C:\Users\josec\OneDrive\Área de Trabalho\Danilo\05-Array_Collections\bin\Debug\05-Array_Collections.exe.config
+C:\Users\josec\OneDrive\Área de Trabalho\Danilo\05-Array_Collections\bin\Debug\05-Array_Collections.exe
+C:\Users\josec\OneDrive\Área de Trabalho\Danilo\05-Array_Collections\bin\Debug\05-Array_Collections.pdb
+C:\Users\josec\OneDrive\Área de Trabalho\Danilo\05-Array_Collections\obj\Debug\05-Array_Collections.csprojAssemblyReference.cache
+C:\Users\josec\OneDrive\Área de Trabalho\Danilo\05-Array_Collections\obj\Debug\05-Array_Collections.csproj.CoreCompileInputs.cache
+C:\Users\josec\OneDrive\Área de Trabalho\Danilo\05-Array_Collections\obj\Debug\05-Array_Collections.exe
+C:\Users\josec\OneDrive\Área de Trabalho\Danilo\05-Array_Collections\obj\Debug\05-Array_Collections.pdb

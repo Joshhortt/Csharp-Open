@@ -1,0 +1,7 @@
+C:\Users\josec\OneDrive\Área de Trabalho\Danilo\06-Funções\obj\Debug\06-Funções.csprojAssemblyReference.cache
+C:\Users\josec\OneDrive\Área de Trabalho\Danilo\06-Funções\obj\Debug\06-Funções.csproj.CoreCompileInputs.cache
+C:\Users\josec\OneDrive\Área de Trabalho\Danilo\06-Funções\bin\Debug\06-Funções.exe.config
+C:\Users\josec\OneDrive\Área de Trabalho\Danilo\06-Funções\bin\Debug\06-Funções.exe
+C:\Users\josec\OneDrive\Área de Trabalho\Danilo\06-Funções\bin\Debug\06-Funções.pdb
+C:\Users\josec\OneDrive\Área de Trabalho\Danilo\06-Funções\obj\Debug\06-Funções.exe
+C:\Users\josec\OneDrive\Área de Trabalho\Danilo\06-Funções\obj\Debug\06-Funções.pdb

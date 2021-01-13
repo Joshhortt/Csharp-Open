@@ -1,0 +1,14 @@
+C:\Users\josec\OneDrive\Área de Trabalho\Danilo\07-Funções_Recursivas\bin\Debug\07-Funções_Recursivas.exe.config
+C:\Users\josec\OneDrive\Área de Trabalho\Danilo\07-Funções_Recursivas\bin\Debug\07-Funções_Recursivas.exe
+C:\Users\josec\OneDrive\Área de Trabalho\Danilo\07-Funções_Recursivas\bin\Debug\07-Funções_Recursivas.pdb
+C:\Users\josec\OneDrive\Área de Trabalho\Danilo\07-Funções_Recursivas\obj\Debug\07-Funções_Recursivas.csprojAssemblyReference.cache
+C:\Users\josec\OneDrive\Área de Trabalho\Danilo\07-Funções_Recursivas\obj\Debug\07-Funções_Recursivas.csproj.CoreCompileInputs.cache
+C:\Users\josec\OneDrive\Área de Trabalho\Danilo\07-Funções_Recursivas\obj\Debug\07-Funções_Recursivas.exe
+C:\Users\josec\OneDrive\Área de Trabalho\Danilo\07-Funções_Recursivas\obj\Debug\07-Funções_Recursivas.pdb
+C:\Users\josec\OneDrive\Área de Trabalho\Csharp-Open\07-Funções_Recursivas\bin\Debug\07-Funções_Recursivas.exe.config
+C:\Users\josec\OneDrive\Área de Trabalho\Csharp-Open\07-Funções_Recursivas\bin\Debug\07-Funções_Recursivas.exe
+C:\Users\josec\OneDrive\Área de Trabalho\Csharp-Open\07-Funções_Recursivas\bin\Debug\07-Funções_Recursivas.pdb
+C:\Users\josec\OneDrive\Área de Trabalho\Csharp-Open\07-Funções_Recursivas\obj\Debug\07-Funções_Recursivas.csprojAssemblyReference.cache
+C:\Users\josec\OneDrive\Área de Trabalho\Csharp-Open\07-Funções_Recursivas\obj\Debug\07-Funções_Recursivas.csproj.CoreCompileInputs.cache
+C:\Users\josec\OneDrive\Área de Trabalho\Csharp-Open\07-Funções_Recursivas\obj\Debug\07-Funções_Recursivas.exe
+C:\Users\josec\OneDrive\Área de Trabalho\Csharp-Open\07-Funções_Recursivas\obj\Debug\07-Funções_Recursivas.pdb

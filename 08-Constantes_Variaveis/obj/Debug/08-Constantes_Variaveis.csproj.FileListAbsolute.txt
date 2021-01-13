@@ -1,0 +1,7 @@
+C:\Users\josec\OneDrive\Área de Trabalho\Danilo\08-Constantes_Variaveis\bin\Debug\08-Constantes_Variaveis.exe.config
+C:\Users\josec\OneDrive\Área de Trabalho\Danilo\08-Constantes_Variaveis\bin\Debug\08-Constantes_Variaveis.exe
+C:\Users\josec\OneDrive\Área de Trabalho\Danilo\08-Constantes_Variaveis\bin\Debug\08-Constantes_Variaveis.pdb
+C:\Users\josec\OneDrive\Área de Trabalho\Danilo\08-Constantes_Variaveis\obj\Debug\08-Constantes_Variaveis.csprojAssemblyReference.cache
+C:\Users\josec\OneDrive\Área de Trabalho\Danilo\08-Constantes_Variaveis\obj\Debug\08-Constantes_Variaveis.csproj.CoreCompileInputs.cache
+C:\Users\josec\OneDrive\Área de Trabalho\Danilo\08-Constantes_Variaveis\obj\Debug\08-Constantes_Variaveis.exe
+C:\Users\josec\OneDrive\Área de Trabalho\Danilo\08-Constantes_Variaveis\obj\Debug\08-Constantes_Variaveis.pdb

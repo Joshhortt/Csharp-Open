@@ -1,0 +1,14 @@
+C:\Users\josec\OneDrive\Área de Trabalho\Danilo\09-POF_parte1\obj\Debug\09-POF_parte1.csprojAssemblyReference.cache
+C:\Users\josec\OneDrive\Área de Trabalho\Danilo\09-POF_parte1\obj\Debug\09-POF_parte1.csproj.CoreCompileInputs.cache
+C:\Users\josec\OneDrive\Área de Trabalho\Danilo\09-POF_parte1\bin\Debug\09-POF_parte1.exe.config
+C:\Users\josec\OneDrive\Área de Trabalho\Danilo\09-POF_parte1\bin\Debug\09-POF_parte1.exe
+C:\Users\josec\OneDrive\Área de Trabalho\Danilo\09-POF_parte1\bin\Debug\09-POF_parte1.pdb
+C:\Users\josec\OneDrive\Área de Trabalho\Danilo\09-POF_parte1\obj\Debug\09-POF_parte1.exe
+C:\Users\josec\OneDrive\Área de Trabalho\Danilo\09-POF_parte1\obj\Debug\09-POF_parte1.pdb
+C:\Users\josec\OneDrive\Área de Trabalho\Csharp-Open\09-POF_parte1\bin\Debug\09-POF_parte1.exe.config
+C:\Users\josec\OneDrive\Área de Trabalho\Csharp-Open\09-POF_parte1\bin\Debug\09-POF_parte1.exe
+C:\Users\josec\OneDrive\Área de Trabalho\Csharp-Open\09-POF_parte1\bin\Debug\09-POF_parte1.pdb
+C:\Users\josec\OneDrive\Área de Trabalho\Csharp-Open\09-POF_parte1\obj\Debug\09-POF_parte1.csprojAssemblyReference.cache
+C:\Users\josec\OneDrive\Área de Trabalho\Csharp-Open\09-POF_parte1\obj\Debug\09-POF_parte1.csproj.CoreCompileInputs.cache
+C:\Users\josec\OneDrive\Área de Trabalho\Csharp-Open\09-POF_parte1\obj\Debug\09-POF_parte1.exe
+C:\Users\josec\OneDrive\Área de Trabalho\Csharp-Open\09-POF_parte1\obj\Debug\09-POF_parte1.pdb
