@@ -26,3 +26,10 @@ C:\Users\josec\OneDrive\Área de Trabalho\Csharp-Open\11-POO-Classes_Instancias\
 C:\Users\josec\OneDrive\Área de Trabalho\Csharp-Open\11-POO-Classes_Instancias\obj\Debug\10-POF-parte2.csproj.CoreCompileInputs.cache
 C:\Users\josec\OneDrive\Área de Trabalho\Csharp-Open\11-POO-Classes_Instancias\obj\Debug\10-POF-parte2.exe
 C:\Users\josec\OneDrive\Área de Trabalho\Csharp-Open\11-POO-Classes_Instancias\obj\Debug\10-POF-parte2.pdb
+C:\Users\josec\Source\Repos\Csharp-Open\11-POO-Classes_Instancias\bin\Debug\10-POF-parte2.exe.config
+C:\Users\josec\Source\Repos\Csharp-Open\11-POO-Classes_Instancias\bin\Debug\10-POF-parte2.exe
+C:\Users\josec\Source\Repos\Csharp-Open\11-POO-Classes_Instancias\bin\Debug\10-POF-parte2.pdb
+C:\Users\josec\Source\Repos\Csharp-Open\11-POO-Classes_Instancias\obj\Debug\10-POF-parte2.csprojAssemblyReference.cache
+C:\Users\josec\Source\Repos\Csharp-Open\11-POO-Classes_Instancias\obj\Debug\10-POF-parte2.csproj.CoreCompileInputs.cache
+C:\Users\josec\Source\Repos\Csharp-Open\11-POO-Classes_Instancias\obj\Debug\10-POF-parte2.exe
+C:\Users\josec\Source\Repos\Csharp-Open\11-POO-Classes_Instancias\obj\Debug\10-POF-parte2.pdb
