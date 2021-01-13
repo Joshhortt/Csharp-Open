@@ -1,0 +1,13 @@
+C:\Users\josec\OneDrive\Área de Trabalho\Danilo\03-Op_Logicos_Condicionais\03-Op_Logicos_Condicionais\03-Op_Logicos_Condicionais\bin\Debug\netcoreapp3.1\03-Op_Logicos_Condicionais.exe
+C:\Users\josec\OneDrive\Área de Trabalho\Danilo\03-Op_Logicos_Condicionais\03-Op_Logicos_Condicionais\03-Op_Logicos_Condicionais\bin\Debug\netcoreapp3.1\03-Op_Logicos_Condicionais.deps.json
+C:\Users\josec\OneDrive\Área de Trabalho\Danilo\03-Op_Logicos_Condicionais\03-Op_Logicos_Condicionais\03-Op_Logicos_Condicionais\bin\Debug\netcoreapp3.1\03-Op_Logicos_Condicionais.runtimeconfig.json
+C:\Users\josec\OneDrive\Área de Trabalho\Danilo\03-Op_Logicos_Condicionais\03-Op_Logicos_Condicionais\03-Op_Logicos_Condicionais\bin\Debug\netcoreapp3.1\03-Op_Logicos_Condicionais.runtimeconfig.dev.json
+C:\Users\josec\OneDrive\Área de Trabalho\Danilo\03-Op_Logicos_Condicionais\03-Op_Logicos_Condicionais\03-Op_Logicos_Condicionais\bin\Debug\netcoreapp3.1\03-Op_Logicos_Condicionais.dll
+C:\Users\josec\OneDrive\Área de Trabalho\Danilo\03-Op_Logicos_Condicionais\03-Op_Logicos_Condicionais\03-Op_Logicos_Condicionais\bin\Debug\netcoreapp3.1\03-Op_Logicos_Condicionais.pdb
+C:\Users\josec\OneDrive\Área de Trabalho\Danilo\03-Op_Logicos_Condicionais\03-Op_Logicos_Condicionais\03-Op_Logicos_Condicionais\obj\Debug\netcoreapp3.1\03-Op_Logicos_Condicionais.csprojAssemblyReference.cache
+C:\Users\josec\OneDrive\Área de Trabalho\Danilo\03-Op_Logicos_Condicionais\03-Op_Logicos_Condicionais\03-Op_Logicos_Condicionais\obj\Debug\netcoreapp3.1\03-Op_Logicos_Condicionais.AssemblyInfoInputs.cache
+C:\Users\josec\OneDrive\Área de Trabalho\Danilo\03-Op_Logicos_Condicionais\03-Op_Logicos_Condicionais\03-Op_Logicos_Condicionais\obj\Debug\netcoreapp3.1\03-Op_Logicos_Condicionais.AssemblyInfo.cs
+C:\Users\josec\OneDrive\Área de Trabalho\Danilo\03-Op_Logicos_Condicionais\03-Op_Logicos_Condicionais\03-Op_Logicos_Condicionais\obj\Debug\netcoreapp3.1\03-Op_Logicos_Condicionais.csproj.CoreCompileInputs.cache
+C:\Users\josec\OneDrive\Área de Trabalho\Danilo\03-Op_Logicos_Condicionais\03-Op_Logicos_Condicionais\03-Op_Logicos_Condicionais\obj\Debug\netcoreapp3.1\03-Op_Logicos_Condicionais.dll
+C:\Users\josec\OneDrive\Área de Trabalho\Danilo\03-Op_Logicos_Condicionais\03-Op_Logicos_Condicionais\03-Op_Logicos_Condicionais\obj\Debug\netcoreapp3.1\03-Op_Logicos_Condicionais.pdb
+C:\Users\josec\OneDrive\Área de Trabalho\Danilo\03-Op_Logicos_Condicionais\03-Op_Logicos_Condicionais\03-Op_Logicos_Condicionais\obj\Debug\netcoreapp3.1\03-Op_Logicos_Condicionais.genruntimeconfig.cache
