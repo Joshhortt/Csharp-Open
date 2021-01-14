@@ -10,13 +10,24 @@ namespace Classes
 {
 	public class Cliente
 	{
-		// O construtor que criamos vai ter sempre o mesmo nome da classe neste caso 'Cliente'
-		public Cliente()   // O Construtor
+		/// <summary>
+		/// Construtor da classe. O Construtor - metodo com o mesmo nome da classe.
+		/// </summary>
+		/// <param name="nome">Para preencher o nome do objeto</param>
+		public Cliente(string nome)   		  
 		{
-			this.Nome = "Jose";
+			this.Nome = nome;  // this é a instancia + a propriedade com que quero preencher o meu objeto, neste caso com o nome Jose'.
+			                   // a propriedade Nome em PascaCase e a propriedade em camelCase ou entao em vez de camelCase 'nome' assim '_nome'.
 		}
 
-		// public static string Teste;
+		/// <summary>
+		/// Construtor sem parametros
+		/// </summary>
+		public Cliente()
+		{
+		}
+
+		public static string Teste;
 		public string Nome;
 		public string Telefone;
 		public string CC;

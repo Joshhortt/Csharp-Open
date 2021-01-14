@@ -26,21 +26,24 @@ namespace _12_POO_Construtores
 			var clientes = Cliente.LerClientes();
 
 			// Sempre que criamos algo static' é sempre para varias pessoas do modelo, não é para um só.
-			
-			var cliente = new Cliente();
-			cliente.Nome = "Jose";
+
+			Cliente.Teste = "sss";
+
+			var cliente = new Cliente();   
+			cliente.Nome = "jose";
 			cliente.Telefone = "911815877";
 			cliente.CC = "9690543";
 			cliente.Gravar();
 
-			Cliente c = new Cliente();
-			
+			Cliente c = new Cliente();  // passei nome da propriedade a minha instancia colocando 'nome' entre parenteses.
+
+			/*
 			var cliente2 = new Cliente();
 			cliente2.Nome = "Rita";
 			cliente2.Telefone = "911815878";
 			cliente2.CC = "9690544";
 			cliente2.Gravar();
-			
+			*/
 		}
 	}
 }
