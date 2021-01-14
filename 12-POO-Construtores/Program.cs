@@ -26,9 +26,9 @@ namespace _12_POO_Construtores
 			Cliente.Teste = "sss";
 
 			var cliente = new Cliente();   
-			cliente.Nome = "jose";
-			cliente.Telefone = "911815877";
-			cliente.CC = "9690543";
+			cliente.Nome = "Geraldo";
+			cliente.Telefone = "911815870";
+			cliente.CC = "9690540";
 			cliente.Gravar();
 
 			//Cliente c = new Cliente();
@@ -40,10 +40,11 @@ namespace _12_POO_Construtores
 			foreach (Cliente c in clientes) 
 			{
 				Console.WriteLine(c.Nome);
+				Console.WriteLine(c.Telefone);
+				Console.WriteLine(c.CC);
+				Console.WriteLine("=============================================");
 			}
 			Console.ReadLine();
-			
-
 			//var l = new List<String>();
 			
 			var cliente2 = new Cliente();

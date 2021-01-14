@@ -44,17 +44,20 @@ namespace Classes
 
 		public void Gravar()
 		{
-			// incluir clientes dentro de uma variavel
+		
 			var clientes = Cliente.LerClientes();
-			clientes.Add(this); // this é toda a inststancia daquel objeto que acabei de criar nesta lista 
+			clientes.Add(this);
 			if (File.Exists(caminhoBaseClientes()))
 			{
-				string conteudo = "nome;telefone;cc;\n";
+				StreamWriter r = new StreamWriter(caminhoBaseClientes());
+				string conteudo = "nome;telefone;cc;";
+				r.WriteLine(conteudo);
 				foreach (Cliente c in clientes)
 				{
-					conteudo += c.Nome + ";" + c.Telefone + ";" + c.CC + ";\n";
+					var linha = c.Nome + ";" + c.Telefone + ";" + c.CC + ";";
+					r.WriteLine(linha);
 				}
-				File.WriteAllText(caminhoBaseClientes(), conteudo);
+				r.Close();  // fechar o arquivo com a conexão acima. Escrevi tudo o que era necessario e fechei a conexão.
 			}
 		}
 
