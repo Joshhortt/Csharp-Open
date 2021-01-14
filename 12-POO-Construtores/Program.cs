@@ -35,7 +35,6 @@ namespace _12_POO_Construtores
 
 			Cliente c = new Cliente();
 
-			// criar construtor sem consrutor. Uma grande vantagem que as versões mais novas do C# tem.
 			Cliente c2 = new Cliente { Nome = "josh", Telefone = "911815880", CC = "9690544"};
 
 			var l = new List<String>();

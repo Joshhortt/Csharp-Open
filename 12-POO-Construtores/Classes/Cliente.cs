@@ -63,12 +63,18 @@ namespace Classes
 						i++;
 						if (i == 1) continue;
 
+						// Uma nova forma de programar em C# em vez das linhas 75,76,77.
+						// Refactorar atributo por atribuito passando diretamente este á instancia dentro de um bloco.
 						var clienteArquivo = linha.Split(';');
-						var cliente = new Cliente();
+						var cliente = new Cliente { 
+							Nome = clienteArquivo[0], 
+							Telefone = clienteArquivo[1], 
+							CC = clienteArquivo[2] 
+						};
 
-						cliente.Nome = clienteArquivo[0];
-						cliente.Telefone = clienteArquivo[1];
-						cliente.CC = clienteArquivo[2];
+						//cliente.Nome = clienteArquivo[0];
+						//cliente.Telefone = clienteArquivo[1];
+						//cliente.CC = clienteArquivo[2];
 
 						clientes.Add(cliente);
 					}
