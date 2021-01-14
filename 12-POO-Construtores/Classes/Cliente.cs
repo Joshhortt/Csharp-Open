@@ -10,18 +10,22 @@ namespace Classes
 {
 	public class Cliente
 	{   
-		/*
+		
 		/// <summary>
-		/// Construtor da classe. O Construtor - metodo com o mesmo nome da classe.
+		/// construtor com 3 parametros
 		/// </summary>
-		/// <param name="nome">Para preencher o nome do objeto</param>
-		public Cliente(string nome)   		  
+		/// <param name="nome"></param>
+		/// <param name="telefone"></param>
+		/// <param name="cc"></param>
+		public Cliente(string nome, string telefone, string cc)   		  
 		{
-			this.Nome = nome;  
+			this.Nome = nome;
+			this.Telefone = telefone;
+			this.CC = cc;
 		}
 
 		/// <summary>
-		/// Criar Construtor para telefone com parametro 'int'. Se fosse string o programa nao iria compilar.
+		/// Criar Construtor para telefone com parametro 'int'. 
 		/// <param name="telefone">telefone inteiro</param>
 		public Cliente(int telefone)
 		{
@@ -32,7 +36,7 @@ namespace Classes
 		/// Construtor sem parametros
 		/// </summary>
 		public Cliente()  { }
-		*/
+		
 		public static string Teste;
 		public string Nome;
 		public string Telefone;
@@ -46,7 +50,6 @@ namespace Classes
 		{
 			return ConfigurationManager.AppSettings["BaseDeClientes"];
 		}
-
 
 		public static List<Cliente> LerClientes()
 		{
@@ -63,18 +66,13 @@ namespace Classes
 						i++;
 						if (i == 1) continue;
 
-						// Uma nova forma de programar em C# em vez das linhas 75,76,77.
-						// Refactorar atributo por atribuito passando diretamente este á instancia dentro de um bloco.
 						var clienteArquivo = linha.Split(';');
-						var cliente = new Cliente { 
-							Nome = clienteArquivo[0], 
-							Telefone = clienteArquivo[1], 
-							CC = clienteArquivo[2] 
-						};
-
-						//cliente.Nome = clienteArquivo[0];
-						//cliente.Telefone = clienteArquivo[1];
-						//cliente.CC = clienteArquivo[2];
+						var cliente = new Cliente(clienteArquivo[0], clienteArquivo[1], clienteArquivo[2]);
+						//var cliente = new Cliente { 
+						//	Nome = clienteArquivo[0], 
+						//	Telefone = clienteArquivo[1], 
+						//	CC = clienteArquivo[2] 
+						//};
 
 						clientes.Add(cliente);
 					}
