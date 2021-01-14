@@ -10,6 +10,13 @@ namespace Classes
 {
 	public class Cliente
 	{
+		// O construtor que criamos vai ter sempre o mesmo nome da classe neste caso 'Cliente'
+		public Cliente()   // O Construtor
+		{
+			this.Nome = "Jose";
+		}
+
+		// public static string Teste;
 		public string Nome;
 		public string Telefone;
 		public string CC;

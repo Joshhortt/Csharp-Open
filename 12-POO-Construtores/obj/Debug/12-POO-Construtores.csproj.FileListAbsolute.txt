@@ -1,0 +1,7 @@
+C:\Users\josec\Source\Repos\Csharp-Open\12-POO-Construtores\bin\Debug\10-POF-parte2.exe.config
+C:\Users\josec\Source\Repos\Csharp-Open\12-POO-Construtores\bin\Debug\10-POF-parte2.exe
+C:\Users\josec\Source\Repos\Csharp-Open\12-POO-Construtores\bin\Debug\10-POF-parte2.pdb
+C:\Users\josec\Source\Repos\Csharp-Open\12-POO-Construtores\obj\Debug\12-POO-Construtores.csprojAssemblyReference.cache
+C:\Users\josec\Source\Repos\Csharp-Open\12-POO-Construtores\obj\Debug\12-POO-Construtores.csproj.CoreCompileInputs.cache
+C:\Users\josec\Source\Repos\Csharp-Open\12-POO-Construtores\obj\Debug\10-POF-parte2.exe
+C:\Users\josec\Source\Repos\Csharp-Open\12-POO-Construtores\obj\Debug\10-POF-parte2.pdb
