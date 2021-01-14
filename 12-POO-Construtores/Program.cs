@@ -1,8 +1,8 @@
 ﻿//**********************************************************************************************************************
-// 11. Programação orientada a Objectos - Classes e Instâncias (Continuação da aula anterior)
+// 12. Programação orientada a Objectos - Construtores (Continuação da aula anterior)
 //**********************************************************************************************************************
-//Nesta aula você irá entender o que é uma classe em C#, iremos organizar os arquivos de configuração no ficheiro 
-//'App.config' e iremos ver as diferenças entre métodos estáticos e de instâncias. Continuação de REFACTORAR o código.
+//Nesta aula iremos aprender os construtores em C#, criando instâncias com atributos já preenchidos, 
+//também iremos aprender a gravar a instância de nosso objeto em arquivo .txt ou .csv
 //**********************************************************************************************************************
 
 using Classes;
