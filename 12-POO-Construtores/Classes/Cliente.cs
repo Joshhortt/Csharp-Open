@@ -9,7 +9,8 @@ using System.Threading.Tasks;
 namespace Classes
 {
 	public class Cliente
-	{
+	{   
+		/*
 		/// <summary>
 		/// Construtor da classe. O Construtor - metodo com o mesmo nome da classe.
 		/// </summary>
@@ -31,7 +32,7 @@ namespace Classes
 		/// Construtor sem parametros
 		/// </summary>
 		public Cliente()  { }
-
+		*/
 		public static string Teste;
 		public string Nome;
 		public string Telefone;

@@ -25,8 +25,6 @@ namespace _12_POO_Construtores
 
 			var clientes = Cliente.LerClientes();
 
-			// Sempre que criamos algo static' é sempre para varias pessoas do modelo, não é para um só.
-
 			Cliente.Teste = "sss";
 
 			var cliente = new Cliente();   
@@ -35,7 +33,10 @@ namespace _12_POO_Construtores
 			cliente.CC = "9690543";
 			cliente.Gravar();
 
-			Cliente c = new Cliente();  // passei nome da propriedade a minha instancia colocando 'nome' entre parenteses.
+			Cliente c = new Cliente();
+
+			// criar construtor sem consrutor. Uma grande vantagem que as versões mais novas do C# tem.
+			Cliente c2 = new Cliente { Nome = "josh", Telefone = "911815880", CC = "9690544"};
 
 			var l = new List<String>();
 			/*
