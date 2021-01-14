@@ -10,7 +10,6 @@ namespace Classes
 {
 	public class Cliente
 	{   
-		
 		/// <summary>
 		/// construtor com 3 parametros
 		/// </summary>
@@ -57,7 +56,7 @@ namespace Classes
 					var linha = c.Nome + ";" + c.Telefone + ";" + c.CC + ";";
 					r.WriteLine(linha);
 				}
-				r.Close();  // fechar o arquivo com a conexão acima. Escrevi tudo o que era necessario e fechei a conexão.
+				r.Close();  
 			}
 		}
 
@@ -83,11 +82,7 @@ namespace Classes
 						var clienteArquivo = linha.Split(';');
 
 						var cliente = new Cliente(clienteArquivo[0], clienteArquivo[1], clienteArquivo[2]);
-						//var cliente = new Cliente { 
-						//	Nome = clienteArquivo[0], 
-						//	Telefone = clienteArquivo[1], 
-						//	CC = clienteArquivo[2] 
-						//};
+
 						clientes.Add(cliente);
 					}
 				}

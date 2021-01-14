@@ -31,11 +31,6 @@ namespace _12_POO_Construtores
 			cliente.CC = "9690540";
 			cliente.Gravar();
 
-			//Cliente c = new Cliente();
-
-			//Cliente c2 = new Cliente { Nome = "josh", Telefone = "911815880", CC = "9690544"};
-
-			// criar um foreach para listar os clientes que ja temos para a tela
 			var clientes = Cliente.LerClientes();
 			foreach (Cliente c in clientes) 
 			{
@@ -45,7 +40,7 @@ namespace _12_POO_Construtores
 				Console.WriteLine("=============================================");
 			}
 			Console.ReadLine();
-			//var l = new List<String>();
+			var l = new List<String>();
 			
 			var cliente2 = new Cliente();
 			cliente2.Nome = "Rita";
