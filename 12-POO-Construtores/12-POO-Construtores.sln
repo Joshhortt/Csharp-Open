@@ -3,7 +3,7 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.30804.86
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "10-POF-parte2", "10-POF-parte2.csproj", "{802C5D5C-C699-4D71-8CEA-26DE2F3290FE}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "12-POO-Construtores", "12-POO-Construtores.csproj", "{802C5D5C-C699-4D71-8CEA-26DE2F3290FE}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
