@@ -37,6 +37,7 @@ namespace _12_POO_Construtores
 
 			Cliente c = new Cliente();  // passei nome da propriedade a minha instancia colocando 'nome' entre parenteses.
 
+			var l = new List<String>();
 			/*
 			var cliente2 = new Cliente();
 			cliente2.Nome = "Rita";

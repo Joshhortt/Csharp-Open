@@ -16,16 +16,21 @@ namespace Classes
 		/// <param name="nome">Para preencher o nome do objeto</param>
 		public Cliente(string nome)   		  
 		{
-			this.Nome = nome;  // this é a instancia + a propriedade com que quero preencher o meu objeto, neste caso com o nome Jose'.
-			                   // a propriedade Nome em PascaCase e a propriedade em camelCase ou entao em vez de camelCase 'nome' assim '_nome'.
+			this.Nome = nome;  
+		}
+
+		/// <summary>
+		/// Criar Construtor para telefone com parametro 'int'. Se fosse string o programa nao iria compilar.
+		/// <param name="telefone">telefone inteiro</param>
+		public Cliente(int telefone)
+		{
+			this.Telefone = telefone.ToString();
 		}
 
 		/// <summary>
 		/// Construtor sem parametros
 		/// </summary>
-		public Cliente()
-		{
-		}
+		public Cliente()  { }
 
 		public static string Teste;
 		public string Nome;
