@@ -10,33 +10,56 @@ namespace Funções
 	class TelaCliente
 	{
 		public static void Chamar()
-
 		{
-			Cliente.Teste = "sss";
 
-			var cliente = new Cliente();
-
-			cliente.Nome = "Geraldo";
-			cliente.Telefone = "911815870";
-			cliente.CC = "9690540";
-			cliente.Gravar();
-
-			var clientes = Cliente.LerClientes();
-			foreach (Cliente c in clientes)
+			Console.WriteLine("\n========================== Cadastro de Cliente ==========================\n");
+			while (true)
 			{
-				Console.WriteLine(c.Nome);
-				Console.WriteLine(c.Telefone);
-				Console.WriteLine(c.CC);
-				Console.WriteLine("=============================================");
-			}
-			Console.ReadLine();
-			var l = new List<String>();
 
-			var cliente2 = new Cliente();
-			cliente2.Nome = "Rita";
-			cliente2.Telefone = "911815878";
-			cliente2.CC = "9690544";
-			cliente2.Gravar();
+				string mensagem = "Digite uma das opções abaixo:\n" +
+				"\n    0 - Sair do Cadastro" +
+				"\n    1 - Para cadastrar clientes" +
+				"\n    2 - Para listar clientes";
+
+				int valor = int.Parse(Console.ReadLine());
+
+				if (valor == 0)
+				{
+					break;
+				}
+				else if (valor == 1)
+				{
+					// Ler para dentro do cliente
+					var cliente = new Cliente();
+					Console.WriteLine("");
+					cliente.Nome = Console.ReadLine();  //"Geraldo";
+					cliente.Telefone = Console.ReadLine();  //"911815870";
+					cliente.CC = Console.ReadLine(); // "9690540";
+					cliente.Gravar();
+				}
+				else
+				{
+					var clientes = Cliente.LerClientes();
+					foreach (Cliente c in clientes)
+					{
+						Console.WriteLine(c.Nome);
+						Console.WriteLine(c.Telefone);
+						Console.WriteLine(c.CC);
+						Console.WriteLine("=============================================");
+					}
+				}
+
+				var clientes = Cliente.LerClientes();
+				foreach (Cliente c in clientes)
+				{
+					Console.WriteLine(c.Nome);
+					Console.WriteLine(c.Telefone);
+					Console.WriteLine(c.CC);
+					Console.WriteLine("=============================================");
+				}
+			 }
+			}
 		}
 	}
 }
+

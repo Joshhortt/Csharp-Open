@@ -32,7 +32,7 @@ namespace Tela
 				"\n    4 - Cadastrar Clientes";  // Novo item de menu. Opção 4 adicionado.
 
 				Console.WriteLine(mensagem);
-				//Console.ReadLine();
+				
 				int valor = int.Parse(Console.ReadLine());
 
 				if (valor == SAIDA_PROGRAMA)
