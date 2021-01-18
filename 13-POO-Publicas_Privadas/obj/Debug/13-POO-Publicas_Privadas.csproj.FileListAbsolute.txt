@@ -1,0 +1,7 @@
+C:\Users\josec\Source\Repos\Csharp-Open\13-POO-Publicas_Privadas\bin\Debug\13-POO-Publicas_Privadas.exe.config
+C:\Users\josec\Source\Repos\Csharp-Open\13-POO-Publicas_Privadas\bin\Debug\13-POO-Publicas_Privadas.exe
+C:\Users\josec\Source\Repos\Csharp-Open\13-POO-Publicas_Privadas\bin\Debug\13-POO-Publicas_Privadas.pdb
+C:\Users\josec\Source\Repos\Csharp-Open\13-POO-Publicas_Privadas\obj\Debug\13-POO-Publicas_Privadas.csproj.CoreCompileInputs.cache
+C:\Users\josec\Source\Repos\Csharp-Open\13-POO-Publicas_Privadas\obj\Debug\13-POO-Publicas_Privadas.exe
+C:\Users\josec\Source\Repos\Csharp-Open\13-POO-Publicas_Privadas\obj\Debug\13-POO-Publicas_Privadas.pdb
+C:\Users\josec\Source\Repos\Csharp-Open\13-POO-Publicas_Privadas\obj\Debug\13-POO-Publicas_Privadas.csprojAssemblyReference.cache
