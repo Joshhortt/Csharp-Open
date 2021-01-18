@@ -17,13 +17,9 @@ namespace Funções
 			return c;
 		}
 
-
 		public static void MostrarTela()
 		{
 			Console.WriteLine("Olá Pessoal!");
 		}
-
-
-
 	}
 }

@@ -27,6 +27,7 @@ namespace Tela
 				"\n    1 - Para Ler Arquivos" +
 				"\n    2 - Para executar a Tabuada" +
 				"\n    3 - Para Calcular a Média dos Alunos";
+
 				Console.WriteLine(mensagem);
 				//Console.ReadLine();
 				int valor = int.Parse(Console.ReadLine());
@@ -54,8 +55,8 @@ namespace Tela
 				{
 					Console.WriteLine("\n==================== Opção Calculo da Media========================================\n");
 					Media.Alunos(); // Refactorado
-									//Media.CalcularMediaAlunos();
-									//CalcularMediaAlunos();
+									// Media.CalcularMediaAlunos();
+									// CalcularMediaAlunos();
 					Console.WriteLine("\n================================================================================\n");
 				}
 				else

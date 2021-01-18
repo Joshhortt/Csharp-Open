@@ -14,7 +14,7 @@ using System.Text;
 using System.Threading.Tasks;
 using Tela;
 
-namespace _11_POF_parte2
+namespace _11_POO_Classes_Instancias
 
 {
 

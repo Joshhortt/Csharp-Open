@@ -24,6 +24,7 @@ namespace Calculo
 				totalNotas += nota;
 				notas.Add(nota);
 			}
+
 			int mediaNotas = totalNotas / notas.Count;
 			Console.WriteLine("\nA media do aluno " + nomeAluno + " é: " + mediaNotas);
 			Console.WriteLine("\nAs suas notas são: \n");

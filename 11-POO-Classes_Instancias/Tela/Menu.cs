@@ -27,6 +27,7 @@ namespace Tela
 				"\n    1 - Para Ler Arquivos" +
 				"\n    2 - Para executar a Tabuada" +
 				"\n    3 - Para Calcular a Média dos Alunos";
+
 				Console.WriteLine(mensagem);
 				//Console.ReadLine();
 				int valor = int.Parse(Console.ReadLine());

@@ -1,0 +1,7 @@
+C:\Users\josec\Source\Repos\Csharp-Open\11-POO-Classes_Instancias\bin\Debug\11-POO-Classes_Instancias.exe.config
+C:\Users\josec\Source\Repos\Csharp-Open\11-POO-Classes_Instancias\bin\Debug\11-POO-Classes_Instancias.exe
+C:\Users\josec\Source\Repos\Csharp-Open\11-POO-Classes_Instancias\bin\Debug\11-POO-Classes_Instancias.pdb
+C:\Users\josec\Source\Repos\Csharp-Open\11-POO-Classes_Instancias\obj\Debug\11-POO-Classes_Instancias.csprojAssemblyReference.cache
+C:\Users\josec\Source\Repos\Csharp-Open\11-POO-Classes_Instancias\obj\Debug\11-POO-Classes_Instancias.csproj.CoreCompileInputs.cache
+C:\Users\josec\Source\Repos\Csharp-Open\11-POO-Classes_Instancias\obj\Debug\11-POO-Classes_Instancias.exe
+C:\Users\josec\Source\Repos\Csharp-Open\11-POO-Classes_Instancias\obj\Debug\11-POO-Classes_Instancias.pdb

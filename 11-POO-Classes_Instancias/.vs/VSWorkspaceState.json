@@ -1,9 +1,13 @@
 {
   "ExpandedNodes": [
     "",
+    "\\bin",
+    "\\bin\\Debug",
+    "\\obj",
+    "\\obj\\Debug",
     "\\Properties",
     "\\Tela"
   ],
-  "SelectedNode": "\\10-POF-parte2.sln",
+  "SelectedNode": "\\11-POO-Classes_Instancias.sln",
   "PreviewInSolutionExplorer": false
 }

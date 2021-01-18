@@ -23,7 +23,6 @@ namespace Classes
 			return ConfigurationManager.AppSettings["BaseDeClientes"];
 		}
 
-
 		public static List<Cliente> LerClientes()
 		{
 			var clientes = new List<Cliente>();
