@@ -21,8 +21,8 @@ namespace _13_POO_Publicas_Privadas
 	{
 		static void Main(string[] args)
 		{
-			// Menu.Criar();
-
+			Menu.Criar();
+		/*
 			Cliente.Teste = "sss";
 
 			var cliente = new Cliente();   
@@ -48,7 +48,7 @@ namespace _13_POO_Publicas_Privadas
 			cliente2.Telefone = "911815878";
 			cliente2.CC = "9690544";
 			cliente2.Gravar();
-			
+			*/
 		}
 	}
 }
