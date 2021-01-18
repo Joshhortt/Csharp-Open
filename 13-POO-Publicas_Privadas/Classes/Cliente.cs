@@ -45,8 +45,6 @@ namespace Classes
 
 		public void Gravar()
 		{
-			this.Olhar();
-			return;
 		
 			var clientes = Cliente.LerClientes();
 			clientes.Add(this);

@@ -61,7 +61,7 @@ namespace Tela
 				}
 				else if (valor == CADASTRAR_CLIENTES)
 				{   // Adicionar condicional ao Cadastrar Clientes ao novo item de menu
-					Console.WriteLine("\n==================== Opção Cadastrar Clientes========================================\n");
+					// Console.WriteLine("\n==================== Opção Cadastrar Clientes========================================\n");
 					TelaCliente.Chamar();
 					Console.WriteLine("\n================================================================================\n");
 				}
