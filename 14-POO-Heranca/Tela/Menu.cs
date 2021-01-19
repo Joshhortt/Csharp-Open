@@ -15,7 +15,7 @@ namespace Tela
 		public const int LER_ARQUIVOS = 1;
 		public const int TABUADA = 2;
 		public const int CALCULO_MEDIA = 3;
-		public const int CADASTRAR_CLIENTES = 4;  // Adiionar novo item de menu.
+		public const int CADASTRAR_CLIENTES = 4;  
 
 
 		public static void Criar()
@@ -29,7 +29,7 @@ namespace Tela
 				"\n    1 - Para Ler Arquivos" +
 				"\n    2 - Para executar a Tabuada" +
 				"\n    3 - Para Calcular a Média dos Alunos" +
-				"\n    4 - Cadastrar Clientes";  // Novo item de menu. Opção 4 adicionado.
+				"\n    4 - Cadastrar Clientes";  
 
 				Console.WriteLine(mensagem);
 				
@@ -60,8 +60,7 @@ namespace Tela
 					Console.WriteLine("\n================================================================================\n");
 				}
 				else if (valor == CADASTRAR_CLIENTES)
-				{   // Adicionar condicional ao Cadastrar Clientes ao novo item de menu
-					// Console.WriteLine("\n==================== Opção Cadastrar Clientes========================================\n");
+				{   
 					TelaCliente.Chamar();
 					Console.WriteLine("\n================================================================================\n");
 				}

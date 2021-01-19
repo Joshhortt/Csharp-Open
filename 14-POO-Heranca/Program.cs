@@ -23,12 +23,12 @@ namespace _14_POO_Heranca
 		{
 			Menu.Criar();
 
-			Usuario u = new Usuario();  // Criar ba nova classe usuario
+			Usuario u = new Usuario();  
 			u.Nome = "sss";
 			u.Telefone = "zzz";
 			u.CC = "yyy";
 			u.Gravar();
-			//Usuario.LerClientes();
+			
 		}
 	}
 }

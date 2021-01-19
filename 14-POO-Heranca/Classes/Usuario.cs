@@ -8,12 +8,12 @@ namespace Classes
 {
 	public class Usuario : Cliente  
 	{
-		public Usuario(string nome, string telefone, string cc)  // criar construtor para usuario
+		public Usuario(string nome, string telefone, string cc)  
 		{
 			this.Nome = nome;
 			this.Telefone = telefone;
 			this.CC = cc;
 		}
-		public Usuario() { }  // metodo vazio
+		public Usuario() { } 
 	}
 }

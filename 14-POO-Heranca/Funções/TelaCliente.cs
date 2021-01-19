@@ -31,17 +31,16 @@ namespace Funções
 				}
 				else if (valor == 1)
 				{
-					// Ler para dentro do cliente
 					var cliente = new Cliente();
 					
 					Console.WriteLine("Digite o nome do cliente");
-					cliente.Nome = Console.ReadLine();  //"Geraldo";
+					cliente.Nome = Console.ReadLine(); 
 
 					Console.WriteLine("Digite o numero de Telefone do cliente");
-					cliente.Telefone = Console.ReadLine();  //"911815870";
+					cliente.Telefone = Console.ReadLine(); 
 
 					Console.WriteLine("Digite o numero do CC do cliente");
-					cliente.CC = Console.ReadLine(); // "9690540";
+					cliente.CC = Console.ReadLine(); 
 					cliente.Gravar();
 				}
 				else

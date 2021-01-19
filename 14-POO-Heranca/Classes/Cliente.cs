@@ -63,10 +63,11 @@ namespace Classes
 					r.Close();
 				}
 			}
-			else  // o mesmo codigo condicional como para cliente, mudando só o nome das variaveis e método para usuario e Usuario respetivamente
+			else  
 			{
-				var usuario = Usuario.LerClientes();
-				usuario.Add(this);
+				var usuario = Usuario.LerUsuarios();
+				Usuario u = new Usuario(this.Nome, this.Telefone, this.CC); // adicionar nova instancia de Usuario
+				usuario.Add(u);  // em vez this' incluir o u'.
 				if (File.Exists(caminhoBaseUsuarios()))
 				{
 					StreamWriter r = new StreamWriter(caminhoBaseUsuarios());
@@ -82,7 +83,7 @@ namespace Classes
 			}
 		}
 
-		private void Olhar() // Criar um metodo de instancia privado
+		private void Olhar() 
 		{
 			Console.WriteLine("O cliente " + this.Nome + " " + this.Sobrenome + " está olhando para mim.");
 			Console.WriteLine("===================================================");
@@ -123,8 +124,6 @@ namespace Classes
 
 				return clientes;
 		}
-
-		// Duplicado metodo publico, agora para Usuarios
 
 		public static List<Usuario> LerUsuarios()
 		{
