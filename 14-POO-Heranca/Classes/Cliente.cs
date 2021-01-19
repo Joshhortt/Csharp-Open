@@ -128,11 +128,11 @@ namespace Classes
 
 		public static List<Usuario> LerUsuarios()
 		{
-			var clientes = new List<Usuario>();
+			var usuarios = new List<Usuario>();
 
 			if (File.Exists(caminhoBaseClientes()))
 			{
-				using (StreamReader arquivo = File.OpenText(caminhoBaseClientes()))
+				using (StreamReader arquivo = File.OpenText(caminhoBaseUsuarios()))
 				{
 					string linha;
 					int i = 0;
@@ -140,16 +140,16 @@ namespace Classes
 					{
 						i++;
 						if (i == 1) continue;
-						var clienteArquivo = linha.Split(';');
+						var usuarioArquivo = linha.Split(';');
 
-						var cliente = new Usuario(clienteArquivo[0], clienteArquivo[1], clienteArquivo[2]);  // é preciso criar um construtor para usuario
+						var usuario = new Usuario(usuarioArquivo[0], usuarioArquivo[1], usuarioArquivo[2]);  
 
-						clientes.Add(cliente);
+						usuarios.Add(usuario);
 					}
 				}
 			}
 
-			return clientes;
+			return usuarios;
 		}
 	}
 }
