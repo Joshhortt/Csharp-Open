@@ -69,11 +69,11 @@ _**WEB FORMS**_<br/>
 _**SQL**_<br/>
 _**ENTITY FRAMEWORK**_<br/><br/>
 
-_**VUE.JS**<br/>
-_**ANGULAR**<br/>
-_**REACT.JS**<br/><br/>
+_**VUE.JS**_<br/>
+_**ANGULAR**_<br/>
+_**REACT.JS**_<br/><br/>
 
-_**UNIT TESTING**<br/>
-_**AZURE**<br/>
+_**UNIT TESTING**_<br/>
+_**AZURE**_
 
 
