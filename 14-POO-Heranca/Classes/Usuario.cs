@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Classes
 {
-	public class Usuario
+	public class Usuario : Cliente   // criar uma Herança
 	{
 	}
 }
