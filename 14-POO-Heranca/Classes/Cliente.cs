@@ -46,6 +46,43 @@ namespace Classes
 		public void Gravar()
 		{
 		
+			if(this.GetType() == typeof(Cliente))
+			{
+				var clientes = Cliente.LerClientes();
+				clientes.Add(this);
+				if (File.Exists(caminhoBaseClientes()))
+				{
+					StreamWriter r = new StreamWriter(caminhoBaseClientes());
+					string conteudo = "nome;telefone;cc;";
+					r.WriteLine(conteudo);
+					foreach (Cliente c in clientes)
+					{
+						var linha = c.Nome + ";" + c.Telefone + ";" + c.CC + ";";
+						r.WriteLine(linha);
+					}
+					r.Close();
+				}
+			}
+			else  // o mesmo codigo condicional como para cliente, mudando só o nome das variaveis e método para usuario e Usuario respetivamente
+			{
+				var usuario = Usuario.LerClientes();
+				usuario.Add(this);
+				if (File.Exists(caminhoBaseClientes()))
+				{
+					StreamWriter r = new StreamWriter(caminhoBaseClientes());
+					string conteudo = "nome;telefone;cc;";
+					r.WriteLine(conteudo);
+					foreach (Usuario c in usuario)
+					{
+						var linha = c.Nome + ";" + c.Telefone + ";" + c.CC + ";";
+						r.WriteLine(linha);
+					}
+					r.Close();
+				}
+			}
+		}
+		
+		/*
 			var clientes = Cliente.LerClientes();
 			clientes.Add(this);
 			if (File.Exists(caminhoBaseClientes()))
@@ -61,6 +98,7 @@ namespace Classes
 				r.Close();  
 			}
 		}
+		*/
 
 		private void Olhar() // Criar um metodo de instancia privado
 		{
