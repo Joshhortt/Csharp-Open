@@ -1,0 +1,7 @@
+C:\Users\josec\Source\Repos\Csharp-Open\14-POO-Heranca\bin\Debug\14-POO-Heranca.exe.config
+C:\Users\josec\Source\Repos\Csharp-Open\14-POO-Heranca\bin\Debug\14-POO-Heranca.exe
+C:\Users\josec\Source\Repos\Csharp-Open\14-POO-Heranca\bin\Debug\14-POO-Heranca.pdb
+C:\Users\josec\Source\Repos\Csharp-Open\14-POO-Heranca\obj\Debug\14-POO-Heranca.csprojAssemblyReference.cache
+C:\Users\josec\Source\Repos\Csharp-Open\14-POO-Heranca\obj\Debug\14-POO-Heranca.csproj.CoreCompileInputs.cache
+C:\Users\josec\Source\Repos\Csharp-Open\14-POO-Heranca\obj\Debug\14-POO-Heranca.exe
+C:\Users\josec\Source\Repos\Csharp-Open\14-POO-Heranca\obj\Debug\14-POO-Heranca.pdb
