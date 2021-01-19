@@ -81,24 +81,6 @@ namespace Classes
 				}
 			}
 		}
-		
-		/*
-			var clientes = Cliente.LerClientes();
-			clientes.Add(this);
-			if (File.Exists(caminhoBaseClientes()))
-			{
-				StreamWriter r = new StreamWriter(caminhoBaseClientes());
-				string conteudo = "nome;telefone;cc;";
-				r.WriteLine(conteudo);
-				foreach (Cliente c in clientes)
-				{
-					var linha = c.Nome + ";" + c.Telefone + ";" + c.CC + ";";
-					r.WriteLine(linha);
-				}
-				r.Close();  
-			}
-		}
-		*/
 
 		private void Olhar() // Criar um metodo de instancia privado
 		{
