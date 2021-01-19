@@ -46,11 +46,11 @@ _Para ver o código de uma lição específica, certifique-se de selecionar essa
 _Use o  **Tutorials Teacher** https://www.tutorialsteacher.com/csharp/csharp-tutorials_<br/>
 _Ou também **C# in a Nutshell** http://www.albahari.com/nutshell/ to dive deeper_.
 
-## Setup/Instalação/Contribute
+## Setup/Instalação/Contribue
 
 _Contribue para **Csharp-Open** ao clonar este repositório_.
-_**Issue Tracking**: https://github.com/Joshhortt/Csharp-Openr/issues_<br/>
-_**Source**: https://github.com/Joshhortt/Csharp-Open_
+_**PROBLEMAS**: https://github.com/Joshhortt/Csharp-Openr/issues._<br/>
+_**URL**: https://github.com/Joshhortt/Csharp-Open_
 
 ## Suporte/Contacto
 
