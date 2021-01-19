@@ -21,13 +21,39 @@ namespace _14_POO_Heranca
 	{
 		static void Main(string[] args)
 		{
-			Menu.Criar();
+			//Menu.Criar();
 
+			// Ler Clientes
+			Console.WriteLine("====================== Cadastro de Cliente ============================");
+			Cliente c = new Cliente();
+			c.Nome = "Maria";
+			c.Telefone = "926655440";
+			c.CC = "178736529";
+			c.Gravar();
+
+			foreach (Cliente cl in Cliente.LerClientes())
+			{
+				Console.WriteLine(cl.Nome);
+				Console.WriteLine(cl.Telefone);
+				Console.WriteLine(cl.CC);
+				Console.WriteLine("========================================================");
+			}
+
+			// Ler Usuarios
+			Console.WriteLine("====================== Cadastro de Usuario ============================");
 			Usuario u = new Usuario();  
 			u.Nome = "Maria";
 			u.Telefone = "926655440";
 			u.CC = "178736529";
 			u.Gravar();
+
+			foreach(Usuario us in Usuario.LerUsuarios())
+			{
+				Console.WriteLine(us.Nome);
+				Console.WriteLine(us.Telefone);
+				Console.WriteLine(us.CC);
+				Console.WriteLine("========================================================");
+			}
 		}
 	}
 }
