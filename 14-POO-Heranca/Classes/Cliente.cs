@@ -93,6 +93,11 @@ namespace Classes
 			return ConfigurationManager.AppSettings["BaseDeClientes"];
 		}
 
+		private static string caminhoBaseUsuarios()
+		{
+			return ConfigurationManager.AppSettings["BaseDeUsuarios"];
+		}
+
 		public static List<Cliente> LerClientes()
 		{
 			var clientes = new List<Cliente>();
