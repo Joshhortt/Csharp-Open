@@ -1,8 +1,8 @@
 ﻿//**********************************************************************************************************************
-// 13. Programação orientada a Objectos - Construtores (Continuação da aula anterior)
+// 14. Programação orientada a Objectos - Herança (Continuação da aula anterior)
 //**********************************************************************************************************************
-//Nesta aula iremos aprender a utilização dos atributos e métodos públicos e privados, você verá na prática como 
-//utilizá-lo e também iremos alterar a nossa aplicação console criando mais uma opção no menu.
+//Nesta aula iremos aprender como utilizar herança em uma classe, aproveitando assim os seus
+//atributos públicos e os seus métodos públicos
 //**********************************************************************************************************************
 
 using Classes;
@@ -24,11 +24,11 @@ namespace _14_POO_Heranca
 			//Menu.Criar();
 
 			// Ler Clientes
-			Console.WriteLine("====================== Cadastro de Cliente ============================");
+			Console.WriteLine("================= Cadastro de Cliente ==================");
 			Cliente c = new Cliente();
-			c.Nome = "Maria";
-			c.Telefone = "926655440";
-			c.CC = "178736529";
+			c.Nome = "Chico";
+			c.Telefone = "926600040";
+			c.CC = "236936529";
 			c.Gravar();
 
 			foreach (Cliente cl in Cliente.LerClientes())
@@ -40,11 +40,11 @@ namespace _14_POO_Heranca
 			}
 
 			// Ler Usuarios
-			Console.WriteLine("====================== Cadastro de Usuario ============================");
+			Console.WriteLine("================ Cadastro de Usuario ===================");
 			Usuario u = new Usuario();  
-			u.Nome = "Maria";
-			u.Telefone = "926655440";
-			u.CC = "178736529";
+			u.Nome = "Joao";
+			u.Telefone = "929955440";
+			u.CC = "188736529";
 			u.Gravar();
 
 			foreach(Usuario us in Usuario.LerUsuarios())

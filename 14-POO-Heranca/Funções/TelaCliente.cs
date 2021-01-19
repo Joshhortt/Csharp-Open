@@ -11,11 +11,9 @@ namespace Funções
 	{
 		public static void Chamar()
 		{
-
 			Console.WriteLine("\n========================== Cadastro de Cliente ==========================\n");
 			while (true)
 			{
-
 				string mensagem = "Digite uma das opções abaixo:\n" +
 				"\n    0 - Sair do Cadastro" +
 				"\n    1 - Para cadastrar clientes" +

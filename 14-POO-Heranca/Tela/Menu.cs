@@ -17,7 +17,6 @@ namespace Tela
 		public const int CALCULO_MEDIA = 3;
 		public const int CADASTRAR_CLIENTES = 4;  
 
-
 		public static void Criar()
 		{
 			while (true)
