@@ -1,12 +1,12 @@
 # Csharp-Open
-Passo a passo para te tornares um Programador C# (sharp)
+Passo a passo para te tornares um Programador C# (sharp). Um projeto aberto a todos que queiram aprender ou contribuir.
 
 ## Publicado
-_version: 19/01/2021_<br/>
+_versão: 19/01/2021_<br/>
 
-_By **Josh Hortt**_
+_**Josh Hortt**_
 
-## Este é o Caminho para te tornares um Progrmador C#
+## Este é o Percurso para te tornares um Progrmador C#
 
 _"Aprender a programar é uma das melhores decisões que tomou"._<br/>
 _Se decidiu começar com a Linguagem de Programação em C #, parabéns._<br/> 
@@ -39,28 +39,41 @@ _- Todo o código fonte aqui disponivel no Github_<br/>
 
 
 ## Quem ensina
-_Josh Hortt, formerly formador de Informática_<br/> 
+_Josh Hortt, formador de Programação de Linguagens (C; C++; C#; PHP e JS)._<br/> 
 
 ## Comece aqui se só quiser usar material no Github
 _Para ver o código de uma lição específica, certifique-se de selecionar essa lição por Seções e acompanhe_.<br/>
 _Use o  **Tutorials Teacher** https://www.tutorialsteacher.com/csharp/csharp-tutorials_<br/>
 _Ou também **C# in a Nutshell** http://www.albahari.com/nutshell/ to dive deeper_.
 
-## Setup/Instalação
+## Setup/Instalação/Contribute
 
-_Contribute to **Csharp-Open** by cloning this repository_.
-
-## Contribute
-
+_Contribue para **Csharp-Open** ao clonar este repositório_.
 _**Issue Tracking**: https://github.com/Joshhortt/Csharp-Openr/issues_<br/>
 _**Source**: https://github.com/Joshhortt/Csharp-Open_
 
-## Support and Contact Details
+## Suporte/Contacto
 
-_If you have any issues or have questions, ideas, concerns, please contact: joshhortt@yahoo.com_
+_Se você tiver quaisquer problemas ou perguntas, ideias, preocupações, entre em contato: joshhortt@yahoo.com_
 
-## Technologies Used
+## Tecnologias 
 
-_**C#** - C sharp_<br/>
+_**C#** - C sharp_<br/><br/>
+
+_**ASP.NET CORE**_<br/>
+_**ASP.NET MVC**_<br/>
+_**.NET CORE**_<br/>
+_**.NET CORE API**_<br/><br/>
+
+_**WEB FORMS**_<br/>
+_**SQL**_<br/>
+_**ENTITY FRAMEWORK**_<br/><br/>
+
+_**VUE.JS**<br/>
+_**ANGULAR**<br/>
+_**REACT.JS**<br/><br/>
+
+_**UNIT TESTING**<br/>
+_**AZURE**<br/>
 
 
