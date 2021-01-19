@@ -123,6 +123,34 @@ namespace Classes
 
 				return clientes;
 		}
+
+		// Duplicado metodo publico, agora para Usuarios
+
+		public static List<Usuario> LerUsuarios()
+		{
+			var clientes = new List<Usuario>();
+
+			if (File.Exists(caminhoBaseClientes()))
+			{
+				using (StreamReader arquivo = File.OpenText(caminhoBaseClientes()))
+				{
+					string linha;
+					int i = 0;
+					while ((linha = arquivo.ReadLine()) != null)
+					{
+						i++;
+						if (i == 1) continue;
+						var clienteArquivo = linha.Split(';');
+
+						var cliente = new Usuario(clienteArquivo[0], clienteArquivo[1], clienteArquivo[2]);  // é preciso criar um construtor para usuario
+
+						clientes.Add(cliente);
+					}
+				}
+			}
+
+			return clientes;
+		}
 	}
 }
 
