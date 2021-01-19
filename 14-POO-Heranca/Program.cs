@@ -24,11 +24,10 @@ namespace _14_POO_Heranca
 			Menu.Criar();
 
 			Usuario u = new Usuario();  
-			u.Nome = "sss";
-			u.Telefone = "zzz";
-			u.CC = "yyy";
+			u.Nome = "Maria";
+			u.Telefone = "926655440";
+			u.CC = "178736529";
 			u.Gravar();
-			
 		}
 	}
 }

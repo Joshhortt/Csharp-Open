@@ -66,8 +66,8 @@ namespace Classes
 			else  
 			{
 				var usuario = Usuario.LerUsuarios();
-				Usuario u = new Usuario(this.Nome, this.Telefone, this.CC); // adicionar nova instancia de Usuario
-				usuario.Add(u);  // em vez this' incluir o u'.
+				Usuario u = new Usuario(this.Nome, this.Telefone, this.CC); 
+				usuario.Add(u);  
 				if (File.Exists(caminhoBaseUsuarios()))
 				{
 					StreamWriter r = new StreamWriter(caminhoBaseUsuarios());
