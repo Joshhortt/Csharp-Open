@@ -67,9 +67,9 @@ namespace Classes
 			{
 				var usuario = Usuario.LerClientes();
 				usuario.Add(this);
-				if (File.Exists(caminhoBaseClientes()))
+				if (File.Exists(caminhoBaseUsuarios()))
 				{
-					StreamWriter r = new StreamWriter(caminhoBaseClientes());
+					StreamWriter r = new StreamWriter(caminhoBaseUsuarios());
 					string conteudo = "nome;telefone;cc;";
 					r.WriteLine(conteudo);
 					foreach (Usuario c in usuario)
