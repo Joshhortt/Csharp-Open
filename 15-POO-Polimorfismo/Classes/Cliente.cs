@@ -49,9 +49,9 @@ namespace Classes
 			{
 				var clientes = Cliente.LerClientes();
 				clientes.Add(this);
-				if (File.Exists(caminhoBaseClientes()))
+				if (File.Exists(caminhoBase()))
 				{
-					StreamWriter r = new StreamWriter(caminhoBaseClientes());
+					StreamWriter r = new StreamWriter(caminhoBase());
 					string conteudo = "nome;telefone;cc;";
 					r.WriteLine(conteudo);
 					foreach (Cliente c in clientes)
@@ -88,7 +88,7 @@ namespace Classes
 			Console.WriteLine("===================================================");
 		}
 
-		private static string caminhoBaseClientes()
+		private static string caminhoBase()  // Rename do metodo para caminhoBase(). Alterar em todo codigo fonte
 		{
 			return ConfigurationManager.AppSettings["BaseDeClientes"];
 		}
@@ -102,9 +102,9 @@ namespace Classes
 		{
 			var clientes = new List<Cliente>();
 
-			if (File.Exists(caminhoBaseClientes()))
+			if (File.Exists(caminhoBase()))
 			{
-				using (StreamReader arquivo = File.OpenText(caminhoBaseClientes()))
+				using (StreamReader arquivo = File.OpenText(caminhoBase()))
 				{
 					string linha;
 					int i = 0;
@@ -128,7 +128,7 @@ namespace Classes
 		{
 			var usuarios = new List<Usuario>();
 
-			if (File.Exists(caminhoBaseClientes()))
+			if (File.Exists(caminhoBase()))
 			{
 				using (StreamReader arquivo = File.OpenText(caminhoBaseUsuarios()))
 				{
