@@ -23,7 +23,6 @@ namespace _15_POO_Polimorfismo
 		{
 			//Menu.Criar();
 
-			// Ler Clientes
 			Console.WriteLine("================= Cadastro de Cliente ==================");
 			Cliente c = new Cliente();
 			c.Nome = "Chico";

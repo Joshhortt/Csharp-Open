@@ -1,4 +1,6 @@
-﻿using System;
+﻿
+  
+using System;
 using System.Collections.Generic;
 using System.Configuration;
 using System.IO;
@@ -9,14 +11,14 @@ using System.Threading.Tasks;
 namespace Classes
 {
 	public class Cliente
-	{   
+	{
 		/// <summary>
 		/// construtor com 3 parametros
 		/// </summary>
 		/// <param name="nome"></param>
 		/// <param name="telefone"></param>
 		/// <param name="cc"></param>
-		public Cliente(string nome, string telefone, string cc)   		  
+		public Cliente(string nome, string telefone, string cc)
 		{
 			this.Nome = nome;
 			this.Telefone = telefone;
@@ -34,8 +36,8 @@ namespace Classes
 		/// <summary>
 		/// Construtor sem parametros
 		/// </summary>
-		public Cliente()  { }
-		
+		public Cliente() { }
+
 		public static string Teste;
 		public string Nome;
 		public string Telefone;
@@ -43,35 +45,33 @@ namespace Classes
 
 		private string Sobrenome = "Santos";
 
-		public virtual void Gravar() 
+		public virtual void Gravar()
 
-		// public sealed void Gravar() O metodo Gravar com 'sealed quer dizer que ninguem pode subscrevr os metodo que pretendemos subscrever. 
-		 //Encontra-se fechado ou bloquado a alterações.
 
 		{
-				var clientes = Cliente.LerClientes();
-				clientes.Add(this);
-				if (File.Exists(caminhoBase()))
+			var clientes = Cliente.LerClientes();
+			clientes.Add(this);
+			if (File.Exists(CaminhoBase()))
+			{
+				StreamWriter r = new StreamWriter(CaminhoBase());
+				string conteudo = "nome;telefone;cc;";
+				r.WriteLine(conteudo);
+				foreach (Cliente c in clientes)
 				{
-					StreamWriter r = new StreamWriter(caminhoBase());
-					string conteudo = "nome;telefone;cc;";
-					r.WriteLine(conteudo);
-					foreach (Cliente c in clientes)
-					{
-						var linha = c.Nome + ";" + c.Telefone + ";" + c.CC + ";";
-						r.WriteLine(linha);
-					}
-					r.Close();
+					var linha = c.Nome + ";" + c.Telefone + ";" + c.CC + ";";
+					r.WriteLine(linha);
 				}
+				r.Close();
 			}
+		}
 
-		private void Olhar() 
+		private void Olhar()
 		{
 			Console.WriteLine("O cliente " + this.Nome + " " + this.Sobrenome + " está olhando para mim.");
 			Console.WriteLine("===================================================");
 		}
 
-		private static string caminhoBaseUsuarios()
+		private static string CaminhoBase()
 		{
 			return ConfigurationManager.AppSettings["BaseDeUsuarios"];
 		}
@@ -80,9 +80,9 @@ namespace Classes
 		{
 			var clientes = new List<Cliente>();
 
-			if (File.Exists(caminhoBase()))
+			if (File.Exists(CaminhoBase()))
 			{
-				using (StreamReader arquivo = File.OpenText(caminhoBase()))
+				using (StreamReader arquivo = File.OpenText(CaminhoBase()))
 				{
 					string linha;
 					int i = 0;
@@ -99,13 +99,12 @@ namespace Classes
 				}
 			}
 
-				return clientes;
+			return clientes;
 		}
 
-	  	private static string caminhoBase()
+		/*private static string caminhoBase()
 		{
 			throw new NotImplementedException();
-		}
+		}*/
 	}
 }
-

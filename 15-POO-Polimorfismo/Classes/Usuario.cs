@@ -1,4 +1,5 @@
-﻿using System;
+﻿
+using System;
 using System.Collections.Generic;
 using System.Configuration;
 using System.IO;
@@ -8,9 +9,9 @@ using System.Threading.Tasks;
 
 namespace Classes
 {
-	public class Usuario : Cliente  
+	public class Usuario : Cliente
 	{
-		public Usuario(string nome, string telefone, string cc)  
+		public Usuario(string nome, string telefone, string cc)
 		{
 			this.Nome = nome;
 			this.Telefone = telefone;
@@ -18,7 +19,7 @@ namespace Classes
 		}
 		public Usuario() { }
 
-		private static string caminhoBase()  
+		private static string CaminhoBase()
 		{
 			return ConfigurationManager.AppSettings["BaseDeUsuarios"];
 		}
@@ -28,9 +29,9 @@ namespace Classes
 			var usuario = Usuario.LerUsuarios();
 			Usuario u = new Usuario(this.Nome, this.Telefone, this.CC);
 			usuario.Add(u);
-			if (File.Exists(caminhoBase()))  
+			if (File.Exists(CaminhoBase()))
 			{
-				StreamWriter r = new StreamWriter(caminhoBase());  
+				StreamWriter r = new StreamWriter(CaminhoBase());
 				string conteudo = "nome;telefone;cc;";
 				r.WriteLine(conteudo);
 				foreach (Usuario c in usuario)
@@ -45,9 +46,9 @@ namespace Classes
 		{
 			var usuarios = new List<Usuario>();
 
-			if (File.Exists(caminhoBase()))
+			if (File.Exists(CaminhoBase()))
 			{
-				using (StreamReader arquivo = File.OpenText(caminhoBase()))
+				using (StreamReader arquivo = File.OpenText(CaminhoBase()))
 				{
 					string linha;
 					int i = 0;
