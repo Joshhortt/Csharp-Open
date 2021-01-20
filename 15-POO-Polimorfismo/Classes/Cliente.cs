@@ -45,8 +45,8 @@ namespace Classes
 
 		public void Gravar()
 		{
-		
-			if(this.GetType() == typeof(Cliente))
+			/*
+			 if(this.GetType() == typeof(Cliente))
 			{
 				var clientes = Cliente.LerClientes();
 				clientes.Add(this);
@@ -81,6 +81,7 @@ namespace Classes
 					r.Close();
 				}
 			}
+			*/
 		}
 
 		private void Olhar() 

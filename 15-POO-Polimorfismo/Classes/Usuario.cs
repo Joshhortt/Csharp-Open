@@ -14,6 +14,45 @@ namespace Classes
 			this.Telefone = telefone;
 			this.CC = cc;
 		}
-		public Usuario() { } 
+		public Usuario() { }
+
+		public void Gravar() // sobrepor o metodo Gravar() de uma classe já existente (Cliente) que está em Cliente.cs
+		{
+			if (this.GetType() == typeof(Cliente))
+			{
+				var clientes = Cliente.LerClientes();
+				clientes.Add(this);
+				if (File.Exists(caminhoBaseClientes()))
+				{
+					StreamWriter r = new StreamWriter(caminhoBaseClientes());
+					string conteudo = "nome;telefone;cc;";
+					r.WriteLine(conteudo);
+					foreach (Cliente c in clientes)
+					{
+						var linha = c.Nome + ";" + c.Telefone + ";" + c.CC + ";";
+						r.WriteLine(linha);
+					}
+					r.Close();
+				}
+			}
+			else
+			{
+				var usuario = Usuario.LerUsuarios();
+				Usuario u = new Usuario(this.Nome, this.Telefone, this.CC);
+				usuario.Add(u);
+				if (File.Exists(caminhoBaseUsuarios()))
+				{
+					StreamWriter r = new StreamWriter(caminhoBaseUsuarios());
+					string conteudo = "nome;telefone;cc;";
+					r.WriteLine(conteudo);
+					foreach (Usuario c in usuario)
+					{
+						var linha = c.Nome + ";" + c.Telefone + ";" + c.CC + ";";
+						r.WriteLine(linha);
+					}
+					r.Close();
+				}
+			}
+		}
 	}
 }
