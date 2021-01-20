@@ -45,8 +45,7 @@ namespace Classes
 
 		public void Gravar()
 		{
-			if (this.GetType() == typeof(Cliente))
-			{
+			//if (this.GetType() == typeof(Cliente))  {
 				var clientes = Cliente.LerClientes();
 				clientes.Add(this);
 				if (File.Exists(caminhoBase()))
@@ -62,7 +61,7 @@ namespace Classes
 					r.Close();
 				}
 			}
-			else
+			/*else
 			{
 				var usuario = Usuario.LerUsuarios();
 				Usuario u = new Usuario(this.Nome, this.Telefone, this.CC);
@@ -81,7 +80,7 @@ namespace Classes
 				}
 			}
 		}
-
+		*/
 		private void Olhar() 
 		{
 			Console.WriteLine("O cliente " + this.Nome + " " + this.Sobrenome + " está olhando para mim.");
@@ -123,34 +122,6 @@ namespace Classes
 		{
 			throw new NotImplementedException();
 		}
-	  
-	  /*
-		public static List<Usuario> LerUsuarios()
-		{
-			var usuarios = new List<Usuario>();
-
-			if (File.Exists(caminhoBase()))
-			{
-				using (StreamReader arquivo = File.OpenText(caminhoBaseUsuarios()))
-				{
-					string linha;
-					int i = 0;
-					while ((linha = arquivo.ReadLine()) != null)
-					{
-						i++;
-						if (i == 1) continue;
-						var usuarioArquivo = linha.Split(';');
-
-						var usuario = new Usuario(usuarioArquivo[0], usuarioArquivo[1], usuarioArquivo[2]);  
-
-						usuarios.Add(usuario);
-					}
-				}
-			}
-
-			return usuarios;
-		}
-	  */
 	}
 }
 
