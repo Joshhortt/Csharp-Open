@@ -2,7 +2,7 @@
 // 15. Programação orientada a Objectos - Polimorfismo (Continuação da aula anterior)
 //**********************************************************************************************************************
 //Nesta aula iremos aprender um pouco mais sobre orientação a objetos, falando sobre polimorfismo, 
-//iremos alterar a nossa aplicação console refatorando o nosso código deixando mais simples.
+//iremos alterar e separar a nossa aplicação console refatorando o nosso código deixando o mais simples.
 //**********************************************************************************************************************
 
 using Classes;

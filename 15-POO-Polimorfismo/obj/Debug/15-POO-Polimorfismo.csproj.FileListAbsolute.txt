@@ -1,0 +1,7 @@
+C:\Users\josec\Source\Repos\Csharp-Open\15-POO-Polimorfismo\bin\Debug\15-POO-Polimorfismo.exe.config
+C:\Users\josec\Source\Repos\Csharp-Open\15-POO-Polimorfismo\bin\Debug\15-POO-Polimorfismo.exe
+C:\Users\josec\Source\Repos\Csharp-Open\15-POO-Polimorfismo\bin\Debug\15-POO-Polimorfismo.pdb
+C:\Users\josec\Source\Repos\Csharp-Open\15-POO-Polimorfismo\obj\Debug\15-POO-Polimorfismo.csprojAssemblyReference.cache
+C:\Users\josec\Source\Repos\Csharp-Open\15-POO-Polimorfismo\obj\Debug\15-POO-Polimorfismo.csproj.CoreCompileInputs.cache
+C:\Users\josec\Source\Repos\Csharp-Open\15-POO-Polimorfismo\obj\Debug\15-POO-Polimorfismo.exe
+C:\Users\josec\Source\Repos\Csharp-Open\15-POO-Polimorfismo\obj\Debug\15-POO-Polimorfismo.pdb

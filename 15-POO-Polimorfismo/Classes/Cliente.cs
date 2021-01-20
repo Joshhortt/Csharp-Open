@@ -43,9 +43,11 @@ namespace Classes
 
 		private string Sobrenome = "Santos";
 
-		public virtual void Gravar() // Ao incluir o 'virtual'no metodo Cliente (Pai) em vez de 'new' no metodo Usuario (filho) ele força sub escrever, 
-									// permitindo o programador nao advinhar o nome do metodo, assim aparecendo disponivel nas opções, 
-									// tornando mais facil ao Programador editar esse mesmo codigo.
+		public virtual void Gravar() 
+
+		// public sealed void Gravar() O metodo Gravar com 'sealed quer dizer que ninguem pode subscrevr os metodo que pretendemos subscrever. 
+		 //Encontra-se fechado ou bloquado a alterações.
+
 		{
 				var clientes = Cliente.LerClientes();
 				clientes.Add(this);
