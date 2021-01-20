@@ -88,11 +88,6 @@ namespace Classes
 			Console.WriteLine("===================================================");
 		}
 
-		/*private static string caminhoBase()  // Rename do metodo para caminhoBase(). Alterar em todo codigo fonte
-		{
-			return ConfigurationManager.AppSettings["BaseDeClientes"];
-		}*/
-
 		private static string caminhoBaseUsuarios()
 		{
 			return ConfigurationManager.AppSettings["BaseDeUsuarios"];
@@ -124,6 +119,12 @@ namespace Classes
 				return clientes;
 		}
 
+	  	private static string caminhoBase()
+		{
+			throw new NotImplementedException();
+		}
+	  
+	  /*
 		public static List<Usuario> LerUsuarios()
 		{
 			var usuarios = new List<Usuario>();
@@ -149,6 +150,7 @@ namespace Classes
 
 			return usuarios;
 		}
+	  */
 	}
 }
 
