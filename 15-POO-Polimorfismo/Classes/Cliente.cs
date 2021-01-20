@@ -1,6 +1,4 @@
-﻿
-  
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.Configuration;
 using System.IO;
@@ -46,7 +44,6 @@ namespace Classes
 		private string Sobrenome = "Santos";
 
 		public virtual void Gravar()
-
 
 		{
 			var clientes = Cliente.LerClientes();

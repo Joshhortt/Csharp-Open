@@ -4,7 +4,6 @@
 //Nesta aula iremos aprender um pouco mais sobre orientação a objetos, falando sobre polimorfismo, 
 //iremos alterar e separar a nossa aplicação console refatorando o nosso código deixando o mais simples.
 //**********************************************************************************************************************
-
 using Classes;
 using System;
 using System.Collections.Generic;
@@ -25,7 +24,7 @@ namespace _15_POO_Polimorfismo
 
 			Console.WriteLine("================= Cadastro de Cliente ==================");
 			Cliente c = new Cliente();
-			c.Nome = "Chico";
+			c.Nome = "Cliente";
 			c.Telefone = "926600040";
 			c.CC = "236936529";
 			c.Gravar();
@@ -41,7 +40,7 @@ namespace _15_POO_Polimorfismo
 			// Ler Usuarios
 			Console.WriteLine("================ Cadastro de Usuario ===================");
 			Usuario u = new Usuario();  
-			u.Nome = "Joao";
+			u.Nome = "Usuario";
 			u.Telefone = "929955440";
 			u.CC = "188736529";
 			u.Gravar();

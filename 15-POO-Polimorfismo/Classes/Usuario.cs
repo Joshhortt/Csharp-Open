@@ -27,8 +27,9 @@ namespace Classes
 		public override void Gravar()
 		{
 			var usuario = Usuario.LerUsuarios();
-			Usuario u = new Usuario(this.Nome, this.Telefone, this.CC);
-			usuario.Add(u);
+			//Usuario u = new Usuario(this.Nome, this.Telefone, this.CC);
+			//usuario.Add(u);
+			usuario.Add(this);
 			if (File.Exists(CaminhoBase()))
 			{
 				StreamWriter r = new StreamWriter(CaminhoBase());
