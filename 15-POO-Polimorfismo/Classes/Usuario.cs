@@ -20,11 +20,11 @@ namespace Classes
 
 		private static string caminhoBase()  
 		{
-			return ConfigurationManager.AppSettings["BaseDeClientes"];
+			return ConfigurationManager.AppSettings["BaseDeUsuarios"];
 		}
 
-		public void Gravar() 
-				{
+		public override void Gravar()
+		{
 			var usuario = Usuario.LerUsuarios();
 			Usuario u = new Usuario(this.Nome, this.Telefone, this.CC);
 			usuario.Add(u);
