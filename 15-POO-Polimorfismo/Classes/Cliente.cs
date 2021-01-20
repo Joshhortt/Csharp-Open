@@ -88,10 +88,10 @@ namespace Classes
 			Console.WriteLine("===================================================");
 		}
 
-		private static string caminhoBase()  // Rename do metodo para caminhoBase(). Alterar em todo codigo fonte
+		/*private static string caminhoBase()  // Rename do metodo para caminhoBase(). Alterar em todo codigo fonte
 		{
 			return ConfigurationManager.AppSettings["BaseDeClientes"];
-		}
+		}*/
 
 		private static string caminhoBaseUsuarios()
 		{

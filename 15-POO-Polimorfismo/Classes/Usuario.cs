@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Configuration;
 using System.IO;
 using System.Linq;
 using System.Text;
@@ -17,14 +18,19 @@ namespace Classes
 		}
 		public Usuario() { }
 
+		private static string caminhoBase()  // Retrirado este bloco de codigo da classe Cliente e colocado aqui
+		{
+			return ConfigurationManager.AppSettings["BaseDeClientes"];
+		}
+
 		public void Gravar() 
 				{
 			var usuario = Usuario.LerUsuarios();
 			Usuario u = new Usuario(this.Nome, this.Telefone, this.CC);
 			usuario.Add(u);
-			if (File.Exists(caminhoBaseUsuarios()))
+			if (File.Exists(caminhoBase()))  // sobre escrevendo aqui
 			{
-				StreamWriter r = new StreamWriter(caminhoBaseUsuarios());
+				StreamWriter r = new StreamWriter(caminhoBase());  // sobres escrevendo aqui
 				string conteudo = "nome;telefone;cc;";
 				r.WriteLine(conteudo);
 				foreach (Usuario c in usuario)
