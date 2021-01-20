@@ -16,8 +16,9 @@ namespace Classes
 		}
 		public Usuario() { }
 
-		public void Gravar() // sobrepor o metodo Gravar() de uma classe já existente (Cliente) que está em Cliente.cs
+		public void Gravar() 
 		{
+			/* Remover toda a condição if else daqui pois só é pretendido aqui salvar os dados de usuário em vez de cliente.
 			if (this.GetType() == typeof(Cliente))
 			{
 				var clientes = Cliente.LerClientes();
@@ -37,6 +38,7 @@ namespace Classes
 			}
 			else
 			{
+			*/
 				var usuario = Usuario.LerUsuarios();
 				Usuario u = new Usuario(this.Nome, this.Telefone, this.CC);
 				usuario.Add(u);
