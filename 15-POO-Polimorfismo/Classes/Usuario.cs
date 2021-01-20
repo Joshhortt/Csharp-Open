@@ -24,11 +24,17 @@ namespace Classes
 			return ConfigurationManager.AppSettings["BaseDeUsuarios"];
 		}
 
+		public override void Olhar()  // Também aqui vamos incluir o 'override' para o metodo Olhar()
+		{
+			Console.WriteLine("O usuario " + this.Nome + " não tem o sobrenome, pois é atribuito da classe Pai, está olhando para mim.");
+			Console.WriteLine("=======================================================================================================");
+			Console.WriteLine("O método original é: ");
+			base.Olhar();  // Chamando a classe base (Pai)
+		}
+
 		public override void Gravar()
 		{
 			var usuario = Usuario.LerUsuarios();
-			//Usuario u = new Usuario(this.Nome, this.Telefone, this.CC);
-			//usuario.Add(u);
 			usuario.Add(this);
 			if (File.Exists(CaminhoBase()))
 			{

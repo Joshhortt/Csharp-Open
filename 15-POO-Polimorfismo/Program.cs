@@ -21,7 +21,7 @@ namespace _15_POO_Polimorfismo
 		static void Main(string[] args)
 		{
 			//Menu.Criar();
-
+			/*
 			Console.WriteLine("================= Cadastro de Cliente ==================");
 			Cliente c = new Cliente();
 			c.Nome = "Cliente";
@@ -36,22 +36,23 @@ namespace _15_POO_Polimorfismo
 				Console.WriteLine(cl.CC);
 				Console.WriteLine("========================================================");
 			}
-
+			*/
 			// Ler Usuarios
 			Console.WriteLine("================ Cadastro de Usuario ===================");
 			Usuario u = new Usuario();  
 			u.Nome = "Usuario";
 			u.Telefone = "929955440";
 			u.CC = "188736529";
-			u.Gravar();
-
-			foreach(Usuario us in Usuario.LerUsuarios())
+			//u.Gravar();
+			u.Olhar();  // Testar o Usuario
+			/*
+			foreach (Usuario us in Usuario.LerUsuarios())
 			{
 				Console.WriteLine(us.Nome);
 				Console.WriteLine(us.Telefone);
 				Console.WriteLine(us.CC);
 				Console.WriteLine("========================================================");
-			}
+			} */
 		}
 	}
 }

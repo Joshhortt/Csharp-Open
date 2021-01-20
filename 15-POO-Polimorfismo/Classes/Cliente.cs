@@ -62,7 +62,8 @@ namespace Classes
 			}
 		}
 
-		private void Olhar()
+		//private void Olhar()
+		public virtual void Olhar() // Também aqui vamos incluir o 'virtual' para o metodo Olhar()
 		{
 			Console.WriteLine("O cliente " + this.Nome + " " + this.Sobrenome + " está olhando para mim.");
 			Console.WriteLine("===================================================");
@@ -97,11 +98,6 @@ namespace Classes
 			}
 
 			return clientes;
-		}
-
-		/*private static string caminhoBase()
-		{
-			throw new NotImplementedException();
-		}*/
+		}	
 	}
 }
