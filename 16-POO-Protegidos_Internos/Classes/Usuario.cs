@@ -28,8 +28,9 @@ namespace Classes
 		{
 			int resultado = this.CalcularUmMaisDois();
 			//this.CalcularUmMaisDois();     
-			this.CalcularUmMaisDois();   // 4. Não é possivel acessar o privado,
-			this.CalcularUmMaisDois3();  //    somente o protegido e o publico
+			//this.CalcularUmMaisDois();  
+			//this.CalcularUmMaisDois3(); 
+			this.CalcularUmMaisDois4();  // 5. Aqui tembem é possivel acessar o .. 4();
 													
 
 			Console.WriteLine("O usuario " + this.Nome + " não tem o sobrenome, pois é atribuito da classe Pai, está olhando para mim.");

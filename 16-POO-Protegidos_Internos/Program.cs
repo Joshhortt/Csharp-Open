@@ -38,8 +38,8 @@ namespace _16_POO_Protegidos_Internos
 			}
 			*/
 			Cliente c = new Cliente();
-			c.CalcularUmMaisDois3();  // 3. Só é possivel acessar o metodo publico criado na classe Cliente 
-			
+			// c.CalcularUmMaisDois3();
+			c.CalcularUmMaisDois4();  // 4. Consegue acessar o metodo ..4();
 			Console.WriteLine("================ Cadastro de Usuario ===================");
 			Usuario u = new Usuario();  
 			u.Nome = "Usuario";
