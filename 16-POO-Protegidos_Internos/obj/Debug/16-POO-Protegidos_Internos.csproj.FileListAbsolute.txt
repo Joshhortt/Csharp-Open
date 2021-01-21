@@ -1,0 +1,7 @@
+C:\Users\josec\Source\Repos\Csharp-Open\16-POO-Protegidos_Internos\bin\Debug\16-POO-Protegidos_Internos.exe.config
+C:\Users\josec\Source\Repos\Csharp-Open\16-POO-Protegidos_Internos\bin\Debug\16-POO-Protegidos_Internos.exe
+C:\Users\josec\Source\Repos\Csharp-Open\16-POO-Protegidos_Internos\bin\Debug\16-POO-Protegidos_Internos.pdb
+C:\Users\josec\Source\Repos\Csharp-Open\16-POO-Protegidos_Internos\obj\Debug\16-POO-Protegidos_Internos.csprojAssemblyReference.cache
+C:\Users\josec\Source\Repos\Csharp-Open\16-POO-Protegidos_Internos\obj\Debug\16-POO-Protegidos_Internos.csproj.CoreCompileInputs.cache
+C:\Users\josec\Source\Repos\Csharp-Open\16-POO-Protegidos_Internos\obj\Debug\16-POO-Protegidos_Internos.exe
+C:\Users\josec\Source\Repos\Csharp-Open\16-POO-Protegidos_Internos\obj\Debug\16-POO-Protegidos_Internos.pdb
