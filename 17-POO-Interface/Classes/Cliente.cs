@@ -8,7 +8,7 @@ using System.Threading.Tasks;
 
 namespace Classes
 {
-	public class Cliente
+	public class Cliente : Pessoa    // 2. Cliente vai herdar o Interface Pessoa
 	{
 		/// <summary>
 		/// construtor com 3 parametros

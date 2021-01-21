@@ -9,7 +9,8 @@ using System.Threading.Tasks;
 
 namespace Classes
 {
-	public class Usuario : Cliente
+		public class Usuario : Cliente
+		// public class Usuario : Pessoa
 	{
 		public Usuario(string nome, string telefone, string cc)
 		{
