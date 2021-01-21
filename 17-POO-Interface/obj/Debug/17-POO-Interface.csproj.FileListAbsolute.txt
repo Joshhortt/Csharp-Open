@@ -1,0 +1,10 @@
+C:\Users\josec\Source\Repos\Csharp-Open\17-POO-Interface\bin\Debug\17-POO-Interface.exe.config
+C:\Users\josec\Source\Repos\Csharp-Open\17-POO-Interface\bin\Debug\17-POO-Interface.exe
+C:\Users\josec\Source\Repos\Csharp-Open\17-POO-Interface\bin\Debug\17-POO-Interface.pdb
+C:\Users\josec\Source\Repos\Csharp-Open\17-POO-Interface\bin\Debug\Componentes.dll
+C:\Users\josec\Source\Repos\Csharp-Open\17-POO-Interface\bin\Debug\Componentes.pdb
+C:\Users\josec\Source\Repos\Csharp-Open\17-POO-Interface\obj\Debug\17-POO-Interface.csprojAssemblyReference.cache
+C:\Users\josec\Source\Repos\Csharp-Open\17-POO-Interface\obj\Debug\17-POO-Interface.csproj.CoreCompileInputs.cache
+C:\Users\josec\Source\Repos\Csharp-Open\17-POO-Interface\obj\Debug\17-POO-Interface.csproj.CopyComplete
+C:\Users\josec\Source\Repos\Csharp-Open\17-POO-Interface\obj\Debug\17-POO-Interface.exe
+C:\Users\josec\Source\Repos\Csharp-Open\17-POO-Interface\obj\Debug\17-POO-Interface.pdb
