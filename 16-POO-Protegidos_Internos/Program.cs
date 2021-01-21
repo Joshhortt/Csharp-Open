@@ -5,6 +5,7 @@
 //também o que é uma DLL e o que uma DLL tem a ver com métodos internos. Veremos também o que é um assembly.
 //**********************************************************************************************************************
 using Classes;
+using Componentes;
 using System;
 using System.Collections.Generic;
 using System.IO;
@@ -37,6 +38,14 @@ namespace _16_POO_Protegidos_Internos
 				Console.WriteLine("========================================================");
 			}
 			*/
+
+			Ferramentas f = new Ferramentas();  // 2. criado nova instancia Ferramentas();
+			f.MetodoParaTodosQueUtilizarOAssembly();  // 3. é possivel acessar o metodo publico mas não o internal criado anteriormente.
+			bool d = f.ValidarCC("123456789");   // 4. é possivel acessar o metodo bool mas não o internal criado anteriormente.
+
+			// 5. Nota de que agora Se forem ao diretorio Componentes, dentro de bin/Debug ja encontram uma dll que podem enviar a outros para partilhar
+			// por E-mail por exemplo. o ficheiro Componentes.dll -->  C:\Users\josec\Source\Repos\Csharp-Open\16-POO-Protegidos_Internos\Componentes\bin\Debug
+
 			Cliente c = new Cliente();
 			// c.CalcularUmMaisDois3();
 			c.CalcularUmMaisDois4();  
