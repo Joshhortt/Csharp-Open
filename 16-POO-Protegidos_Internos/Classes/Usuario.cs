@@ -30,7 +30,7 @@ namespace Classes
 			//this.CalcularUmMaisDois();     
 			//this.CalcularUmMaisDois();  
 			//this.CalcularUmMaisDois3(); 
-			this.CalcularUmMaisDois4();  // 5. Aqui tembem é possivel acessar o .. 4();
+			this.CalcularUmMaisDois4();  
 													
 
 			Console.WriteLine("O usuario " + this.Nome + " não tem o sobrenome, pois é atribuito da classe Pai, está olhando para mim.");

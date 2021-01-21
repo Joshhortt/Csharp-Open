@@ -44,5 +44,11 @@
     <Compile Include="Ferramentas.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\16-POO-Protegidos_Internos.csproj">
+      <Project>{802c5d5c-c699-4d71-8cea-26de2f3290fe}</Project>
+      <Name>16-POO-Protegidos_Internos</Name>
+    </ProjectReference>
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

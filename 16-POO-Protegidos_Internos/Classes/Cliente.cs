@@ -58,7 +58,7 @@ namespace Classes
 			return 1 + 2;
 		}
 
-		internal int CalcularUmMaisDois4()  // 3. Crair o metodo internal para acessar o CalcularUmMaisDois4();
+		internal int CalcularUmMaisDois4()  
 		{
 			return 1 + 2;
 		}
