@@ -43,7 +43,12 @@ namespace Classes
 
 		private string Sobrenome = "Santos";
 
-		protected int CalcularUmMaisDois()  // 1. Criar metodo protegido na classe de Cliente
+		protected int CalcularUmMaisDois()  
+		{
+			return 1 + 2;
+		}
+
+		private int CalcularUmMaisDois2()  // 1. Criar metodo privado na classe de Cliente
 		{
 			return 1 + 2;
 		}

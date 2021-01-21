@@ -26,9 +26,9 @@ namespace Classes
 
 		public override void Olhar()  
 		{
-			int resultado = this.CalcularUmMaisDois();  // 4. Atraves da classe do Usuario eu consigo acessar o metodo privado criado na classe de Cliente
-			                                            // Porque fiz uma herança de Cliente. A chave a aqui é o '.this' que faz com que acessamos
-														// internamente a instancia.
+			int resultado = this.CalcularUmMaisDois();  
+			this.CalcularUmMaisDois();       // 2. Consegue acessar o metodo protegido mas não consegue acessar o metodo privado       
+														
 
 			Console.WriteLine("O usuario " + this.Nome + " não tem o sobrenome, pois é atribuito da classe Pai, está olhando para mim.");
 			Console.WriteLine("=======================================================================================================");
