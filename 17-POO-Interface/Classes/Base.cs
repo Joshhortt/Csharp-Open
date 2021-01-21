@@ -10,7 +10,7 @@ namespace Classes
 {
 	public class Base : Pessoa
 	{
-
+		// Todo o código refatorado aqui
 		public Base(string nome, string telefone, string cc)  
 		{
 			this.Nome = nome;
@@ -32,20 +32,22 @@ namespace Classes
 		public virtual void Gravar()
 
 		{
-			var dados = new Base().Ler();  
+			// var dados = new Base().Ler();   substituir o new Base() por this.
+			var dados = this.Ler();
 			dados.Add(this);
-			if (File.Exists(DiretorioComArquivo()))  
-			{
-				StreamWriter r = new StreamWriter(DiretorioComArquivo());   
-				string conteudo = "nome;telefone;cc;";
-				r.WriteLine(conteudo);
-				foreach (Base b in dados)  
-				{
-					var linha = b.Nome + ";" + b.Telefone + ";" + b.CC + ";";  
-					r.WriteLine(linha);
-				}
-				r.Close();
-			}
+
+			/*if (File.Exists(DiretorioComArquivo()))  ja não é preciso aqui o if
+			{*/
+					StreamWriter r = new StreamWriter(DiretorioComArquivo());   
+					string conteudo = "nome;telefone;cc;";
+					r.WriteLine(conteudo);
+					foreach (Base b in dados)  
+					{
+						var linha = b.Nome + ";" + b.Telefone + ";" + b.CC + ";";  
+						r.WriteLine(linha);
+					}
+					r.Close();
+			
 		}
 
 		public List<Base> Ler() 

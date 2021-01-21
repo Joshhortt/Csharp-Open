@@ -43,7 +43,8 @@ namespace Funções
 				}
 				else
 				{
-					var clientes = Cliente.LerClientes();
+					//var clientes = Cliente.LerClientes();
+					var clientes = new Cliente().Ler();  // criar nova instancia
 					foreach (Cliente c in clientes)
 					{
 						Console.WriteLine(c.Nome);
