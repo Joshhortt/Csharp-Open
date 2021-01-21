@@ -9,8 +9,8 @@ using System.Threading.Tasks;
 
 namespace Classes
 {
-		public class Usuario : Cliente
-		// public class Usuario : Pessoa
+		// public class Usuario : Cliente   refatorado para Usuario : Base
+		public class Usuario : Base
 	{
 		public Usuario(string nome, string telefone, string cc)
 		{
@@ -25,7 +25,7 @@ namespace Classes
 			return ConfigurationManager.AppSettings["BaseDeUsuarios"];
 		}
 
-		public override void Olhar()  
+		/*public override void Olhar()  
 		{
 			int resultado = this.CalcularUmMaisDois();
 			//this.CalcularUmMaisDois();     
@@ -37,7 +37,7 @@ namespace Classes
 			Console.WriteLine("=======================================================================================================");
 			Console.WriteLine("O método original é: ");
 			base.Olhar();  
-		}
+		}*/
 
 		public override void Gravar()
 		{

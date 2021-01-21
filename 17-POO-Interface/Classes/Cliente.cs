@@ -8,7 +8,8 @@ using System.Threading.Tasks;
 
 namespace Classes
 {
-	public class Cliente : Pessoa    // 2. Cliente vai herdar o Interface Pessoa
+	   //public class Cliente : Pessoa   refatorado para Cliente : Base
+		public class Cliente : Base
 	{
 		/// <summary>
 		/// construtor com 3 parametros
@@ -37,12 +38,14 @@ namespace Classes
 		public Cliente() { }
 
 		public static string Teste;
-		public string Nome;
-		public string Telefone;
-		public string CC;
 
-		private string Sobrenome = "Santos";
+		//public string Nome;
+		//public string Telefone;
+		//public string CC;
 
+		// private string Sobrenome = "Santos";
+
+		/*
 		protected int CalcularUmMaisDois()  
 		{
 			return 1 + 2;
@@ -62,15 +65,13 @@ namespace Classes
 		{
 			return 1 + 2;
 		}
+		*/
 
-		public virtual void Gravar()
+		//Este Bloco de Codigo do metodo Gravar() deve ser copiado para Base.cs
+		
+		  public virtual void Gravar()
 
 		{
-		
-			this.CalcularUmMaisDois();
-			this.CalcularUmMaisDois2();
-			this.CalcularUmMaisDois3();
-
 			var clientes = Cliente.LerClientes();
 			clientes.Add(this);
 			if (File.Exists(CaminhoBase()))
@@ -86,18 +87,21 @@ namespace Classes
 				r.Close();
 			}
 		}
-
+		/*
 		public virtual void Olhar()
 		{
 			Console.WriteLine("O cliente " + this.Nome + " " + this.Sobrenome + " está olhando para mim.");
 			Console.WriteLine("===================================================");
 		}
+		*/
 
+		//Este Bloco de Codigo do metodo CaminhoBase() deve ser copiado para Base.cs
 		private static string CaminhoBase()
 		{
-			return ConfigurationManager.AppSettings["BaseDeUsuarios"];
+			return ConfigurationManager.AppSettings["BaseDeClientes"];
 		}
 
+		//Este Bloco de Codigo do metodo CaminhoBase() deve ser copiado para Base.cs
 		public static List<Cliente> LerClientes()
 		{
 			var clientes = new List<Cliente>();
