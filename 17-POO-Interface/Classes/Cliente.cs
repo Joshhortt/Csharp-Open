@@ -8,7 +8,6 @@ using System.Threading.Tasks;
 
 namespace Classes
 {
-	   //public class Cliente : Pessoa   refatorado para Cliente : Base
 		public class Cliente : Base
 	{
 		/// <summary>
@@ -38,36 +37,6 @@ namespace Classes
 		public Cliente() { }
 
 		public static string Teste;
-
-		//public string Nome;
-		//public string Telefone;
-		//public string CC;
-
-		// private string Sobrenome = "Santos";
-
-		/*
-		protected int CalcularUmMaisDois()  
-		{
-			return 1 + 2;
-		}
-
-		private int CalcularUmMaisDois2()  
-		{
-			return 1 + 2;
-		}
-
-		public int CalcularUmMaisDois3()  
-		{
-			return 1 + 2;
-		}
-
-		internal int CalcularUmMaisDois4()  
-		{
-			return 1 + 2;
-		}
-		*/
-
-		//Este Bloco de Codigo do metodo Gravar() deve ser copiado para Base.cs
 		
 		  public virtual void Gravar()
 
@@ -87,21 +56,12 @@ namespace Classes
 				r.Close();
 			}
 		}
-		/*
-		public virtual void Olhar()
-		{
-			Console.WriteLine("O cliente " + this.Nome + " " + this.Sobrenome + " está olhando para mim.");
-			Console.WriteLine("===================================================");
-		}
-		*/
 
-		//Este Bloco de Codigo do metodo CaminhoBase() deve ser copiado para Base.cs
 		private static string CaminhoBase()
 		{
 			return ConfigurationManager.AppSettings["BaseDeClientes"];
 		}
 
-		//Este Bloco de Codigo do metodo CaminhoBase() deve ser copiado para Base.cs
 		public static List<Cliente> LerClientes()
 		{
 			var clientes = new List<Cliente>();

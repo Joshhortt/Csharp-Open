@@ -53,7 +53,7 @@ namespace _17_POO_Interface
 			u.Telefone = "929955440";
 			u.CC = "188736529";
 			//u.Gravar();
-			u.Olhar();  // Testar o Usuario
+			u.Olhar();  
 			/*
 			foreach (Usuario us in Usuario.LerUsuarios())
 			{

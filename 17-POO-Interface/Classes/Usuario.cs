@@ -9,7 +9,6 @@ using System.Threading.Tasks;
 
 namespace Classes
 {
-		// public class Usuario : Cliente   refatorado para Usuario : Base
 		public class Usuario : Base
 	{
 		public Usuario(string nome, string telefone, string cc)
@@ -24,20 +23,6 @@ namespace Classes
 		{
 			return ConfigurationManager.AppSettings["BaseDeUsuarios"];
 		}
-
-		/*public override void Olhar()  
-		{
-			int resultado = this.CalcularUmMaisDois();
-			//this.CalcularUmMaisDois();     
-			//this.CalcularUmMaisDois3(); 
-			//this.CalcularUmMaisDois4();  
-													
-
-			Console.WriteLine("O usuario " + this.Nome + " não tem o sobrenome, pois é atribuito da classe Pai, está olhando para mim.");
-			Console.WriteLine("=======================================================================================================");
-			Console.WriteLine("O método original é: ");
-			base.Olhar();  
-		}*/
 
 		public override void Gravar()
 		{

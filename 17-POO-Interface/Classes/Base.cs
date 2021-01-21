@@ -11,14 +11,14 @@ namespace Classes
 	public class Base : Pessoa
 	{
 
-		public Base(string nome, string telefone, string cc)  // Criado Construtor Base
+		public Base(string nome, string telefone, string cc)  
 		{
 			this.Nome = nome;
 			this.Telefone = telefone;
 			this.CC = cc;
 		}
 
-		public Base()  // Criar tambem o Construtor sem parametros senão não consegue compilar
+		public Base()  
 		{
 
 		}
@@ -27,37 +27,34 @@ namespace Classes
 		public string Telefone;
 		public string CC;
 
-		// colocar codigo aqui
 		private string Sobrenome = "Santos";
 
 		public virtual void Gravar()
 
 		{
-			var dados = new Base().Ler();   // Alterar clientes para dados e Cliente.LerClientes para new Base().Ler();
+			var dados = new Base().Ler();  
 			dados.Add(this);
-			if (File.Exists(DiretorioComArquivo()))  // Alterar CaminhoBase para DiretorioComArquivo
+			if (File.Exists(DiretorioComArquivo()))  
 			{
-				StreamWriter r = new StreamWriter(DiretorioComArquivo());    // Alterar CaminhoBase para DiretorioComArquivo
+				StreamWriter r = new StreamWriter(DiretorioComArquivo());   
 				string conteudo = "nome;telefone;cc;";
 				r.WriteLine(conteudo);
-				foreach (Base b in dados)  // Alterar Cliente para Base e c para b
+				foreach (Base b in dados)  
 				{
-					var linha = b.Nome + ";" + b.Telefone + ";" + b.CC + ";";  // Alterar todos os c por b.
+					var linha = b.Nome + ";" + b.Telefone + ";" + b.CC + ";";  
 					r.WriteLine(linha);
 				}
 				r.Close();
 			}
 		}
 
-		// Bloco de codigo da classe Cliente colocado aqui
-
-		public List<Base> Ler() // Mudar de Cliente para Base e em vez de LerClientes somente Ler, e retirar o static
+		public List<Base> Ler() 
 		{
-			var dados = new List<Base>();   // Mudar de Cliente para Base e clientes para dados
+			var dados = new List<Base>();   
 
-			if (File.Exists(DiretorioComArquivo()))  // Alterar CaminhoBase para DiretorioComArquivo
+			if (File.Exists(DiretorioComArquivo()))  
 			{
-				using (StreamReader arquivo = File.OpenText(DiretorioComArquivo()))  // Alterar CaminhoBase para DiretorioComArquivo
+				using (StreamReader arquivo = File.OpenText(DiretorioComArquivo()))  
 				{
 					string linha;
 					int i = 0;
@@ -65,47 +62,29 @@ namespace Classes
 					{
 						i++;
 						if (i == 1) continue;
-						var baseArquivo = linha.Split(';');  // alterar clienteArquivo para baseArquivo
+						var baseArquivo = linha.Split(';');  
 
-						var cliente = new Base(baseArquivo[0], baseArquivo[1], baseArquivo[2]);  // alterar clienteArquivo para baseArquivo em todos tres.
+						var cliente = new Base(baseArquivo[0], baseArquivo[1], baseArquivo[2]);  
 
-						dados.Add(cliente);  // Alterar clientes para dados
+						dados.Add(cliente); 
 					}
 				}
 			}
 
-			return dados;  // Alterar clientes para dados
-		}
-		private string DiretorioComArquivo()    // Alterar CaminhoBase para DiretorioComArquivo e retirar o static
-		{
-			return ConfigurationManager.AppSettings["CaminhoArquivos"] + this.GetType().Name + ".txt"; // Alterar a string para CaminhoArquivos e alterar caminho no 'App.config'.
+			return dados;  
 		}
 
-		// colocar o codigo aqui
-
-		   //public override void Olhar()   mudar de override para virtual, pois aqui é uma classe principal.
-		/*	public virtual void Olhar()
+		private string DiretorioComArquivo()  
 		{
-			int resultado = this.CalcularUmMaisDois();
-			//this.CalcularUmMaisDois();     
-			//this.CalcularUmMaisDois3(); 
-			//this.CalcularUmMaisDois4();  
+			return ConfigurationManager.AppSettings["CaminhoArquivos"] + this.GetType().Name + ".txt"; 
+		}
 
-
-			Console.WriteLine("O usuario " + this.Nome + " não tem o sobrenome, pois é atribuito da classe Pai, está olhando para mim.");
-			Console.WriteLine("=======================================================================================================");
-			Console.WriteLine("O método original é: ");
-			base.Olhar();
-		} */
-
-		// colocar o codigo aqui
 		public virtual void Olhar()
 		{
 			Console.WriteLine("O cliente " + this.Nome + " " + this.Sobrenome + " está olhando para mim.");
 			Console.WriteLine("===================================================");
 		}
 
-		// colocar o codigo aqui
 		protected int CalcularUmMaisDois()
 		{
 			return 1 + 2;
@@ -125,8 +104,5 @@ namespace Classes
 		{
 			return 1 + 2;
 		}
-
-
-
 	}
 }
