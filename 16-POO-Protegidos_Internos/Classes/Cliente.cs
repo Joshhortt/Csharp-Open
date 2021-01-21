@@ -48,7 +48,12 @@ namespace Classes
 			return 1 + 2;
 		}
 
-		private int CalcularUmMaisDois2()  // 1. Criar metodo privado na classe de Cliente
+		private int CalcularUmMaisDois2()  
+		{
+			return 1 + 2;
+		}
+
+		public int CalcularUmMaisDois3()  // 1. Criar metodo publico na classe de Cliente
 		{
 			return 1 + 2;
 		}
@@ -56,6 +61,11 @@ namespace Classes
 		public virtual void Gravar()
 
 		{
+			// 2. Consegue acessar todos os metodos, porque foi definido como publico
+			this.CalcularUmMaisDois();
+			this.CalcularUmMaisDois2();
+			this.CalcularUmMaisDois3();
+
 			var clientes = Cliente.LerClientes();
 			clientes.Add(this);
 			if (File.Exists(CaminhoBase()))

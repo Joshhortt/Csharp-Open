@@ -37,8 +37,8 @@ namespace _16_POO_Protegidos_Internos
 				Console.WriteLine("========================================================");
 			}
 			*/
-			Cliente c = new Cliente();      // 2. Criar uma nova instancia
-			// c.CalcularUmMaisDois();  // 3. Se agora formos compilar, este vai dar um erro , porque e protegido.
+			Cliente c = new Cliente();
+			c.CalcularUmMaisDois3();  // 3. Só é possivel acessar o metodo publico criado na classe Cliente 
 			
 			Console.WriteLine("================ Cadastro de Usuario ===================");
 			Usuario u = new Usuario();  

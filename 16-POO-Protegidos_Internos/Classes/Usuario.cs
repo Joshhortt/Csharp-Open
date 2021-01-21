@@ -26,14 +26,16 @@ namespace Classes
 
 		public override void Olhar()  
 		{
-			int resultado = this.CalcularUmMaisDois();  
-			this.CalcularUmMaisDois();       // 2. Consegue acessar o metodo protegido mas não consegue acessar o metodo privado       
-														
+			int resultado = this.CalcularUmMaisDois();
+			//this.CalcularUmMaisDois();     
+			this.CalcularUmMaisDois();   // 4. Não é possivel acessar o privado,
+			this.CalcularUmMaisDois3();  //    somente o protegido e o publico
+													
 
 			Console.WriteLine("O usuario " + this.Nome + " não tem o sobrenome, pois é atribuito da classe Pai, está olhando para mim.");
 			Console.WriteLine("=======================================================================================================");
 			Console.WriteLine("O método original é: ");
-			base.Olhar();  // Chamando a classe base (Pai)
+			base.Olhar();  
 		}
 
 		public override void Gravar()
