@@ -1,0 +1,10 @@
+C:\Users\josec\Source\Repos\Csharp-Open\18-POO-Abstracao\bin\Debug\18-POO-Abstracao.exe.config
+C:\Users\josec\Source\Repos\Csharp-Open\18-POO-Abstracao\bin\Debug\18-POO-Abstracao.exe
+C:\Users\josec\Source\Repos\Csharp-Open\18-POO-Abstracao\bin\Debug\18-POO-Abstracao.pdb
+C:\Users\josec\Source\Repos\Csharp-Open\18-POO-Abstracao\bin\Debug\Componentes.dll
+C:\Users\josec\Source\Repos\Csharp-Open\18-POO-Abstracao\bin\Debug\Componentes.pdb
+C:\Users\josec\Source\Repos\Csharp-Open\18-POO-Abstracao\obj\Debug\18-POO-Abstracao.csprojAssemblyReference.cache
+C:\Users\josec\Source\Repos\Csharp-Open\18-POO-Abstracao\obj\Debug\18-POO-Abstracao.csproj.CoreCompileInputs.cache
+C:\Users\josec\Source\Repos\Csharp-Open\18-POO-Abstracao\obj\Debug\18-POO-Abstracao.csproj.CopyComplete
+C:\Users\josec\Source\Repos\Csharp-Open\18-POO-Abstracao\obj\Debug\18-POO-Abstracao.exe
+C:\Users\josec\Source\Repos\Csharp-Open\18-POO-Abstracao\obj\Debug\18-POO-Abstracao.pdb

@@ -1,0 +1,6 @@
+C:\Users\josec\Source\Repos\Csharp-Open\18-POO-Abstracao\Componentes\bin\Debug\Componentes.dll
+C:\Users\josec\Source\Repos\Csharp-Open\18-POO-Abstracao\Componentes\bin\Debug\Componentes.pdb
+C:\Users\josec\Source\Repos\Csharp-Open\18-POO-Abstracao\Componentes\obj\Debug\Componentes.csprojAssemblyReference.cache
+C:\Users\josec\Source\Repos\Csharp-Open\18-POO-Abstracao\Componentes\obj\Debug\Componentes.csproj.CoreCompileInputs.cache
+C:\Users\josec\Source\Repos\Csharp-Open\18-POO-Abstracao\Componentes\obj\Debug\Componentes.dll
+C:\Users\josec\Source\Repos\Csharp-Open\18-POO-Abstracao\Componentes\obj\Debug\Componentes.pdb
