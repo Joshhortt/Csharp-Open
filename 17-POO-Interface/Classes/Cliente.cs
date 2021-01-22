@@ -10,7 +10,6 @@ namespace Classes
 {
 		public class Cliente : Base
 	{
-		// Todo o código refatorado aqui
 		public Cliente(string nome, string telefone, string cc)
 		{
 			this.Nome = nome;

@@ -29,14 +29,29 @@ namespace _17_POO_Interface
 			c.Telefone = "926600040";
 			c.CC = "236936529";
 			c.Gravar();
-
-			//foreach (Cliente cl in Cliente.LerClientes())
-				foreach (Cliente cl in new Cliente().Ler())
+				// foreach (Cliente cl in new Cliente().Ler())
+				foreach (Base cl in new Cliente().Ler())  // Alteração da classe de Cliente para classe 'Base'
 				{
 				Console.WriteLine(cl.Nome);
 				Console.WriteLine(cl.Telefone);
 				Console.WriteLine(cl.CC);
 				Console.WriteLine("========================================================");
+			}
+
+			Console.WriteLine("================ Cadastro de Usuario ===================");
+			Usuario u = new Usuario();
+			u.Nome = "Usuario";
+			u.Telefone = "929955440";
+			u.CC = "188736529";
+			u.Gravar();
+			
+			//foreach (Usuario us in Usuario.LerUsuarios())
+			foreach (Base us in new Usuario().Ler())  // Para ler os usuarios utilizamos a mesma formula como fizemos para Cliente acima.
+			{
+			Console.WriteLine(us.Nome);
+			Console.WriteLine(us.Telefone);
+			Console.WriteLine(us.CC);
+			Console.WriteLine("========================================================");
 			}
 			
 			/*
@@ -47,23 +62,7 @@ namespace _17_POO_Interface
 			Cliente c = new Cliente();
 			// c.CalcularUmMaisDois3();
 			c.CalcularUmMaisDois4();  
-
-			Console.WriteLine("================ Cadastro de Usuario ===================");
-			Usuario u = new Usuario();  
-			u.Nome = "Usuario";
-			u.Telefone = "929955440";
-			u.CC = "188736529";
-			//u.Gravar();
-			u.Olhar();  
-			*/
-			/*
-			foreach (Usuario us in Usuario.LerUsuarios())
-			{
-				Console.WriteLine(us.Nome);
-				Console.WriteLine(us.Telefone);
-				Console.WriteLine(us.CC);
-				Console.WriteLine("========================================================");
-			} */
+			 */
 		}
 	}
 }
