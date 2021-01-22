@@ -25,12 +25,11 @@ namespace _17_POO_Interface
 			
 			Console.WriteLine("================= Cadastro de Cliente ==================");
 			Cliente c = new Cliente();
-			c.Nome = "ClienteNOVO";
-			c.Telefone = "926600040";
-			c.CC = "236936529";
+			c.Nome = "Cliente";
+			c.Telefone = "100-200-300";
+			c.CC = "400500600";
 			c.Gravar();
-				
-				foreach (Cliente cl in new Cliente().Ler())   // Para melhor implementação da Leitura do Cliente, alterar Base para 'Usuario'
+				foreach (Cliente cl in new Cliente().Ler())   // Para melhor implementação da Leitura do Cliente, alterar Base para 'Cliente'
 			{
 				Console.WriteLine(cl.Nome);
 				Console.WriteLine(cl.Telefone);
@@ -41,28 +40,16 @@ namespace _17_POO_Interface
 			Console.WriteLine("================ Cadastro de Usuario ===================");
 			Usuario u = new Usuario();
 			u.Nome = "Usuario";
-			u.Telefone = "929955440";
-			u.CC = "188736529";
+			u.Telefone = "500-600-700";
+			u.CC = "800900000";
 			u.Gravar();
-			
-			
 			foreach (Usuario us in new Usuario().Ler())  // Para melhor implementação da Leitura do Usuario, alterar Base para 'Usuario'
 			{
-			Console.WriteLine(us.Nome);
-			Console.WriteLine(us.Telefone);
-			Console.WriteLine(us.CC);
-			Console.WriteLine("========================================================");
+				Console.WriteLine(us.Nome);
+				Console.WriteLine(us.Telefone);
+				Console.WriteLine(us.CC);
+				Console.WriteLine("========================================================");
 			}
-			
-			/*
-			Ferramentas f = new Ferramentas();  
-			f.MetodoParaTodosQueUtilizarOAssembly();  
-			bool d = f.ValidarCC("123456789");   
-
-			Cliente c = new Cliente();
-			// c.CalcularUmMaisDois3();
-			c.CalcularUmMaisDois4();  
-			 */
 		}
 	}
 }

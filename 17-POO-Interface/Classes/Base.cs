@@ -17,16 +17,12 @@ namespace Classes
 			this.CC = cc;
 		}
 
-		public Base()
-		{
-
-		}
+		public Base() { }
 
 		public string Nome;
 		public string Telefone;
 		public string CC;
 
-		// Implementar os setters aqui tal como no Interface para que tudo funcione aceitar os nosso atributos
 		public void SetNome(string nome)  { this.Nome = nome; }
 	    public void SetTelefone(string telefone)  { this.Telefone = telefone; }
         public void SetCC(string cc)  { this.CC = cc; }
@@ -35,7 +31,6 @@ namespace Classes
 		private string Sobrenome = "Santos";
 
 		public virtual void Gravar()
-
 		{
 			var dados = this.Ler();
 			dados.Add(this);
@@ -51,10 +46,9 @@ namespace Classes
 			r.Close();
 		}
 
-		//public List<Base> Ler()
-		public List<IPessoa> Ler()  // Alteração da lista de Base para IPessoa
+		public List<IPessoa> Ler()  
 		{
-			var dados = new List<IPessoa>();   // Alteração da lista de Base para IPessoa
+			var dados = new List<IPessoa>();   
 
 			if (File.Exists(DiretorioComArquivo()))  
 			{
@@ -68,13 +62,12 @@ namespace Classes
 						if (i == 1) continue;
 						var baseArquivo = linha.Split(';');
 
-						var b = (IPessoa)Activator.CreateInstance(this.GetType());  // Vai criar uma instancia generica Do meu objeto corrente. 
-																					// Utilização de um 'Casting' para converter o Activator.
-						// Apos implementação de Setters refatorar assim
+						var b = (IPessoa)Activator.CreateInstance(this.GetType());   
+																					
 						b.SetNome(baseArquivo[0]);
-						b.SetTelefone(baseArquivo[0]);
-						b.SetCC(baseArquivo[0]);
-						// var b = new Base(baseArquivo[0], baseArquivo[1], baseArquivo[2]);  
+						b.SetTelefone(baseArquivo[1]);
+						b.SetCC(baseArquivo[2]);
+					
 						dados.Add(b);
 					}
 				}
