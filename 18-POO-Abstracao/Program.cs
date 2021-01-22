@@ -15,21 +15,23 @@ using System.Threading.Tasks;
 using Tela;
 
 namespace _18_POO_Abstracao
-
 {
 	class Program
 	{
 		static void Main(string[] args)
 		{
+			// Teste Abstração 
+			var cachorro = new Classes.Cachorro();  
+
 			//Menu.Criar();
-			
+			/*
 			Console.WriteLine("================= Cadastro de Cliente ==================");
 			Cliente c = new Cliente();
 			c.Nome = "Cliente";
 			c.Telefone = "100-200-300";
 			c.CC = "400500600";
 			c.Gravar();
-				foreach (Cliente cl in new Cliente().Ler())   // Para melhor implementação da Leitura do Cliente, alterar Base para 'Cliente'
+				foreach (Cliente cl in new Cliente().Ler())   
 			{
 				Console.WriteLine(cl.Nome);
 				Console.WriteLine(cl.Telefone);
@@ -43,13 +45,13 @@ namespace _18_POO_Abstracao
 			u.Telefone = "500-600-700";
 			u.CC = "800900000";
 			u.Gravar();
-			foreach (Usuario us in new Usuario().Ler())  // Para melhor implementação da Leitura do Usuario, alterar Base para 'Usuario'
+			foreach (Usuario us in new Usuario().Ler())  
 			{
 				Console.WriteLine(us.Nome);
 				Console.WriteLine(us.Telefone);
 				Console.WriteLine(us.CC);
 				Console.WriteLine("========================================================");
-			}
+			}*/
 		}
 	}
 }
