@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Classes
 {
-	public interface Pessoa
+	public interface IPessoa
 	{
 		void Gravar();   
 	}

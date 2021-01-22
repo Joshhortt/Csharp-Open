@@ -8,7 +8,7 @@ using System.Threading.Tasks;
 
 namespace Classes
 {
-	public class Base : Pessoa
+	public class Base : IPessoa
 	{
 		// Todo o código refatorado aqui
 		public Base(string nome, string telefone, string cc)  
