@@ -8,6 +8,10 @@ namespace Classes
 {
 	public interface IPessoa
 	{
+		// Implementar Setters
+		void SetNome(string nome);
+		void SetTelefone(string telefone);
+		void SetCC(string cc);
 		void Gravar();   
 	}
 }

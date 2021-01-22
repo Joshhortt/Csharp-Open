@@ -10,14 +10,14 @@ namespace Classes
 {
 	public class Base : IPessoa
 	{
-		public Base(string nome, string telefone, string cc)  
+		public Base(string nome, string telefone, string cc)
 		{
 			this.Nome = nome;
 			this.Telefone = telefone;
 			this.CC = cc;
 		}
 
-		public Base()  
+		public Base()
 		{
 
 		}
@@ -25,6 +25,12 @@ namespace Classes
 		public string Nome;
 		public string Telefone;
 		public string CC;
+
+		// Implementar os setters aqui tal como no Interface para que tudo funcione aceitar os nosso atributos
+		public void SetNome(string nome)  { this.Nome = nome; }
+	    public void SetTelefone(string telefone)  { this.Telefone = telefone; }
+        public void SetCC(string cc)  { this.CC = cc; }
+
 
 		private string Sobrenome = "Santos";
 
@@ -45,9 +51,10 @@ namespace Classes
 			r.Close();
 		}
 
-		public List<Base> Ler() 
+		//public List<Base> Ler()
+		public List<IPessoa> Ler()  // Alteração da lista de Base para IPessoa
 		{
-			var dados = new List<Base>();   
+			var dados = new List<IPessoa>();   // Alteração da lista de Base para IPessoa
 
 			if (File.Exists(DiretorioComArquivo()))  
 			{
@@ -59,17 +66,21 @@ namespace Classes
 					{
 						i++;
 						if (i == 1) continue;
-						var baseArquivo = linha.Split(';');  
+						var baseArquivo = linha.Split(';');
 
-						//var cliente = new Base(baseArquivo[0], baseArquivo[1], baseArquivo[2]);  
-						//dados.Add(cliente);
-						var b = new Base(baseArquivo[0], baseArquivo[1], baseArquivo[2]);  // Alteração da Lista de Base em vez de cliente alterado para 'b'
+						var b = (IPessoa)Activator.CreateInstance(this.GetType());  // Vai criar uma instancia generica Do meu objeto corrente. 
+																					// Utilização de um 'Casting' para converter o Activator.
+						// Apos implementação de Setters refatorar assim
+						b.SetNome(baseArquivo[0]);
+						b.SetTelefone(baseArquivo[0]);
+						b.SetCC(baseArquivo[0]);
+						// var b = new Base(baseArquivo[0], baseArquivo[1], baseArquivo[2]);  
 						dados.Add(b);
 					}
 				}
 			}
 
-			return dados;  
+			return dados;
 		}
 
 		private string DiretorioComArquivo()  

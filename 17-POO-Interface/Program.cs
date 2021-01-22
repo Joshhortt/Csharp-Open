@@ -29,9 +29,9 @@ namespace _17_POO_Interface
 			c.Telefone = "926600040";
 			c.CC = "236936529";
 			c.Gravar();
-				// foreach (Cliente cl in new Cliente().Ler())
-				foreach (Base cl in new Cliente().Ler())  // Alteração da classe de Cliente para classe 'Base'
-				{
+				
+				foreach (Cliente cl in new Cliente().Ler())   // Para melhor implementação da Leitura do Cliente, alterar Base para 'Usuario'
+			{
 				Console.WriteLine(cl.Nome);
 				Console.WriteLine(cl.Telefone);
 				Console.WriteLine(cl.CC);
@@ -45,8 +45,8 @@ namespace _17_POO_Interface
 			u.CC = "188736529";
 			u.Gravar();
 			
-			//foreach (Usuario us in Usuario.LerUsuarios())
-			foreach (Base us in new Usuario().Ler())  // Para ler os usuarios utilizamos a mesma formula como fizemos para Cliente acima.
+			
+			foreach (Usuario us in new Usuario().Ler())  // Para melhor implementação da Leitura do Usuario, alterar Base para 'Usuario'
 			{
 			Console.WriteLine(us.Nome);
 			Console.WriteLine(us.Telefone);
