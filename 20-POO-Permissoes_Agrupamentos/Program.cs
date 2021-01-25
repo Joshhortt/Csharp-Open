@@ -22,7 +22,7 @@ namespace _20_POO_Permissoes_Agrupamentos
 		
 		private static void Main()
 		{  }
-		 public class Animal
+		/* class Animal
 		{
 			public string Teste;
 			public string Teste2()
@@ -33,10 +33,31 @@ namespace _20_POO_Permissoes_Agrupamentos
 		}
 
 		class Macaco : Animal
-		{  // New
-			public new string Teste2() // com 'new' permite sobresecrever o metodo
+		{  
+			public new string Teste2()
 			{
 				return "sss";
+			}
+		}*/
+
+
+		// Partial
+
+		// class Animal   -- > classe Animal só nao vai funcionar
+	    partial class Animal  // com partial vai funcionar
+		{
+			public string teste;  // metodo com atributo
+			partial void tt();    // metodo partial
+		}
+
+
+		//  class Animal   classe Animal com o mesmo nome da primeira  -- > classe Animal só nao vai funcionar
+		partial class Animal  // com partial vai funcionar
+		{
+			public string teste2;  // metodo com outro atributo
+			partial void tt()   // metodo partial
+			{
+				Console.WriteLine("teste");
 			}
 		}
 
