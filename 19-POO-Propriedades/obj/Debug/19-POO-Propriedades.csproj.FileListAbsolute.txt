@@ -1,0 +1,10 @@
+C:\Users\josec\Source\Repos\Csharp-Open\19-POO-Propriedades\bin\Debug\19-POO-Propriedades.exe.config
+C:\Users\josec\Source\Repos\Csharp-Open\19-POO-Propriedades\bin\Debug\19-POO-Propriedades.exe
+C:\Users\josec\Source\Repos\Csharp-Open\19-POO-Propriedades\bin\Debug\19-POO-Propriedades.pdb
+C:\Users\josec\Source\Repos\Csharp-Open\19-POO-Propriedades\bin\Debug\Componentes.dll
+C:\Users\josec\Source\Repos\Csharp-Open\19-POO-Propriedades\bin\Debug\Componentes.pdb
+C:\Users\josec\Source\Repos\Csharp-Open\19-POO-Propriedades\obj\Debug\19-POO-Propriedades.csprojAssemblyReference.cache
+C:\Users\josec\Source\Repos\Csharp-Open\19-POO-Propriedades\obj\Debug\19-POO-Propriedades.csproj.CoreCompileInputs.cache
+C:\Users\josec\Source\Repos\Csharp-Open\19-POO-Propriedades\obj\Debug\19-POO-Propriedades.csproj.CopyComplete
+C:\Users\josec\Source\Repos\Csharp-Open\19-POO-Propriedades\obj\Debug\19-POO-Propriedades.exe
+C:\Users\josec\Source\Repos\Csharp-Open\19-POO-Propriedades\obj\Debug\19-POO-Propriedades.pdb
