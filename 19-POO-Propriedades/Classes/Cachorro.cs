@@ -10,7 +10,7 @@ namespace Classes
 {
 	public class Cachorro : Animal
 	{   
-		// IV - Implementar uma Propriedade Complexa com blocos de codigo
+		
 		public int Idade;    
 
 		private int IdadePreDefinida = 2;    
@@ -19,13 +19,23 @@ namespace Classes
 			get { 
 				return IdadePreDefinida; 
 			} 
-			set       // 2. Implementar o Set'
+			set      
 			{
-				IdadePreDefinida = value;      // 3. é o novo valor setado dentro dessa variavel
+				IdadePreDefinida = value;    
 			}
-		}         
-																
-	
+		}
+		// V - Implementar uma forma usual em outras linguagens (getters e setters). Com 2 metodos. Tambem podemos usar no C#
+		public int GetIdade2()    // 1. Implmentar Get como Getter, usual noutras linguagens.
+		{
+			return IdadePreDefinida;
+		}
+
+		public void SetIdade2(int idade2)   // 2. Implmentar Set como Setter, usual noutras linguagens.
+		{
+			IdadePreDefinida = Idade2;
+		}
+
+
 		public override void Latir()
 		{
 			Console.WriteLine("Au! Eu sou um cachorrinho");

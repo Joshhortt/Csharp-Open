@@ -25,11 +25,12 @@ namespace _19_POO_Propriedades
 			c.Idade = 1;                 
 			Console.WriteLine(c.Idade);  
 
-			c.Idade2 = 1;                   // 1. Implmentar o Set'. Jogando o 1 dentro dessa variavel
+			c.Idade2 = 1;                   
 
-			Console.WriteLine(c.Idade2);   
+			Console.WriteLine(c.Idade2);
 
-
+			c.SetIdade2(2);  // 3. aqui podemos chamar o SETTER
+			c.GetIdade2();   // 4. aqui podemos chamr o GETTER
 
 			/*
 			var cachorro = new Classes.Cachorro();  
