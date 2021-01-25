@@ -29,8 +29,8 @@ namespace _19_POO_Propriedades
 
 			Console.WriteLine(c.Idade2);
 
-			c.SetIdade2(2);  // 3. aqui podemos chamar o SETTER
-			c.GetIdade2();   // 4. aqui podemos chamr o GETTER
+			c.SetIdade2(2);  
+			c.GetIdade2();   
 
 			/*
 			var cachorro = new Classes.Cachorro();  

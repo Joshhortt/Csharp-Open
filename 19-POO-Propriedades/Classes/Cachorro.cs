@@ -24,13 +24,13 @@ namespace Classes
 				IdadePreDefinida = value;    
 			}
 		}
-		// V - Implementar uma forma usual em outras linguagens (getters e setters). Com 2 metodos. Tambem podemos usar no C#
-		public int GetIdade2()    // 1. Implmentar Get como Getter, usual noutras linguagens.
+		
+		public int GetIdade2()   
 		{
 			return IdadePreDefinida;
 		}
 
-		public void SetIdade2(int idade2)   // 2. Implmentar Set como Setter, usual noutras linguagens.
+		public void SetIdade2(int idade2)   
 		{
 			IdadePreDefinida = Idade2;
 		}
@@ -42,8 +42,3 @@ namespace Classes
 		}
 	}
 }
-
-
-// Vai imprimir para a Tela
-//1
-//1
