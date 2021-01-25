@@ -21,11 +21,15 @@ namespace _19_POO_Propriedades
 		static void Main(string[] args)
 		{
 
-			var c = new Cachorro();  // 2. Criar uma variavel para a nova instancia
-			c.Idade = 1;             // 3. Set' jogar para dentro da instancia
-			Console.WriteLine(c.Idade);  //4. Get'  Retirar dentro da minha instancia
-			
-			
+			var c = new Cachorro();      
+			c.Idade = 1;                 
+			Console.WriteLine(c.Idade);  
+
+			c.Idade2 = 1;                   // 3. Set' jogar para dentro da instancia idade2
+			Console.WriteLine(c.Idade2);    //4. Get'  Retirar dentro da minha instancia idade2
+
+
+
 			/*
 			var cachorro = new Classes.Cachorro();  
 

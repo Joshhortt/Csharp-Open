@@ -9,8 +9,11 @@ using System.Threading.Tasks;
 namespace Classes
 {
 	public class Cachorro : Animal
-	{   // I - Criar uma Propriedade Simples ou Atributo
+	{   // II - Criar uma Propriedade Complexa
 		public int Idade;  // 1. Criar Propriedade Idade
+
+		public int Idade2  { get; set; }          // 2. Criar Propriedade Idade2. com abertura do bloco de codigo
+	
 		public override void Latir()
 		{
 			Console.WriteLine("Au! Eu sou um cachorrinho");
