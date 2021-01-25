@@ -25,7 +25,8 @@ namespace _19_POO_Propriedades
 			c.Idade = 1;                 
 			Console.WriteLine(c.Idade);  
 
-			// c.Idade2 = 1;                   // 3. Set' commentar o Se'.
+			c.Idade2 = 1;                   // 1. Implmentar o Set'. Jogando o 1 dentro dessa variavel
+
 			Console.WriteLine(c.Idade2);   
 
 
