@@ -9,10 +9,17 @@ using System.Threading.Tasks;
 namespace Classes
 {
 	public class Cachorro : Animal
-	{   // II - Criar uma Propriedade Complexa
-		public int Idade;  // 1. Criar Propriedade Idade
+	{   
+		// III - Criar uma Propriedade Complexa só de Leitura (Read-only). Tem porta de saida, mas não de entrada
+		public int Idade;     // Nota: No public é recomenadvel usar PascalCase
 
-		public int Idade2  { get; set; }          // 2. Criar Propriedade Idade2. com abertura do bloco de codigo
+		private int IdadePreDefinida = 2;    // 1. Criar Propriedade com um valor definido = 2;
+											 // Nota: No private é recomenadvel usar camelCase
+		public int Idade2 {     // 2. Criar Propriedade Idade2. so de leitura Get' e colocar o return dentro de outro bloco, retirar ';'
+			get { 
+				return IdadePreDefinida; 
+			} }         
+																
 	
 		public override void Latir()
 		{
@@ -20,3 +27,8 @@ namespace Classes
 		}
 	}
 }
+
+
+// Vai imprimir para a Tela
+//1
+//2

@@ -25,8 +25,8 @@ namespace _19_POO_Propriedades
 			c.Idade = 1;                 
 			Console.WriteLine(c.Idade);  
 
-			c.Idade2 = 1;                   // 3. Set' jogar para dentro da instancia idade2
-			Console.WriteLine(c.Idade2);    //4. Get'  Retirar dentro da minha instancia idade2
+			// c.Idade2 = 1;                   // 3. Set' commentar o Se'.
+			Console.WriteLine(c.Idade2);   
 
 
 
