@@ -19,21 +19,22 @@ namespace _20_POO_Permissoes_Agrupamentos
 	class Program
 	{
 
-		// Virtual 
+		// Sealed
 		private static void Main()
 		{  }
 		 public class Animal
 		{
 			public string Teste;
-			public virtual string Teste2()
+			public string Teste2()
+			//public sealed string Teste2()  // usando este metodo 'sealed vemos que nao pode ser sobrescrito porque é sobrescrito.
 			{
 				return "";
 			}
 		}
 
 		class Macaco : Animal
-		{  // Override
-			public override string Teste2()
+		{  // 
+			public string Teste2()
 			{
 				return "sss";
 			}
