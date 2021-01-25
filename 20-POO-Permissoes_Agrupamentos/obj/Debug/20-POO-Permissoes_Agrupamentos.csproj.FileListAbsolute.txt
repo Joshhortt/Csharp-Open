@@ -1,0 +1,10 @@
+C:\Users\josec\Source\Repos\Csharp-Open\20-POO-Permissoes_Agrupamentos\obj\Debug\20-POO-Permissoes_Agrupamentos.csprojAssemblyReference.cache
+C:\Users\josec\Source\Repos\Csharp-Open\20-POO-Permissoes_Agrupamentos\obj\Debug\20-POO-Permissoes_Agrupamentos.csproj.CoreCompileInputs.cache
+C:\Users\josec\Source\Repos\Csharp-Open\20-POO-Permissoes_Agrupamentos\bin\Debug\20-POO-Permissoes_Agrupamentos.exe.config
+C:\Users\josec\Source\Repos\Csharp-Open\20-POO-Permissoes_Agrupamentos\bin\Debug\20-POO-Permissoes_Agrupamentos.exe
+C:\Users\josec\Source\Repos\Csharp-Open\20-POO-Permissoes_Agrupamentos\bin\Debug\20-POO-Permissoes_Agrupamentos.pdb
+C:\Users\josec\Source\Repos\Csharp-Open\20-POO-Permissoes_Agrupamentos\bin\Debug\Componentes.dll
+C:\Users\josec\Source\Repos\Csharp-Open\20-POO-Permissoes_Agrupamentos\bin\Debug\Componentes.pdb
+C:\Users\josec\Source\Repos\Csharp-Open\20-POO-Permissoes_Agrupamentos\obj\Debug\20-POO-Permissoes_Agrupamentos.csproj.CopyComplete
+C:\Users\josec\Source\Repos\Csharp-Open\20-POO-Permissoes_Agrupamentos\obj\Debug\20-POO-Permissoes_Agrupamentos.exe
+C:\Users\josec\Source\Repos\Csharp-Open\20-POO-Permissoes_Agrupamentos\obj\Debug\20-POO-Permissoes_Agrupamentos.pdb

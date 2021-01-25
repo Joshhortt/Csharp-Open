@@ -7,6 +7,7 @@ using Classes;
 using Componentes;
 using System;
 using System.Collections.Generic;
+using System.Configuration;
 using System.IO;
 using System.Linq;
 using System.Text;
@@ -17,8 +18,28 @@ namespace _20_POO_Permissoes_Agrupamentos
 {
 	class Program
 	{
-		static void Main(string[] args)
+
+		// Virtual 
+		private static void Main()
+		{  }
+		 public class Animal
 		{
+			public string Teste;
+			public virtual string Teste2()
+			{
+				return "";
+			}
+		}
+
+		class Macaco : Animal
+		{  // Override
+			public override string Teste2()
+			{
+				return "sss";
+			}
+		}
+
+
 
 
 			/*
@@ -64,7 +85,7 @@ namespace _20_POO_Permissoes_Agrupamentos
 				Console.WriteLine(us.CC);
 				Console.WriteLine("========================================================");
 			}*/
-		}
+//	}
 	}
 }
 
