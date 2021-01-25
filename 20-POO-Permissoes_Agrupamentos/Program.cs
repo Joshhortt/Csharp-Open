@@ -19,22 +19,22 @@ namespace _20_POO_Permissoes_Agrupamentos
 	class Program
 	{
 
-		// Sealed
+		
 		private static void Main()
 		{  }
 		 public class Animal
 		{
 			public string Teste;
 			public string Teste2()
-			//public sealed string Teste2()  // usando este metodo 'sealed vemos que nao pode ser sobrescrito porque é sobrescrito.
+			
 			{
 				return "";
 			}
 		}
 
 		class Macaco : Animal
-		{  // 
-			public string Teste2()
+		{  // New
+			public new string Teste2() // com 'new' permite sobresecrever o metodo
 			{
 				return "sss";
 			}
