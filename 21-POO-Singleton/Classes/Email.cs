@@ -6,7 +6,8 @@ using System.Threading.Tasks;
 
 namespace Classes
 {
-	public class Email
+	public class Email   // classe sem Instancias
 	{
+		private Email() { }      // Construtor
 	}
 }

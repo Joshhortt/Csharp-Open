@@ -1,6 +1,0 @@
-C:\Users\josec\Source\Repos\Csharp-Open\19-POO-Propriedades\Componentes\bin\Debug\Componentes.dll
-C:\Users\josec\Source\Repos\Csharp-Open\19-POO-Propriedades\Componentes\bin\Debug\Componentes.pdb
-C:\Users\josec\Source\Repos\Csharp-Open\19-POO-Propriedades\Componentes\obj\Debug\Componentes.csprojAssemblyReference.cache
-C:\Users\josec\Source\Repos\Csharp-Open\19-POO-Propriedades\Componentes\obj\Debug\Componentes.csproj.CoreCompileInputs.cache
-C:\Users\josec\Source\Repos\Csharp-Open\19-POO-Propriedades\Componentes\obj\Debug\Componentes.dll
-C:\Users\josec\Source\Repos\Csharp-Open\19-POO-Propriedades\Componentes\obj\Debug\Componentes.pdb
