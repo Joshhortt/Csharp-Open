@@ -69,7 +69,7 @@ namespace Tela
 				}
 				else if (valor == CADASTRAR_USUARIOS)
 				{
-					TelaCliente.Chamar();
+					TelaUsuario.Chamar();
 					Console.WriteLine("\n================================================================================\n");
 				}
 				else

@@ -50,7 +50,7 @@ namespace Funções
 						Console.WriteLine("=============================================");
 						Console.WriteLine("Nome: " + c.Nome);
 						Console.WriteLine("Telefone: " + c.Telefone);
-						Console.WriteLine("Numero do Cartão de Cidadão" + c.CC);
+						Console.WriteLine("Numero do Cartão de Cidadão: " + c.CC);
 						Console.WriteLine("=============================================");
 					}
 				}
