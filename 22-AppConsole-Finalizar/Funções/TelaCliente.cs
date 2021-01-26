@@ -37,22 +37,23 @@ namespace Funções
 					Console.WriteLine("Digite o numero de Telefone do cliente");
 					cliente.Telefone = Console.ReadLine(); 
 
-					Console.WriteLine("Digite o numero do CC do cliente");
+					Console.WriteLine("Digite o numero do Cartão de Cidadão do cliente");
 					cliente.CC = Console.ReadLine(); 
+
 					cliente.Gravar();
 				}
 				else
 				{
 					var clientes = new Cliente().Ler(); 
 					foreach (Cliente c in clientes)
-					{
-						Console.WriteLine(c.Nome);
-						Console.WriteLine(c.Telefone);
-						Console.WriteLine(c.CC);
+					{   
+						Console.WriteLine("=============================================");
+						Console.WriteLine("Nome: " + c.Nome);
+						Console.WriteLine("Telefone: " + c.Telefone);
+						Console.WriteLine("Numero do Cartão de Cidadão" + c.CC);
 						Console.WriteLine("=============================================");
 					}
 				}
-
 			}
 		}
 	}

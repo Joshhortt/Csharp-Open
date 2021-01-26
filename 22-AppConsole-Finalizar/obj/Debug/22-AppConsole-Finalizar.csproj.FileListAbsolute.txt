@@ -1,0 +1,10 @@
+C:\Users\josec\Source\Repos\Csharp-Open\22-AppConsole-Finalizar\obj\Debug\22-AppConsole-Finalizar.csprojAssemblyReference.cache
+C:\Users\josec\Source\Repos\Csharp-Open\22-AppConsole-Finalizar\obj\Debug\22-AppConsole-Finalizar.csproj.CoreCompileInputs.cache
+C:\Users\josec\Source\Repos\Csharp-Open\22-AppConsole-Finalizar\bin\Debug\22-AppConsole-Finalizar.exe.config
+C:\Users\josec\Source\Repos\Csharp-Open\22-AppConsole-Finalizar\bin\Debug\22-AppConsole-Finalizar.exe
+C:\Users\josec\Source\Repos\Csharp-Open\22-AppConsole-Finalizar\bin\Debug\22-AppConsole-Finalizar.pdb
+C:\Users\josec\Source\Repos\Csharp-Open\22-AppConsole-Finalizar\bin\Debug\Componentes.dll
+C:\Users\josec\Source\Repos\Csharp-Open\22-AppConsole-Finalizar\bin\Debug\Componentes.pdb
+C:\Users\josec\Source\Repos\Csharp-Open\22-AppConsole-Finalizar\obj\Debug\22-AppConsole-Finalizar.csproj.CopyComplete
+C:\Users\josec\Source\Repos\Csharp-Open\22-AppConsole-Finalizar\obj\Debug\22-AppConsole-Finalizar.exe
+C:\Users\josec\Source\Repos\Csharp-Open\22-AppConsole-Finalizar\obj\Debug\22-AppConsole-Finalizar.pdb

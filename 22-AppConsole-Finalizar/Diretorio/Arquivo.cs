@@ -17,7 +17,9 @@ namespace Diretorio
 		public static void Ler(int numeroArquivo)
 		{
 			string arquivoCaminho = caminhoArquivo() + "arq" + numeroArquivo + ".txt";
+			Console.WriteLine("");
 			Console.WriteLine("============================= Lendo arquivo ============================\n" + arquivoCaminho + "\n========================================================================");
+			Console.WriteLine("");
 
 			if (File.Exists(arquivoCaminho))
 			{

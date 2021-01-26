@@ -15,20 +15,24 @@ namespace Tela
 		public const int LER_ARQUIVOS = 1;
 		public const int TABUADA = 2;
 		public const int CALCULO_MEDIA = 3;
-		public const int CADASTRAR_CLIENTES = 4;  
+		public const int CADASTRAR_CLIENTES = 4;
+		public const int CADASTRAR_USUARIOS = 5;
 
 		public static void Criar()
 		{
 			while (true)
 			{
-				string mensagem = "Olá Usuário! Benvindo ao programa,\n" +
-				"\n  utilizando a Progrmação Funcional\n" +
-				"\n\n   Digite uma das opções abaixo: \n" +
+				Console.WriteLine("");
+
+				string mensagem = "Olá Usuário! Benvindo ao Programa,\n" +
+				"\n  Aplicação Console Final\n" +
+				"\n   Digite uma das opções abaixo: \n" +
 				"\n    0 - Sair do Programa" +
 				"\n    1 - Para Ler Arquivos" +
 				"\n    2 - Para executar a Tabuada" +
 				"\n    3 - Para Calcular a Média dos Alunos" +
-				"\n    4 - Cadastrar Clientes";  
+				"\n    4 - Cadastrar Clientes" +
+				"\n    5 - Cadastrar Usuarios";
 
 				Console.WriteLine(mensagem);
 				
@@ -42,7 +46,7 @@ namespace Tela
 				{
 					Console.WriteLine("\n========================== Opção Ler Arquivos ==========================\n");
 					Arquivo.Ler(1);
-					Console.WriteLine("\n============================================================================\n");
+					Console.WriteLine("\n========================================================================\n");
 				}
 				else if (valor == TABUADA)
 				{
@@ -63,9 +67,14 @@ namespace Tela
 					TelaCliente.Chamar();
 					Console.WriteLine("\n================================================================================\n");
 				}
+				else if (valor == CADASTRAR_USUARIOS)
+				{
+					TelaCliente.Chamar();
+					Console.WriteLine("\n================================================================================\n");
+				}
 				else
 				{
-					Console.WriteLine("OPÇAO INVALIDA");
+					Console.WriteLine("OPÇAO INVALIDA, DIGITE NOVAMENTE!");
 				}
 			}
 		}

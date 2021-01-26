@@ -1,7 +1,11 @@
 {
   "ExpandedNodes": [
-    ""
+    "",
+    "\\bin",
+    "\\Classes",
+    "\\Funções",
+    "\\Tela"
   ],
-  "SelectedNode": "\\21-POO-Singleton.sln",
+  "SelectedNode": "\\22-AppConsole-Finalizar.sln",
   "PreviewInSolutionExplorer": false
 }

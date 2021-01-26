@@ -22,7 +22,7 @@ namespace _22_AppConsole_Finalizar
 		static void Main(string[] args)
 		{
 
-			//Menu.Criar();
+			Menu.Criar();
 		}
 	}
 }
