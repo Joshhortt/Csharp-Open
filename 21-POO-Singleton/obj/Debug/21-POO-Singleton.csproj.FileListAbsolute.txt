@@ -1,0 +1,10 @@
+C:\Users\josec\Source\Repos\Csharp-Open\21-POO-Singleton\obj\Debug\21-POO-Singleton.csprojAssemblyReference.cache
+C:\Users\josec\Source\Repos\Csharp-Open\21-POO-Singleton\obj\Debug\21-POO-Singleton.csproj.CoreCompileInputs.cache
+C:\Users\josec\Source\Repos\Csharp-Open\21-POO-Singleton\bin\Debug\21-POO-Singleton.exe.config
+C:\Users\josec\Source\Repos\Csharp-Open\21-POO-Singleton\bin\Debug\21-POO-Singleton.exe
+C:\Users\josec\Source\Repos\Csharp-Open\21-POO-Singleton\bin\Debug\21-POO-Singleton.pdb
+C:\Users\josec\Source\Repos\Csharp-Open\21-POO-Singleton\bin\Debug\Componentes.dll
+C:\Users\josec\Source\Repos\Csharp-Open\21-POO-Singleton\bin\Debug\Componentes.pdb
+C:\Users\josec\Source\Repos\Csharp-Open\21-POO-Singleton\obj\Debug\21-POO-Singleton.csproj.CopyComplete
+C:\Users\josec\Source\Repos\Csharp-Open\21-POO-Singleton\obj\Debug\21-POO-Singleton.exe
+C:\Users\josec\Source\Repos\Csharp-Open\21-POO-Singleton\obj\Debug\21-POO-Singleton.pdb

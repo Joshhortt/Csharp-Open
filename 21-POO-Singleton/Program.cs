@@ -21,7 +21,7 @@ namespace _21_POO_Singleton
 		static void Main(string[] args)
 		{
 
-			// Email e = new Email();
+			// Email e = new Email();  
 		}
 	}
 }
