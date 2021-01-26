@@ -11,7 +11,21 @@ namespace Classes
 		private Email() { }      // 2. Construtor
 
 		private static Email instancia;// 3. atributo privado static somente uma instancia
-		
+
+		public static string Origem;   // 8. atributo public origem do Email
+
+		public static string Destino;    // 9. atributo public Destino do Email
+
+		public static string Titulo;   // 10. atributo public Titulo do Email
+
+		public static string Corpo;   // 11. atributo public Corpo do texto do Email
+
+		public static void EnviarEmail()    // 12. Metodo (ação) public  sem retorno para enviar Email
+		{
+			// 13. Enviar mensagem
+			Console.WriteLine("Enviando Email para: " + Destino + "\nCom o titulo: " + Titulo + "\nCorpo: " + Corpo);
+		}
+
 		public static Email Instancia  // 4. criar uma propriedade com retorno E mail chamado Instancia publica
 		{
 			get
