@@ -11,6 +11,7 @@ namespace Classes
 		void SetNome(string nome);
 		void SetTelefone(string telefone);
 		void SetCC(string cc);
+		//void SetNIF(string nif);
 		void Gravar();   
 	}
 }

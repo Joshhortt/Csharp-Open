@@ -10,11 +10,12 @@ namespace Classes
 {
 	public abstract class Base : IPessoa
 	{
-		public Base(string nome, string telefone, string cc)
+		public Base(string nome, string telefone, string cc)  // string nif -- > Não é necessario
 		{
 			this.Nome = nome;
 			this.Telefone = telefone;
 			this.CC = cc;
+			//this.NIF = nif;  -- > Não é necessario
 		}
 
 		public Base() { }
@@ -22,10 +23,12 @@ namespace Classes
 		public string Nome;
 		public string Telefone;
 		public string CC;
+		public string NIF;  // 13. Adicionar NIF
 
 		public void SetNome(string nome)  { this.Nome = nome; }
 	    public void SetTelefone(string telefone)  { this.Telefone = telefone; }
         public void SetCC(string cc)  { this.CC = cc; }
+		//public void SetNIF(string nif) { this.NIF = nif; }  -- > Não é necessario
 
 
 		private string Sobrenome = "Santos";
@@ -37,16 +40,16 @@ namespace Classes
 
 			StreamWriter r = new StreamWriter(DiretorioComArquivo());   
 			//string conteudo = "nome;telefone;cc;";
-			r.WriteLine("nome;telefone;cc;");
+			r.WriteLine("nome;telefone;cc;");  //  nif -- > Não é necessario
 			foreach (Base b in dados)  
 			{
-				var linha = b.Nome + ";" + b.Telefone + ";" + b.CC + ";";  
+				var linha = b.Nome + ";" + b.Telefone + ";" + b.CC + ";";    // b.NIF -- > Não é necessario
 				r.WriteLine(linha);
 			}
 			r.Close();
 		}
 
-		public List<IPessoa> Ler()  
+		public virtual List<IPessoa> Ler()  
 		{
 			var dados = new List<IPessoa>();   
 
