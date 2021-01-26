@@ -55,6 +55,7 @@
     <Compile Include="Calculo\CalculoMedia.cs" />
     <Compile Include="Funções\Genericas.cs" />
     <Compile Include="Funções\Tabuada.cs" />
+    <Compile Include="Funções\TelaUsuario.cs" />
     <Compile Include="Funções\TelaCliente.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
