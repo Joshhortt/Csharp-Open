@@ -30,7 +30,7 @@ namespace Funções
 				else if (valor == 1)
 				{
 					var fornecedor = new Fornecedor();
-					// 4. Adicionar numero fiscal ao Fornecedor NIF
+					
 					Console.WriteLine("Digite o numero fiscal do Fornecedor");
 					fornecedor.NIF = Console.ReadLine();
 
@@ -51,7 +51,7 @@ namespace Funções
 					foreach (Fornecedor c in fornecedores)
 					{   
 						Console.WriteLine("=============================================");
-						Console.WriteLine("Numero Identifição Fiscal: " + c.NIF);   // 5. Adicionar NIF aqui tambem
+						Console.WriteLine("Numero Identifição Fiscal: " + c.NIF);   
 						Console.WriteLine("Nome: " + c.Nome);
 						Console.WriteLine("Telefone: " + c.Telefone);
 						Console.WriteLine("Numero Cartão de Cidadão do Gerente: " + c.CC);

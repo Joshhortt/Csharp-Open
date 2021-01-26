@@ -31,13 +31,13 @@ namespace Funções
 				{
 					var cliente = new Cliente();
 					
-					Console.WriteLine("Digite o nome do cliente");
+					Console.WriteLine("Digite o nome de cliente");
 					cliente.Nome = Console.ReadLine(); 
 
-					Console.WriteLine("Digite o numero de Telefone do cliente");
+					Console.WriteLine("Digite o numero do Telefone de cliente");
 					cliente.Telefone = Console.ReadLine(); 
 
-					Console.WriteLine("Digite o numero do Cartão de Cidadão do cliente");
+					Console.WriteLine("Digite o numero do Cartão de Cidadão de cliente");
 					cliente.CC = Console.ReadLine(); 
 
 					cliente.Gravar();
