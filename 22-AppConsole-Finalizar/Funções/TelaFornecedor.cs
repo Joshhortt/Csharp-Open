@@ -30,27 +30,31 @@ namespace Funções
 				else if (valor == 1)
 				{
 					var fornecedor = new Fornecedor();
-					
+					// 4. Adicionar numero fiscal ao Fornecedor NIF
+					Console.WriteLine("Digite o numero fiscal do Fornecedor");
+					fornecedor.NIF = Console.ReadLine();
+
 					Console.WriteLine("Digite o nome do Fornecedor");
 					fornecedor.Nome = Console.ReadLine(); 
 
 					Console.WriteLine("Digite o numero de Telefone do Fornecedor");
 					fornecedor.Telefone = Console.ReadLine(); 
 
-					Console.WriteLine("Digite o numero do Cartão de Cidadão do Fornecedor");
+					Console.WriteLine("Digite o numero do Cartão de Cidadão do Gerente");
 					fornecedor.CC = Console.ReadLine(); 
 
 					fornecedor.Gravar();
 				}
 				else
 				{
-					var Fornecedors = new Fornecedor().Ler(); 
-					foreach (Fornecedor c in Fornecedors)
+					var fornecedores = new Fornecedor().Ler(); 
+					foreach (Fornecedor c in fornecedores)
 					{   
 						Console.WriteLine("=============================================");
+						Console.WriteLine("Numero Identifição Fiscal: " + c.NIF);   // 5. Adicionar NIF aqui tambem
 						Console.WriteLine("Nome: " + c.Nome);
 						Console.WriteLine("Telefone: " + c.Telefone);
-						Console.WriteLine("Numero do Cartão de Cidadão: " + c.CC);
+						Console.WriteLine("Numero Cartão de Cidadão do Gerente: " + c.CC);
 						Console.WriteLine("=============================================");
 					}
 				}

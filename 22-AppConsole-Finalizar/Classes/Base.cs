@@ -36,8 +36,8 @@ namespace Classes
 			dados.Add(this);
 
 			StreamWriter r = new StreamWriter(DiretorioComArquivo());   
-			string conteudo = "nome;telefone;cc;";
-			r.WriteLine(conteudo);
+			//string conteudo = "nome;telefone;cc;";
+			r.WriteLine("nome;telefone;cc;");
 			foreach (Base b in dados)  
 			{
 				var linha = b.Nome + ";" + b.Telefone + ";" + b.CC + ";";  
@@ -76,7 +76,7 @@ namespace Classes
 			return dados;
 		}
 
-		private string DiretorioComArquivo()  
+		public string DiretorioComArquivo()  
 		{
 			return ConfigurationManager.AppSettings["CaminhoArquivos"] + this.GetType().Name + ".txt"; 
 		}
