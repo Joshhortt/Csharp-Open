@@ -12,15 +12,15 @@ namespace Classes
 
 		private static Email instancia;// 3. atributo privado static somente uma instancia
 
-		public static string Origem;   // 8. atributo public origem do Email
+		public string Origem;   // 8. atributo public origem do Email. REMOVER o 'static'
 
-		public static string Destino;    // 9. atributo public Destino do Email
+		public string Destino;    // 9. atributo public Destino do Email. REMOVER o 'static'
 
-		public static string Titulo;   // 10. atributo public Titulo do Email
+		public string Titulo;   // 10. atributo public Titulo do Email. REMOVER o 'static'
 
-		public static string Corpo;   // 11. atributo public Corpo do texto do Email
+		public string Corpo;   // 11. atributo public Corpo do texto do Email. REMOVER o 'static'
 
-		public static void EnviarEmail()    // 12. Metodo (ação) public  sem retorno para enviar Email
+		public void EnviarEmail()    // 12. Metodo (ação) public  sem retorno para enviar Email. REMOVER o 'static'
 		{
 			// 13. Enviar mensagem
 			Console.WriteLine("Enviando Email para: " + Destino + "\nCom o titulo: " + Titulo + "\nCorpo: " + Corpo);

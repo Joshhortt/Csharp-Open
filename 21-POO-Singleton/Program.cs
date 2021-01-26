@@ -20,11 +20,23 @@ namespace _21_POO_Singleton
 	{
 		static void Main(string[] args)
 		{
-
-			// Email e = new Email();  
+			// 15.  Chamar instancia unitaria (singleton)
+			Email.Instancia.Origem = "joshhortt@rocketmail.com";
+			Email.Instancia.Destino = "joshhortt@yahoo.com";
+			Email.Instancia.Titulo = "Meeting hoje as 19 horas";
+			Email.Instancia.Corpo = "Lorem ipsum";
+			// 16. Enviar Email utilizando Instancia (singleton).
+			Email.Instancia.EnviarEmail();
 		}
 	}
 }
+
+/* OUTPUT
+Enviando Email para: joshhortt@yahoo.com
+Com o titulo: Meeting hoje as 19 horas
+Corpo: Lorem ipsum
+ 
+ */
 
 /*
 var c = new Cachorro();
