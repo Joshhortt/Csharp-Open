@@ -1,4 +1,9 @@
-﻿using System;
+﻿//****************************************************************************************************************
+//23. Aplicação Windows (WinForms). Início.
+//****************************************************************************************************************
+//Nesta aula iremos iniciar nosso primeiro projeto em Windows Forms.
+//****************************************************************************************************************
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;

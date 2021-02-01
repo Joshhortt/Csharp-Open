@@ -67,7 +67,7 @@ namespace _23_WindowsFormsApp
 			// 
 			this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
 			this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-			this.ClientSize = new System.Drawing.Size(927, 720);
+			this.ClientSize = new System.Drawing.Size(397, 720);
 			this.Controls.Add(this.btnOk);
 			this.Controls.Add(this.txtResultado);
 			this.Controls.Add(this.label1);
