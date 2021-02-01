@@ -83,6 +83,7 @@ namespace AppWinforms
 			this.Controls.Add(this.btnOk);
 			this.Name = "Form1";
 			this.Text = "Aplicação 1";
+			this.Load += new System.EventHandler(this.Form1_Load);
 			this.ResumeLayout(false);
 			this.PerformLayout();
 
