@@ -25,7 +25,9 @@ namespace AppWinforms
 		private void btnAbre_Click(object sender, EventArgs e)
 		{
 			var form = new FrmShow();
+			form.lblMensagem.Text = txtResultado.Text;
 			form.Show();
+		
 		}
 	}
 }

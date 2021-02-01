@@ -32,7 +32,6 @@ namespace AppWinforms
 			this.btnOk = new System.Windows.Forms.Button();
 			this.label1 = new System.Windows.Forms.Label();
 			this.txtResultado = new System.Windows.Forms.TextBox();
-			this.btnAbrir = new System.Windows.Forms.Button();
 			this.btnAbre = new System.Windows.Forms.Button();
 			this.SuspendLayout();
 			// 
@@ -63,18 +62,11 @@ namespace AppWinforms
 			this.txtResultado.Size = new System.Drawing.Size(325, 20);
 			this.txtResultado.TabIndex = 2;
 			// 
-			// btnAbrir
-			// 
-			this.btnAbrir.Location = new System.Drawing.Point(0, 0);
-			this.btnAbrir.Name = "btnAbrir";
-			this.btnAbrir.Size = new System.Drawing.Size(75, 23);
-			this.btnAbrir.TabIndex = 0;
-			// 
 			// btnAbre
 			// 
-			this.btnAbre.Location = new System.Drawing.Point(160, 217);
+			this.btnAbre.Location = new System.Drawing.Point(101, 178);
 			this.btnAbre.Name = "btnAbre";
-			this.btnAbre.Size = new System.Drawing.Size(75, 23);
+			this.btnAbre.Size = new System.Drawing.Size(202, 23);
 			this.btnAbre.TabIndex = 3;
 			this.btnAbre.Text = "Abrir nova Janela";
 			this.btnAbre.UseVisualStyleBackColor = true;
@@ -86,7 +78,6 @@ namespace AppWinforms
 			this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
 			this.ClientSize = new System.Drawing.Size(559, 474);
 			this.Controls.Add(this.btnAbre);
-			this.Controls.Add(this.btnAbrir);
 			this.Controls.Add(this.txtResultado);
 			this.Controls.Add(this.label1);
 			this.Controls.Add(this.btnOk);
@@ -102,7 +93,6 @@ namespace AppWinforms
 		private System.Windows.Forms.Button btnOk;
 		private System.Windows.Forms.Label label1;
 		private System.Windows.Forms.TextBox txtResultado;
-		private System.Windows.Forms.Button btnAbrir;
 		private System.Windows.Forms.Button btnAbre;
 	}
 }

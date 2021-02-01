@@ -58,6 +58,6 @@ namespace AppWinforms
 
 		#endregion
 
-		private System.Windows.Forms.Label lblMensagem;
+		public System.Windows.Forms.Label lblMensagem; // mudar de privado para publico
 	}
 }
