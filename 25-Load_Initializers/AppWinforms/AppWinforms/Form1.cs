@@ -15,8 +15,7 @@ namespace AppWinforms
 		public Form1()  // Form1() é o Construtor
 		{
 			InitializeComponent();
-			MessageBox.Show("Inicializando o formulario pelo construtor");  // Depois de compilar app, dar play na aplicação que vai abrir uma pequena text box c/ esta mensagem
-																			// Ok e vai para o  'Load'.
+			// MessageBox.Show("Inicializando o formulario pelo construtor");  
 		}
 
 		private void btnOk_Click(object sender, EventArgs e)
