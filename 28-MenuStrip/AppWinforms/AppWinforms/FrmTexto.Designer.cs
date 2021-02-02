@@ -30,7 +30,7 @@ namespace AppWinforms
 		private void InitializeComponent()
 		{
 			this.lnlInfo = new System.Windows.Forms.Label();
-			this.textBox1 = new System.Windows.Forms.TextBox();
+			this.txtTexto = new System.Windows.Forms.TextBox();
 			this.menuStrip1 = new System.Windows.Forms.MenuStrip();
 			this.arquivoToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
 			this.salvarToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
@@ -48,13 +48,13 @@ namespace AppWinforms
 			this.lnlInfo.TabIndex = 0;
 			this.lnlInfo.Text = "Digite aqui o seu texto";
 			// 
-			// textBox1
+			// txtTexto
 			// 
-			this.textBox1.Location = new System.Drawing.Point(25, 62);
-			this.textBox1.Multiline = true;
-			this.textBox1.Name = "textBox1";
-			this.textBox1.Size = new System.Drawing.Size(1077, 300);
-			this.textBox1.TabIndex = 1;
+			this.txtTexto.Location = new System.Drawing.Point(25, 62);
+			this.txtTexto.Multiline = true;
+			this.txtTexto.Name = "txtTexto";
+			this.txtTexto.Size = new System.Drawing.Size(1077, 300);
+			this.txtTexto.TabIndex = 1;
 			// 
 			// menuStrip1
 			// 
@@ -97,7 +97,7 @@ namespace AppWinforms
 			this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
 			this.ClientSize = new System.Drawing.Size(1191, 547);
 			this.Controls.Add(this.btnSalvar);
-			this.Controls.Add(this.textBox1);
+			this.Controls.Add(this.txtTexto);
 			this.Controls.Add(this.lnlInfo);
 			this.Controls.Add(this.menuStrip1);
 			this.MainMenuStrip = this.menuStrip1;
@@ -113,7 +113,7 @@ namespace AppWinforms
 		#endregion
 
 		private System.Windows.Forms.Label lnlInfo;
-		private System.Windows.Forms.TextBox textBox1;
+		private System.Windows.Forms.TextBox txtTexto;
 		private System.Windows.Forms.MenuStrip menuStrip1;
 		private System.Windows.Forms.ToolStripMenuItem arquivoToolStripMenuItem;
 		private System.Windows.Forms.ToolStripMenuItem salvarToolStripMenuItem;
