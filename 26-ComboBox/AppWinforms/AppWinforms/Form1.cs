@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace AppWinforms
 {
-	public partial class Form1 : Form  // Form1 é a classe
+	public partial class Form1 : Form  
 	{
-		public Form1()  // Form1() é o Construtor
+		public Form1()  
 		{
 			InitializeComponent();
 			// MessageBox.Show("Inicializando o formulario pelo construtor");  
@@ -20,7 +20,7 @@ namespace AppWinforms
 
 		private void btnOk_Click(object sender, EventArgs e)
 		{
-			txtResultado.Text = "Benvindos a nossa primeira aula de Winforms!";
+			txtResultado.Text = "Benvindos ao Estado do Brasil: " + cboEstados.Text;
 		}
 
 		private void btnAbre_Click(object sender, EventArgs e)
@@ -31,10 +31,10 @@ namespace AppWinforms
 		
 		}
 
-		private void Form1_Load(object sender, EventArgs e)  //  dois clicks no formulario abre esta instancia privada -- > o Load
+		private void Form1_Load(object sender, EventArgs e) 
 		{
-			MessageBox.Show("Inicializando o formulario");  // Depois de compilar app, dar play na aplicação que vai abrir uma pequena text box c/ esta mensagem
-			                                                // Ok e vai para o formulario
+			// MessageBox.Show("Inicializando o formulario");  
+			                                                
 		}
 	}
 }
