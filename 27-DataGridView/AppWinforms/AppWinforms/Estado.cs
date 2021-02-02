@@ -10,8 +10,8 @@ namespace AppWinforms
 	{
 		public int Id { get; set; }    
 		public string Nome { get; set; }
-		public int Telefone { get; set; } // Adicionar mais uma propriedades a tabela - Telefone
-		public string Endereco { get; set; }  // Adicionar mais uma propriedades a tabela - Endereço
+		public int Telefone { get; set; } 
+		public string Endereco { get; set; } 
 
 		public override string ToString()  
 		{

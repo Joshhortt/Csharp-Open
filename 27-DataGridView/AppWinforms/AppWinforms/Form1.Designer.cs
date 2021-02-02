@@ -104,16 +104,16 @@ namespace AppWinforms
 			// dataGridView
 			// 
 			this.dataGridView.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-			this.dataGridView.Location = new System.Drawing.Point(401, 163);
+			this.dataGridView.Location = new System.Drawing.Point(402, 263);
 			this.dataGridView.Name = "dataGridView";
-			this.dataGridView.Size = new System.Drawing.Size(456, 150);
+			this.dataGridView.Size = new System.Drawing.Size(444, 135);
 			this.dataGridView.TabIndex = 6;
 			// 
 			// lblNomeGrid
 			// 
 			this.lblNomeGrid.AutoSize = true;
 			this.lblNomeGrid.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-			this.lblNomeGrid.Location = new System.Drawing.Point(502, 140);
+			this.lblNomeGrid.Location = new System.Drawing.Point(510, 208);
 			this.lblNomeGrid.Name = "lblNomeGrid";
 			this.lblNomeGrid.Size = new System.Drawing.Size(225, 20);
 			this.lblNomeGrid.TabIndex = 7;

@@ -31,11 +31,69 @@ namespace AppWinforms
 
 		private void Form1_Load(object sender, EventArgs e)
 		{
+			//*********************** Estado ****************************
 
 			cboEstados.DataSource = Estado.Lista();
 			cboEstados.Text = "[Selecione]";
 
-			dataGridView.DataSource = Estado.Lista(); 
-		}                                          
+			/*
+			 // Load dos Estados na Lista
+			cboEstados.Items.Clear();
+			foreach (Estado estado in Estado.Lista())
+			{
+				cboEstados.Items.Add(estado);
+			}
+			 */
+
+			//***********************************************************
+
+
+
+			//******************* GridView simples***********************
+
+			// forma mais simples de utilizar
+			// dataGridView.DataSource = Estado.Lista();
+
+			//***********************************************************
+
+
+
+			//***************** GridView + complexo**********************
+			/*
+			 * dataGridView.ColumnCount = 2; // o grid view vai ter duas colunas
+			dataGridView.Columns[0].Name = "Id";  // consta numa coluna o Id
+			dataGridView.Columns[1].Name = "Nome";  // consta noutra coluna o Nome
+
+			var rows = new List<string[]>();  //  Lista de array coleção na memoria 
+			foreach (Estado estado in Estado.Lista())
+			{
+				string[] row1 = new string[] { estado.Id.ToString(), estado.Nome }; 
+				rows.Add(row1);  // Adicona as linhas
+			}
+			foreach (string[] rowArray in rows) // Faz esta operação 4 vezes.
+			{
+				dataGridView.Rows.Add(rowArray);
+			}
+			*/
+			//***********************************************************
+
+
+
+
+			//************** GridView forma intermediaria ***************
+			// utilizando Link
+			var data = from estado in Estado.Lista()
+					// where estado.Id == 1 || estado.Id == 2  // só mostra o estado com Id 1 e com Id 2, neste caso o SP e RJ
+					// orderby estado.Nome  // ordena pelo Nome
+					   orderby estado.Id  // ordena pelo Id
+					   select new
+					   {
+						   Id = estado.Id,
+						   Nome = estado.Nome
+					   };
+			dataGridView.DataSource = data.ToList();
+
+			//***********************************************************
+		}
 	}
 }
