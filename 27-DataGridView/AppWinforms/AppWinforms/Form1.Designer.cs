@@ -104,17 +104,18 @@ namespace AppWinforms
 			// dataGridView
 			// 
 			this.dataGridView.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-			this.dataGridView.Location = new System.Drawing.Point(359, 259);
+			this.dataGridView.Location = new System.Drawing.Point(401, 163);
 			this.dataGridView.Name = "dataGridView";
-			this.dataGridView.Size = new System.Drawing.Size(305, 150);
+			this.dataGridView.Size = new System.Drawing.Size(456, 150);
 			this.dataGridView.TabIndex = 6;
 			// 
 			// lblNomeGrid
 			// 
 			this.lblNomeGrid.AutoSize = true;
-			this.lblNomeGrid.Location = new System.Drawing.Point(437, 218);
+			this.lblNomeGrid.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+			this.lblNomeGrid.Location = new System.Drawing.Point(502, 140);
 			this.lblNomeGrid.Name = "lblNomeGrid";
-			this.lblNomeGrid.Size = new System.Drawing.Size(151, 13);
+			this.lblNomeGrid.Size = new System.Drawing.Size(225, 20);
 			this.lblNomeGrid.TabIndex = 7;
 			this.lblNomeGrid.Text = "Dados da Coleção de Estados";
 			// 
@@ -122,7 +123,7 @@ namespace AppWinforms
 			// 
 			this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
 			this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-			this.ClientSize = new System.Drawing.Size(700, 474);
+			this.ClientSize = new System.Drawing.Size(896, 474);
 			this.Controls.Add(this.lblNomeGrid);
 			this.Controls.Add(this.dataGridView);
 			this.Controls.Add(this.label2);

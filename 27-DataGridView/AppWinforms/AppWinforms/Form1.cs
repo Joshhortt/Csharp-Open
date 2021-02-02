@@ -35,7 +35,7 @@ namespace AppWinforms
 			cboEstados.DataSource = Estado.Lista();
 			cboEstados.Text = "[Selecione]";
 
-			dataGridView.DataSource = Estado.Lista(); // O dataGridView automaticamente assum que os dados que tem o Estado e preencha a tabela.
-		}                                             // Também verifica se tem propriedades, permitindo assim
+			dataGridView.DataSource = Estado.Lista(); 
+		}                                          
 	}
 }
