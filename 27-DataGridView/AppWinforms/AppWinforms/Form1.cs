@@ -10,11 +10,11 @@ using System.Windows.Forms;
 
 namespace AppWinforms
 {
-	public partial class Form1 : Form  
+	public partial class Form1 : Form
 	{
-		public Form1()  
+		public Form1()
 		{
-			InitializeComponent(); 
+			InitializeComponent();
 		}
 
 		private void btnOk_Click(object sender, EventArgs e)
@@ -29,20 +29,13 @@ namespace AppWinforms
 			form.Show();
 		}
 
-		private void Form1_Load(object sender, EventArgs e) 
+		private void Form1_Load(object sender, EventArgs e)
 		{
-			//cboEstados.Items.Clear();                Tambem o Clear aqui ja nao é necessario ja que o DataSource limpa tudo
 
-			cboEstados.DataSource = Estado.Lista(); // DataSource é a propriedade onde estao os dados do meu 'estado'. 
-													// Faz o mesmo que o foreach contudo tudo numa linha de codigo.
-													// A diferença aqui é que carrega logo inicialmente o primeiro estado em vez de [Seleccione] 
+			cboEstados.DataSource = Estado.Lista();
+			cboEstados.Text = "[Selecione]";
 
-			cboEstados.Text = "[Selecione]";        // para que o DataSource inclua o que consta na Lista, devemos colocar esta linha de codigo.
-			
-			//foreach (Estado estado in Estado.Lista())
-			//{
-			//	cboEstados.Items.Add(estado);
-			//}
-		}
+			dataGridView.DataSource = Estado.Lista(); // O dataGridView automaticamente assum que os dados que tem o Estado e preencha a tabela.
+		}                                             // Também verifica se tem propriedades, permitindo assim
 	}
 }

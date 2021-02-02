@@ -8,8 +8,8 @@ namespace AppWinforms
 {
 	public class Estado
 	{
-		public int Id;     
-		public string Nome;  
+		public int Id { get; set; }     // Alterar o atributo para propriedade
+		public string Nome { get; set; }  // Alterar o atributo para propriedade 
 
 		public override string ToString()  
 		{
