@@ -100,5 +100,25 @@ namespace AppWinforms
 		{
 			new FrmTexto().Show();   // Ja mostra o novo formulario criado FrmTexto, oden ja podemos digitar texto e salvar.
 		}
+
+		private void sairToolStripMenuItem_Click(object sender, EventArgs e)
+		{
+			Application.Exit();    // Com este metodo Sai da Aplicação ou fecha a, após clicar no botao sair no Menu Strip
+		}
+
+		private void sobreToolStripMenuItem_Click(object sender, EventArgs e)
+		{
+			new FrmSobre().Show();  // mostra o formulario Sobre
+		}
+
+		private void licençaToolStripMenuItem_Click(object sender, EventArgs e)
+		{
+			new FrmLicenca().Show();  // mostra o formulario Licença
+		}
+
+		private void doaçãoToolStripMenuItem_Click(object sender, EventArgs e)
+		{
+			new FrmDoacao().Show();  // mostra o formulario Doação
+		}
 	}
 }

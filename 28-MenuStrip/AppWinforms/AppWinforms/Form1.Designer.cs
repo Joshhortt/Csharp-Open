@@ -160,6 +160,7 @@ namespace AppWinforms
 			this.sairToolStripMenuItem.Name = "sairToolStripMenuItem";
 			this.sairToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
 			this.sairToolStripMenuItem.Text = "Sair";
+			this.sairToolStripMenuItem.Click += new System.EventHandler(this.sairToolStripMenuItem_Click);
 			// 
 			// infoToolStripMenuItem
 			// 
@@ -174,20 +175,23 @@ namespace AppWinforms
 			// sobreToolStripMenuItem
 			// 
 			this.sobreToolStripMenuItem.Name = "sobreToolStripMenuItem";
-			this.sobreToolStripMenuItem.Size = new System.Drawing.Size(114, 22);
+			this.sobreToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
 			this.sobreToolStripMenuItem.Text = "Sobre";
+			this.sobreToolStripMenuItem.Click += new System.EventHandler(this.sobreToolStripMenuItem_Click);
 			// 
 			// licençaToolStripMenuItem
 			// 
 			this.licençaToolStripMenuItem.Name = "licençaToolStripMenuItem";
-			this.licençaToolStripMenuItem.Size = new System.Drawing.Size(114, 22);
+			this.licençaToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
 			this.licençaToolStripMenuItem.Text = "Licença";
+			this.licençaToolStripMenuItem.Click += new System.EventHandler(this.licençaToolStripMenuItem_Click);
 			// 
 			// doaçãoToolStripMenuItem
 			// 
 			this.doaçãoToolStripMenuItem.Name = "doaçãoToolStripMenuItem";
-			this.doaçãoToolStripMenuItem.Size = new System.Drawing.Size(114, 22);
+			this.doaçãoToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
 			this.doaçãoToolStripMenuItem.Text = "Doação";
+			this.doaçãoToolStripMenuItem.Click += new System.EventHandler(this.doaçãoToolStripMenuItem_Click);
 			// 
 			// Form1
 			// 

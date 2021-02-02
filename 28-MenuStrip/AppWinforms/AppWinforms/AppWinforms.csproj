@@ -35,6 +35,11 @@
   <ItemGroup>
     <Reference Include="System" />
     <Reference Include="System.Core" />
+    <Reference Include="System.Runtime.Extensions, Version=4.1.1.1, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Runtime.Extensions.4.3.1\lib\net462\System.Runtime.Extensions.dll</HintPath>
+      <Private>True</Private>
+      <Private>True</Private>
+    </Reference>
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="Microsoft.CSharp" />
@@ -53,11 +58,29 @@
     <Compile Include="Form1.Designer.cs">
       <DependentUpon>Form1.cs</DependentUpon>
     </Compile>
+    <Compile Include="FrmDoacao.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmDoacao.Designer.cs">
+      <DependentUpon>FrmDoacao.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmLicenca.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmLicenca.Designer.cs">
+      <DependentUpon>FrmLicenca.cs</DependentUpon>
+    </Compile>
     <Compile Include="FrmShow.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="FrmShow.Designer.cs">
       <DependentUpon>FrmShow.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmSobre.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmSobre.Designer.cs">
+      <DependentUpon>FrmSobre.cs</DependentUpon>
     </Compile>
     <Compile Include="FrmTexto.cs">
       <SubType>Form</SubType>
@@ -70,8 +93,17 @@
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="FrmDoacao.resx">
+      <DependentUpon>FrmDoacao.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmLicenca.resx">
+      <DependentUpon>FrmLicenca.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="FrmShow.resx">
       <DependentUpon>FrmShow.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmSobre.resx">
+      <DependentUpon>FrmSobre.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FrmTexto.resx">
       <DependentUpon>FrmTexto.cs</DependentUpon>
@@ -85,6 +117,7 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
+    <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
