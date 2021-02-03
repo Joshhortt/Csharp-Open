@@ -55,6 +55,7 @@ namespace AppWinforms
 			this.txtTexto.Name = "txtTexto";
 			this.txtTexto.Size = new System.Drawing.Size(1077, 300);
 			this.txtTexto.TabIndex = 1;
+			this.txtTexto.TextChanged += new System.EventHandler(this.txtTexto_TextChanged);
 			// 
 			// menuStrip1
 			// 

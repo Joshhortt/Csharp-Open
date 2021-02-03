@@ -31,6 +31,11 @@ namespace AppWinforms
 
 		private void Form1_Load(object sender, EventArgs e)
 		{
+
+			lblHoraAtual.Text = "Dia e Hora atual: " + DateTime.Now.ToString("dd/MM/yyyy HH:mm:ss");  // Primeira coisa a fazer apos colocar o Timer e a label no formulario é
+																		       // vir aqui acertar a hora atual.
+			
+			
 			//*********************** Estado ****************************
 
 			cboEstados.DataSource = Estado.Lista();

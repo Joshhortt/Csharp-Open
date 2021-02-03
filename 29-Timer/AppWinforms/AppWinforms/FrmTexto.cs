@@ -25,7 +25,7 @@ namespace AppWinforms
 
 		private void SalvarArquivo() 
 		{
-			File.WriteAllText(@"c:\arquivos\texto_" + DateTime.Now.ToString("dd_MM_yyy_HH_mm_ss") + "Txt", txtTexto.Text);    
+			File.WriteAllText(@"c:\Temp\texto" + DateTime.Now.ToString("dd_MM_yyyy_HH-mm-ss") + "txt", txtTexto.Text);    
 																												  
 
 			MessageBox.Show("Arquivo salvo");
@@ -38,6 +38,11 @@ namespace AppWinforms
 		}
 
 		private void FrmTexto_Load(object sender, EventArgs e)
+		{
+
+		}
+
+		private void txtTexto_TextChanged(object sender, EventArgs e)
 		{
 
 		}
