@@ -46,9 +46,9 @@ namespace AppWinforms
 			this.sobreToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
 			this.licençaToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
 			this.doaçãoToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+			this.cadastroToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
 			this.lblHoraAtual = new System.Windows.Forms.Label();
 			this.timer1 = new System.Windows.Forms.Timer(this.components);
-			this.cadastroToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
 			((System.ComponentModel.ISupportInitialize)(this.dataGridView)).BeginInit();
 			this.menuStrip1.SuspendLayout();
 			this.SuspendLayout();
@@ -156,14 +156,14 @@ namespace AppWinforms
 			// novoTextoToolStripMenuItem
 			// 
 			this.novoTextoToolStripMenuItem.Name = "novoTextoToolStripMenuItem";
-			this.novoTextoToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+			this.novoTextoToolStripMenuItem.Size = new System.Drawing.Size(133, 22);
 			this.novoTextoToolStripMenuItem.Text = "Novo texto";
 			this.novoTextoToolStripMenuItem.Click += new System.EventHandler(this.novoTextoToolStripMenuItem_Click);
 			// 
 			// sairToolStripMenuItem
 			// 
 			this.sairToolStripMenuItem.Name = "sairToolStripMenuItem";
-			this.sairToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+			this.sairToolStripMenuItem.Size = new System.Drawing.Size(133, 22);
 			this.sairToolStripMenuItem.Text = "Sair";
 			this.sairToolStripMenuItem.Click += new System.EventHandler(this.sairToolStripMenuItem_Click);
 			// 
@@ -198,6 +198,13 @@ namespace AppWinforms
 			this.doaçãoToolStripMenuItem.Text = "Doação";
 			this.doaçãoToolStripMenuItem.Click += new System.EventHandler(this.doaçãoToolStripMenuItem_Click);
 			// 
+			// cadastroToolStripMenuItem
+			// 
+			this.cadastroToolStripMenuItem.Name = "cadastroToolStripMenuItem";
+			this.cadastroToolStripMenuItem.Size = new System.Drawing.Size(195, 20);
+			this.cadastroToolStripMenuItem.Text = "Cadastro com tratamento de Erro";
+			this.cadastroToolStripMenuItem.Click += new System.EventHandler(this.cadastroToolStripMenuItem_Click);
+			// 
 			// lblHoraAtual
 			// 
 			this.lblHoraAtual.AutoSize = true;
@@ -213,13 +220,6 @@ namespace AppWinforms
 			this.timer1.Enabled = true;
 			this.timer1.Interval = 1000;
 			this.timer1.Tick += new System.EventHandler(this.timer1_Tick);
-			// 
-			// cadastroToolStripMenuItem
-			// 
-			this.cadastroToolStripMenuItem.Name = "cadastroToolStripMenuItem";
-			this.cadastroToolStripMenuItem.Size = new System.Drawing.Size(66, 20);
-			this.cadastroToolStripMenuItem.Text = "Cadastro";
-			this.cadastroToolStripMenuItem.Click += new System.EventHandler(this.cadastroToolStripMenuItem_Click);
 			// 
 			// Form1
 			// 

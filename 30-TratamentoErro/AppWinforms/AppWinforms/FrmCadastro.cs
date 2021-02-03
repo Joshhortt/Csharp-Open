@@ -26,7 +26,6 @@ namespace AppWinforms
 				int numero = int.Parse(txtNumero.Text);
 				//numero += 100;
 
-				// Testar aqui com um if else erros que criamos prositadamente afim aprender mais sobre debugging do Try catch
 				if(numero == 2)
 				{																												
 				throw new ErroDeProposito("Erro de proposito");
@@ -36,7 +35,7 @@ namespace AppWinforms
 					throw new ErroDeProposito("Erro de proposito generico");
 				}
 
-				numero += 100;  // colocado aqui depois do if else
+				numero += 100;  
 
 				MessageBox.Show("Olá " + nome + ", o valor do numero mais 100 é de: " + numero);
 			}
@@ -52,15 +51,20 @@ namespace AppWinforms
 				MessageBox.Show("Erro de Proposito" + errProposito.StackTrace);
 			}
 
-			catch (Exception err)  // Esse catch tem de ficar no fim porque é o Exception Pai dos outros Exceptions 'ErroDeProosito' e 'FormatException'
+			catch (Exception err)  
 			{
 				MessageBox.Show("Olá cliente, voce por acaso não digitou letras em vez de numeros?" + err.Message);
 			}
+			finally
+			{
+				MessageBox.Show("todas as Excepções tratadas");  // Inclusão do finally com messageBox sempre apos as outras excepções. 
+				                                                 // Acaba sempre por cair no finally. Conclui as sessões.
+			}
 		}
 	}
-	public class ErroDeProposito : Exception  // Classe que herda da classe pai 'Exception'.
+	public class ErroDeProposito : Exception  
 	{
-		public ErroDeProposito(string erro) : base(erro)  // Construtor publico de erro string passando por construtor base que herdei.
+		public ErroDeProposito(string erro) : base(erro)  
 		{
         }
     }
