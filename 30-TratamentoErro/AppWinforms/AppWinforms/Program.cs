@@ -10,7 +10,7 @@ using System.Windows.Forms;
 
 namespace AppWinforms
 {
-	static class Program
+	static class Programs
 	{
 		/// <summary>
 		/// The main entry point for the application.
