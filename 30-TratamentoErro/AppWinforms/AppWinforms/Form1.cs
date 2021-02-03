@@ -136,5 +136,11 @@ namespace AppWinforms
 		{
 			atualizarHora();
 		}
+
+		private void cadastroToolStripMenuItem_Click(object sender, EventArgs e)
+		{
+			// criar ação do cadastro no formulario
+
+		}
 	}
 }

@@ -48,6 +48,7 @@ namespace AppWinforms
 			this.doaçãoToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
 			this.lblHoraAtual = new System.Windows.Forms.Label();
 			this.timer1 = new System.Windows.Forms.Timer(this.components);
+			this.cadastroToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
 			((System.ComponentModel.ISupportInitialize)(this.dataGridView)).BeginInit();
 			this.menuStrip1.SuspendLayout();
 			this.SuspendLayout();
@@ -135,7 +136,8 @@ namespace AppWinforms
 			// 
 			this.menuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.arquivoToolStripMenuItem,
-            this.infoToolStripMenuItem});
+            this.infoToolStripMenuItem,
+            this.cadastroToolStripMenuItem});
 			this.menuStrip1.Location = new System.Drawing.Point(0, 0);
 			this.menuStrip1.Name = "menuStrip1";
 			this.menuStrip1.Size = new System.Drawing.Size(896, 24);
@@ -154,14 +156,14 @@ namespace AppWinforms
 			// novoTextoToolStripMenuItem
 			// 
 			this.novoTextoToolStripMenuItem.Name = "novoTextoToolStripMenuItem";
-			this.novoTextoToolStripMenuItem.Size = new System.Drawing.Size(133, 22);
+			this.novoTextoToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
 			this.novoTextoToolStripMenuItem.Text = "Novo texto";
 			this.novoTextoToolStripMenuItem.Click += new System.EventHandler(this.novoTextoToolStripMenuItem_Click);
 			// 
 			// sairToolStripMenuItem
 			// 
 			this.sairToolStripMenuItem.Name = "sairToolStripMenuItem";
-			this.sairToolStripMenuItem.Size = new System.Drawing.Size(133, 22);
+			this.sairToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
 			this.sairToolStripMenuItem.Text = "Sair";
 			this.sairToolStripMenuItem.Click += new System.EventHandler(this.sairToolStripMenuItem_Click);
 			// 
@@ -212,6 +214,13 @@ namespace AppWinforms
 			this.timer1.Interval = 1000;
 			this.timer1.Tick += new System.EventHandler(this.timer1_Tick);
 			// 
+			// cadastroToolStripMenuItem
+			// 
+			this.cadastroToolStripMenuItem.Name = "cadastroToolStripMenuItem";
+			this.cadastroToolStripMenuItem.Size = new System.Drawing.Size(66, 20);
+			this.cadastroToolStripMenuItem.Text = "Cadastro";
+			this.cadastroToolStripMenuItem.Click += new System.EventHandler(this.cadastroToolStripMenuItem_Click);
+			// 
 			// Form1
 			// 
 			this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -259,6 +268,7 @@ namespace AppWinforms
 		private System.Windows.Forms.ToolStripMenuItem doaçãoToolStripMenuItem;
 		private System.Windows.Forms.Label lblHoraAtual;
 		private System.Windows.Forms.Timer timer1;
+		private System.Windows.Forms.ToolStripMenuItem cadastroToolStripMenuItem;
 	}
 }
 
