@@ -19,15 +19,24 @@ namespace AppWinforms
 
 		private void BtnCalcular_Click(object sender, EventArgs e)
 		{
-			
+
 			var nome = textBox1.Text;
 			try
 			{
 				int numero = int.Parse(txtNumero.Text);
-				numero += 100;
+				//numero += 100;
 
-				throw new Exception("Erro de proposito");  // tipo de erro excepção. Neste caso o erro cai sempre no catch, independentement se o usuario
-														   // digita correctamente as letras e numeros pedidos no formulario.
+				// Testar aqui com um if else erros que criamos prositadamente afim aprender mais sobre debugging do Try catch
+				if(numero == 2)
+				{																												
+				throw new ErroDeProposito("Erro de proposito");
+				}
+				else if(numero == 4)
+				{
+					throw new ErroDeProposito("Erro de proposito generico");
+				}
+
+				numero += 100;  // colocado aqui depois do if else
 
 				MessageBox.Show("Olá " + nome + ", o valor do numero mais 100 é de: " + numero);
 			}
@@ -38,13 +47,23 @@ namespace AppWinforms
 				txtNumero.Focus();
 			}
 
-			catch (Exception err)  // ao incluir o Exception err o catch vai tratar qualquer tipo de erro...
-			{   // posso tambem concatenar a mensagem de erro com o erro em si
-				MessageBox.Show("Olá cliente, voce por acaso não digitou letras em vez de numeros?" + err.Message);  
-				//MessageBox.Show("Olá cliente, voce por acaso não digitou letras em vez de numeros?");
-				//txtNumero.Focus();
+			catch (ErroDeProposito errProposito)
+			{
+				MessageBox.Show("Erro de Proposito" + errProposito.StackTrace);
 			}
-			
+
+			catch (Exception err)  // Esse catch tem de ficar no fim porque é o Exception Pai dos outros Exceptions 'ErroDeProosito' e 'FormatException'
+			{
+				MessageBox.Show("Olá cliente, voce por acaso não digitou letras em vez de numeros?" + err.Message);
+			}
 		}
 	}
+	public class ErroDeProposito : Exception  // Classe que herda da classe pai 'Exception'.
+	{
+		public ErroDeProposito(string erro) : base(erro)  // Construtor publico de erro string passando por construtor base que herdei.
+		{
+        }
+    }
 }
+ 
+

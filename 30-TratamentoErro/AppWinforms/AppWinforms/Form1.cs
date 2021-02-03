@@ -139,8 +139,7 @@ namespace AppWinforms
 
 		private void cadastroToolStripMenuItem_Click(object sender, EventArgs e)
 		{
-			// criar ação do cadastro no formulario
-			new FrmCadastro().Show();  // nvo metodo cadastro + metodo Show.
+			new FrmCadastro().Show(); 
 		}
 	}
 }
