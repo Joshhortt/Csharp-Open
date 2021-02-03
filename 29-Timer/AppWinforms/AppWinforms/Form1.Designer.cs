@@ -200,11 +200,17 @@ namespace AppWinforms
 			// 
 			this.lblHoraAtual.AutoSize = true;
 			this.lblHoraAtual.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-			this.lblHoraAtual.Location = new System.Drawing.Point(524, 51);
+			this.lblHoraAtual.Location = new System.Drawing.Point(388, 24);
 			this.lblHoraAtual.Name = "lblHoraAtual";
 			this.lblHoraAtual.Size = new System.Drawing.Size(312, 24);
 			this.lblHoraAtual.TabIndex = 9;
 			this.lblHoraAtual.Text = "Dia / Hora atual: 01/01/2021 00:00:00";
+			this.lblHoraAtual.Click += new System.EventHandler(this.lblHoraAtual_Click);
+			// 
+			// timer1
+			// 
+			this.timer1.Enabled = true;
+			this.timer1.Tick += new System.EventHandler(this.timer1_Tick);
 			// 
 			// Form1
 			// 

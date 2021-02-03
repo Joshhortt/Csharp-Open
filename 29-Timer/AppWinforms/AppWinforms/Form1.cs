@@ -32,10 +32,10 @@ namespace AppWinforms
 		private void Form1_Load(object sender, EventArgs e)
 		{
 
-			lblHoraAtual.Text = "Dia e Hora atual: " + DateTime.Now.ToString("dd/MM/yyyy HH:mm:ss");  // Primeira coisa a fazer apos colocar o Timer e a label no formulario é
-																		       // vir aqui acertar a hora atual.
-			
-			
+			lblHoraAtual.Text = "Dia e Hora atual: " + DateTime.Now.ToString("dd/MM/yyyy HH:mm:ss:fff"); // acrescentar milisegundos
+
+
+																		      
 			//*********************** Estado ****************************
 
 			cboEstados.DataSource = Estado.Lista();
@@ -54,12 +54,14 @@ namespace AppWinforms
 
 
 
+
 			//******************* GridView simples***********************
 
 			// forma mais simples de utilizar
 			// dataGridView.DataSource = Estado.Lista();
 
 			//***********************************************************
+
 
 
 
@@ -103,27 +105,40 @@ namespace AppWinforms
 
 		private void novoTextoToolStripMenuItem_Click(object sender, EventArgs e)
 		{
-			new FrmTexto().Show();   // Ja mostra o novo formulario criado FrmTexto, oden ja podemos digitar texto e salvar.
+			new FrmTexto().Show();  
 		}
 
 		private void sairToolStripMenuItem_Click(object sender, EventArgs e)
 		{
-			Application.Exit();    // Com este metodo Sai da Aplicação ou fecha a, após clicar no botao sair no Menu Strip
+			Application.Exit();   
 		}
 
 		private void sobreToolStripMenuItem_Click(object sender, EventArgs e)
 		{
-			new FrmSobre().Show();  // mostra o formulario Sobre
+			new FrmSobre().Show();  
 		}
 
 		private void licençaToolStripMenuItem_Click(object sender, EventArgs e)
 		{
-			new FrmLicenca().Show();  // mostra o formulario Licença
+			new FrmLicenca().Show();  
 		}
 
 		private void doaçãoToolStripMenuItem_Click(object sender, EventArgs e)
 		{
-			new FrmDoacao().Show();  // mostra o formulario Doação
+			new FrmDoacao().Show(); 
+		}
+
+		private void timer1_Tick(object sender, EventArgs e)
+		{
+			lblHoraAtual.Text = "Dia e Hora atual: " + DateTime.Now.ToString("dd/MM/yyyy HH:mm:ss:fff");  
+			// Copiar colar para aqui o codigo do acerto de hora e acrescentar milisegundos
+			// e mudar nas propriedades do Timer o enable para 'true'. 
+			// Desta forma o Timer activa os segundos.
+		}
+
+		private void lblHoraAtual_Click(object sender, EventArgs e)
+		{
+
 		}
 	}
 }
