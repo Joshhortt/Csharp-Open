@@ -205,7 +205,7 @@ namespace AppWinforms
 			this.lblHoraAtual.Size = new System.Drawing.Size(312, 24);
 			this.lblHoraAtual.TabIndex = 9;
 			this.lblHoraAtual.Text = "Dia / Hora atual: 01/01/2021 00:00:00";
-			this.lblHoraAtual.Click += new System.EventHandler(this.lblHoraAtual_Click);
+			
 			// 
 			// timer1
 			// 

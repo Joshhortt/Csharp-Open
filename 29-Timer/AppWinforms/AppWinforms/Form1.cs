@@ -141,10 +141,5 @@ namespace AppWinforms
 			// Desta forma podemos remover os milisegundos na string. Adicionar o metodo atualizar hora criado
 			atualizarHora();
 		}
-
-		private void lblHoraAtual_Click(object sender, EventArgs e)
-		{
-
-		}
 	}
 }
