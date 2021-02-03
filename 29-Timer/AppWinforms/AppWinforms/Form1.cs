@@ -31,8 +31,8 @@ namespace AppWinforms
 
 		private void Form1_Load(object sender, EventArgs e)
 		{
-
-			lblHoraAtual.Text = "Dia e Hora atual: " + DateTime.Now.ToString("dd/MM/yyyy HH:mm:ss:fff"); // acrescentar milisegundos
+			// Criar metodo atualizar hora, assim evita codigo duplicado. Gerar metodo
+			atualizarHora();
 
 
 																		      
@@ -103,6 +103,11 @@ namespace AppWinforms
 			//***********************************************************
 		}
 
+		private void atualizarHora()  // o metodo gerado. Colocar a linha de codigo aqui
+		{
+			lblHoraAtual.Text = "Dia e Hora atual: " + DateTime.Now.ToString("dd/MM/yyyy HH:mm:ss");
+		}
+
 		private void novoTextoToolStripMenuItem_Click(object sender, EventArgs e)
 		{
 			new FrmTexto().Show();  
@@ -130,10 +135,11 @@ namespace AppWinforms
 
 		private void timer1_Tick(object sender, EventArgs e)
 		{
-			lblHoraAtual.Text = "Dia e Hora atual: " + DateTime.Now.ToString("dd/MM/yyyy HH:mm:ss:fff");  
-			// Copiar colar para aqui o codigo do acerto de hora e acrescentar milisegundos
-			// e mudar nas propriedades do Timer o enable para 'true'. 
-			// Desta forma o Timer activa os segundos.
+			//lblHoraAtual.Text = "Dia e Hora atual: " + DateTime.Now.ToString("dd/MM/yyyy HH:mm:ss:ffff");
+			// Mudar nas propriedades do Timer o interval para 1000. 
+			// Desta forma o Timer avança de segundo em segundo porque 1000 milisegundos sao exatamente 1 segundo
+			// Desta forma podemos remover os milisegundos na string. Adicionar o metodo atualizar hora criado
+			atualizarHora();
 		}
 
 		private void lblHoraAtual_Click(object sender, EventArgs e)
