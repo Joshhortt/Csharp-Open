@@ -141,5 +141,15 @@ namespace AppWinforms
 		{
 			new FrmCadastro().Show(); 
 		}
+
+		private void notifyIcon_Click(object sender, EventArgs e)
+		{
+			//MessageBox.Show("Cliquei no Icon");  // Ao compilar, clicar no icone no Task Bar aparece uma MessageBox com essa mensagem.
+		}
+
+		private void notifyIcon_DoubleClick(object sender, EventArgs e)
+		{
+			MessageBox.Show("Cliquei no Icon duas vezes");  // Ao compilar, clicar no icone duas vezes no Task Bar aparece uma MessageBox com essa mensagem.
+		}
 	}
 }

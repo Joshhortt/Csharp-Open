@@ -228,6 +228,8 @@ namespace AppWinforms
 			this.notifyIcon.Icon = ((System.Drawing.Icon)(resources.GetObject("notifyIcon.Icon")));
 			this.notifyIcon.Text = "Meu Programa \r\nLaboratorio";
 			this.notifyIcon.Visible = true;
+			this.notifyIcon.Click += new System.EventHandler(this.notifyIcon_Click);
+			this.notifyIcon.DoubleClick += new System.EventHandler(this.notifyIcon_DoubleClick);
 			// 
 			// Form1
 			// 
