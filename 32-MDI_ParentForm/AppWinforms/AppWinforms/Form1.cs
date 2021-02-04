@@ -118,7 +118,9 @@ namespace AppWinforms
 
 		private void novoTextoToolStripMenuItem_Click(object sender, EventArgs e)
 		{
-			new FrmTexto().Show();  
+			var frmTexto = new FrmTexto();
+			frmTexto.MdiParent = MDISingleton.InstanciaMDI(); 
+			frmTexto.Show();    // aqui estou a dizer que o meu formulario novo texto vai abrir dentro do MDI
 		}
 
 		private void sairToolStripMenuItem_Click(object sender, EventArgs e)

@@ -103,6 +103,7 @@
     <Compile Include="MDIParentPrincipal.Designer.cs">
       <DependentUpon>MDIParentPrincipal.cs</DependentUpon>
     </Compile>
+    <Compile Include="MDISingleton.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="Form1.resx">

@@ -21,7 +21,9 @@ namespace AppWinforms
 		{
 			Application.EnableVisualStyles();
 			Application.SetCompatibleTextRenderingDefault(false);
-			Application.Run(new Form1());
+			//Application.Run(new Form1());
+			//Application.Run(new MDIParentPrincipal());  
+			Application.Run(MDISingleton.InstanciaMDI());  // Agora tem a classe singleton como instancia global do MDI
 		}
 	}
 }

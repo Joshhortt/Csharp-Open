@@ -35,6 +35,7 @@ namespace AppWinforms
 			this.newToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
 			this.openToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
 			this.exitToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+			this.form1ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
 			this.menuStrip.SuspendLayout();
 			this.SuspendLayout();
 			// 
@@ -53,6 +54,7 @@ namespace AppWinforms
 			this.fileMenu.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.newToolStripMenuItem,
             this.openToolStripMenuItem,
+            this.form1ToolStripMenuItem,
             this.exitToolStripMenuItem});
 			this.fileMenu.ImageTransparentColor = System.Drawing.SystemColors.ActiveBorder;
 			this.fileMenu.Name = "fileMenu";
@@ -85,6 +87,14 @@ namespace AppWinforms
 			this.exitToolStripMenuItem.Text = "Fechar";
 			this.exitToolStripMenuItem.Click += new System.EventHandler(this.ExitToolsStripMenuItem_Click);
 			// 
+			// form1ToolStripMenuItem
+			// 
+			this.form1ToolStripMenuItem.Image = ((System.Drawing.Image)(resources.GetObject("form1ToolStripMenuItem.Image")));
+			this.form1ToolStripMenuItem.Name = "form1ToolStripMenuItem";
+			this.form1ToolStripMenuItem.Size = new System.Drawing.Size(207, 22);
+			this.form1ToolStripMenuItem.Text = "Form1";
+			this.form1ToolStripMenuItem.Click += new System.EventHandler(this.form1ToolStripMenuItem_Click);
+			// 
 			// MDIParentPrincipal
 			// 
 			this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -96,6 +106,7 @@ namespace AppWinforms
 			this.MainMenuStrip = this.menuStrip;
 			this.Name = "MDIParentPrincipal";
 			this.Text = "MDIParentPrincipal";
+			this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
 			this.menuStrip.ResumeLayout(false);
 			this.menuStrip.PerformLayout();
 			this.ResumeLayout(false);
@@ -110,6 +121,7 @@ namespace AppWinforms
 		private System.Windows.Forms.ToolStripMenuItem newToolStripMenuItem;
 		private System.Windows.Forms.ToolStripMenuItem openToolStripMenuItem;
 		private System.Windows.Forms.ToolStripMenuItem exitToolStripMenuItem;
+		private System.Windows.Forms.ToolStripMenuItem form1ToolStripMenuItem;
 	}
 }
 

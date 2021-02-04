@@ -69,5 +69,12 @@ namespace AppWinforms
 				childForm.Close();
 			}
 		}
+
+		private void form1ToolStripMenuItem_Click(object sender, EventArgs e)   // metodo do form1 do menu Item
+		{
+			var form1 = new Form1();  
+			form1.MdiParent = this;
+			form1.Show();    // aqui estou a dizer que o meu form1 vai abrir dentro do MDI
+		}
 	}
 }
