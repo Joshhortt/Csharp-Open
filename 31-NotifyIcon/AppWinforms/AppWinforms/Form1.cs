@@ -180,5 +180,10 @@ namespace AppWinforms
 		{
 			//MessageBox.Show("Cliquei no Icon duas vezes");  
 		}
+
+		private void btnNotificacao_Click(object sender, EventArgs e)
+		{
+			notifyIcon.ShowBalloonTip(10, "Notificação", txtResultado.Text, ToolTipIcon.Info);
+		}
 	}
 }

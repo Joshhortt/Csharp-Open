@@ -51,6 +51,7 @@ namespace AppWinforms
 			this.lblHoraAtual = new System.Windows.Forms.Label();
 			this.timer1 = new System.Windows.Forms.Timer(this.components);
 			this.notifyIcon = new System.Windows.Forms.NotifyIcon(this.components);
+			this.btnNotificacao = new System.Windows.Forms.Button();
 			((System.ComponentModel.ISupportInitialize)(this.dataGridView)).BeginInit();
 			this.menuStrip1.SuspendLayout();
 			this.SuspendLayout();
@@ -142,7 +143,7 @@ namespace AppWinforms
             this.cadastroToolStripMenuItem});
 			this.menuStrip1.Location = new System.Drawing.Point(0, 0);
 			this.menuStrip1.Name = "menuStrip1";
-			this.menuStrip1.Size = new System.Drawing.Size(896, 24);
+			this.menuStrip1.Size = new System.Drawing.Size(875, 24);
 			this.menuStrip1.TabIndex = 8;
 			this.menuStrip1.Text = "menuStrip1";
 			// 
@@ -158,14 +159,14 @@ namespace AppWinforms
 			// novoTextoToolStripMenuItem
 			// 
 			this.novoTextoToolStripMenuItem.Name = "novoTextoToolStripMenuItem";
-			this.novoTextoToolStripMenuItem.Size = new System.Drawing.Size(133, 22);
+			this.novoTextoToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
 			this.novoTextoToolStripMenuItem.Text = "Novo texto";
 			this.novoTextoToolStripMenuItem.Click += new System.EventHandler(this.novoTextoToolStripMenuItem_Click);
 			// 
 			// sairToolStripMenuItem
 			// 
 			this.sairToolStripMenuItem.Name = "sairToolStripMenuItem";
-			this.sairToolStripMenuItem.Size = new System.Drawing.Size(133, 22);
+			this.sairToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
 			this.sairToolStripMenuItem.Text = "Sair";
 			this.sairToolStripMenuItem.Click += new System.EventHandler(this.sairToolStripMenuItem_Click);
 			// 
@@ -231,11 +232,23 @@ namespace AppWinforms
 			this.notifyIcon.Click += new System.EventHandler(this.notifyIcon_Click);
 			this.notifyIcon.DoubleClick += new System.EventHandler(this.notifyIcon_DoubleClick);
 			// 
+			// btnNotificacao
+			// 
+			this.btnNotificacao.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+			this.btnNotificacao.Location = new System.Drawing.Point(514, 112);
+			this.btnNotificacao.Name = "btnNotificacao";
+			this.btnNotificacao.Size = new System.Drawing.Size(221, 48);
+			this.btnNotificacao.TabIndex = 10;
+			this.btnNotificacao.Text = "Dar Notificação";
+			this.btnNotificacao.UseVisualStyleBackColor = true;
+			this.btnNotificacao.Click += new System.EventHandler(this.btnNotificacao_Click);
+			// 
 			// Form1
 			// 
 			this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
 			this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-			this.ClientSize = new System.Drawing.Size(896, 474);
+			this.ClientSize = new System.Drawing.Size(875, 474);
+			this.Controls.Add(this.btnNotificacao);
 			this.Controls.Add(this.lblHoraAtual);
 			this.Controls.Add(this.lblNomeGrid);
 			this.Controls.Add(this.dataGridView);
@@ -281,6 +294,7 @@ namespace AppWinforms
 		private System.Windows.Forms.Timer timer1;
 		private System.Windows.Forms.ToolStripMenuItem cadastroToolStripMenuItem;
 		private System.Windows.Forms.NotifyIcon notifyIcon;
+		private System.Windows.Forms.Button btnNotificacao;
 	}
 }
 
