@@ -182,8 +182,11 @@ namespace AppWinforms
 		}
 
 		private void btnNotificacao_Click(object sender, EventArgs e)
-		{
-			notifyIcon.ShowBalloonTip(10, "Notificação", txtResultado.Text, ToolTipIcon.Info);
+		{ // Alerta de notificação do tipo info no taskBar
+		  // notifyIcon.ShowBalloonTip(10, "Notificação", txtResultado.Text, ToolTipIcon.Info); 
+
+			// Alerta de notificação do tipo erro no taskBar
+			notifyIcon.ShowBalloonTip(10, "Notificação", "Erro na aplicação", ToolTipIcon.Error);
 		}
 	}
 }
