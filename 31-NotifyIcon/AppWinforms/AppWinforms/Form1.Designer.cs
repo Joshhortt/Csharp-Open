@@ -30,6 +30,7 @@ namespace AppWinforms
 		private void InitializeComponent()
 		{
 			this.components = new System.ComponentModel.Container();
+			System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
 			this.btnOk = new System.Windows.Forms.Button();
 			this.label1 = new System.Windows.Forms.Label();
 			this.txtResultado = new System.Windows.Forms.TextBox();
@@ -49,6 +50,7 @@ namespace AppWinforms
 			this.cadastroToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
 			this.lblHoraAtual = new System.Windows.Forms.Label();
 			this.timer1 = new System.Windows.Forms.Timer(this.components);
+			this.notifyIcon = new System.Windows.Forms.NotifyIcon(this.components);
 			((System.ComponentModel.ISupportInitialize)(this.dataGridView)).BeginInit();
 			this.menuStrip1.SuspendLayout();
 			this.SuspendLayout();
@@ -221,6 +223,12 @@ namespace AppWinforms
 			this.timer1.Interval = 1000;
 			this.timer1.Tick += new System.EventHandler(this.timer1_Tick);
 			// 
+			// notifyIcon
+			// 
+			this.notifyIcon.Icon = ((System.Drawing.Icon)(resources.GetObject("notifyIcon.Icon")));
+			this.notifyIcon.Text = "Meu Programa \r\nLaboratorio";
+			this.notifyIcon.Visible = true;
+			// 
 			// Form1
 			// 
 			this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -236,6 +244,7 @@ namespace AppWinforms
 			this.Controls.Add(this.label1);
 			this.Controls.Add(this.btnOk);
 			this.Controls.Add(this.menuStrip1);
+			this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
 			this.MainMenuStrip = this.menuStrip1;
 			this.Name = "Form1";
 			this.Text = "Aplicação 1";
@@ -269,6 +278,7 @@ namespace AppWinforms
 		private System.Windows.Forms.Label lblHoraAtual;
 		private System.Windows.Forms.Timer timer1;
 		private System.Windows.Forms.ToolStripMenuItem cadastroToolStripMenuItem;
+		private System.Windows.Forms.NotifyIcon notifyIcon;
 	}
 }
 
