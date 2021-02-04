@@ -58,7 +58,7 @@ namespace AppWinforms
 			// 
 			// btnOk
 			// 
-			this.btnOk.Location = new System.Drawing.Point(33, 208);
+			this.btnOk.Location = new System.Drawing.Point(34, 190);
 			this.btnOk.Name = "btnOk";
 			this.btnOk.Size = new System.Drawing.Size(326, 59);
 			this.btnOk.TabIndex = 0;
@@ -70,7 +70,7 @@ namespace AppWinforms
 			// 
 			this.label1.AutoSize = true;
 			this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-			this.label1.Location = new System.Drawing.Point(30, 51);
+			this.label1.Location = new System.Drawing.Point(31, 42);
 			this.label1.Name = "label1";
 			this.label1.Size = new System.Drawing.Size(329, 20);
 			this.label1.TabIndex = 1;
@@ -78,14 +78,14 @@ namespace AppWinforms
 			// 
 			// txtResultado
 			// 
-			this.txtResultado.Location = new System.Drawing.Point(33, 74);
+			this.txtResultado.Location = new System.Drawing.Point(34, 65);
 			this.txtResultado.Name = "txtResultado";
 			this.txtResultado.Size = new System.Drawing.Size(325, 20);
 			this.txtResultado.TabIndex = 2;
 			// 
 			// btnAbre
 			// 
-			this.btnAbre.Location = new System.Drawing.Point(34, 359);
+			this.btnAbre.Location = new System.Drawing.Point(35, 337);
 			this.btnAbre.Name = "btnAbre";
 			this.btnAbre.Size = new System.Drawing.Size(202, 39);
 			this.btnAbre.TabIndex = 3;
@@ -101,7 +101,7 @@ namespace AppWinforms
             "RJ",
             "MG",
             "GO"});
-			this.cboEstados.Location = new System.Drawing.Point(34, 139);
+			this.cboEstados.Location = new System.Drawing.Point(35, 135);
 			this.cboEstados.Name = "cboEstados";
 			this.cboEstados.Size = new System.Drawing.Size(325, 21);
 			this.cboEstados.TabIndex = 4;
@@ -111,7 +111,7 @@ namespace AppWinforms
 			// 
 			this.label2.AutoSize = true;
 			this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-			this.label2.Location = new System.Drawing.Point(30, 116);
+			this.label2.Location = new System.Drawing.Point(30, 112);
 			this.label2.Name = "label2";
 			this.label2.Size = new System.Drawing.Size(68, 20);
 			this.label2.TabIndex = 5;
@@ -159,14 +159,14 @@ namespace AppWinforms
 			// novoTextoToolStripMenuItem
 			// 
 			this.novoTextoToolStripMenuItem.Name = "novoTextoToolStripMenuItem";
-			this.novoTextoToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+			this.novoTextoToolStripMenuItem.Size = new System.Drawing.Size(133, 22);
 			this.novoTextoToolStripMenuItem.Text = "Novo texto";
 			this.novoTextoToolStripMenuItem.Click += new System.EventHandler(this.novoTextoToolStripMenuItem_Click);
 			// 
 			// sairToolStripMenuItem
 			// 
 			this.sairToolStripMenuItem.Name = "sairToolStripMenuItem";
-			this.sairToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+			this.sairToolStripMenuItem.Size = new System.Drawing.Size(133, 22);
 			this.sairToolStripMenuItem.Text = "Sair";
 			this.sairToolStripMenuItem.Click += new System.EventHandler(this.sairToolStripMenuItem_Click);
 			// 
@@ -212,7 +212,7 @@ namespace AppWinforms
 			// 
 			this.lblHoraAtual.AutoSize = true;
 			this.lblHoraAtual.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-			this.lblHoraAtual.Location = new System.Drawing.Point(388, 24);
+			this.lblHoraAtual.Location = new System.Drawing.Point(524, 42);
 			this.lblHoraAtual.Name = "lblHoraAtual";
 			this.lblHoraAtual.Size = new System.Drawing.Size(312, 24);
 			this.lblHoraAtual.TabIndex = 9;
@@ -235,7 +235,7 @@ namespace AppWinforms
 			// btnNotificacao
 			// 
 			this.btnNotificacao.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-			this.btnNotificacao.Location = new System.Drawing.Point(514, 112);
+			this.btnNotificacao.Location = new System.Drawing.Point(543, 112);
 			this.btnNotificacao.Name = "btnNotificacao";
 			this.btnNotificacao.Size = new System.Drawing.Size(221, 48);
 			this.btnNotificacao.TabIndex = 10;
