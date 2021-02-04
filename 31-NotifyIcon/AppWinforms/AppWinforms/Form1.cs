@@ -22,6 +22,25 @@ namespace AppWinforms
 			txtResultado.Text = "Benvindos ao Estado do Brasil: " + ((Estado)cboEstados.SelectedItem).Id;
 		}
 
+
+		// Criar novo metodo privado que vai Ler o arquivo com os argumentos. 
+		private void AbrirLerArquivo_Click(object sender, EventArgs e)
+		{
+			new FrmTexto().Show();  // Vai chamar o Formulario de Texto e mostra-lo
+		}
+
+		// Criar novo metodo privado que vai abrir o cadastro com os argumentos. 
+		private void AbrirCadastro_Click(object sender, EventArgs e)
+		{
+			new FrmCadastro().Show();  // Vai chamar o Formulario de Cadastro e mostra-lo
+		}
+
+		// Criar novo metodo privado que vai fechar a aplicação
+		private void Fechar_Click(object sender, EventArgs e)
+		{
+			Application.Exit();  // Vai chamar o fechar aplicação
+		}
+
 		private void btnAbre_Click(object sender, EventArgs e)
 		{
 			var form = new FrmShow();
@@ -31,6 +50,16 @@ namespace AppWinforms
 
 		private void Form1_Load(object sender, EventArgs e)
 		{
+
+			// Adicionar estas configurações de Menu ao nosso formulario principal da Aplicação
+			var contextMenu = new ContextMenu();
+			contextMenu.MenuItems.Add(new MenuItem("Abrir Ler Arquivo", AbrirLerArquivo_Click));
+			contextMenu.MenuItems.Add(new MenuItem("Abrir Cadastro", AbrirCadastro_Click));
+			contextMenu.MenuItems.Add(new MenuItem("Fechar", Fechar_Click));
+			notifyIcon.ContextMenu = ContextMenu;
+
+			//notifyIcon1.ShowBalloonTip(1000, "TESTE", "MAIS UM TESTE", ToolTipIcon.Warning);
+
 			atualizarHora();
 
 
@@ -144,12 +173,12 @@ namespace AppWinforms
 
 		private void notifyIcon_Click(object sender, EventArgs e)
 		{
-			//MessageBox.Show("Cliquei no Icon");  // Ao compilar, clicar no icone no Task Bar aparece uma MessageBox com essa mensagem.
+			//MessageBox.Show("Cliquei no Icon");  
 		}
 
 		private void notifyIcon_DoubleClick(object sender, EventArgs e)
 		{
-			MessageBox.Show("Cliquei no Icon duas vezes");  // Ao compilar, clicar no icone duas vezes no Task Bar aparece uma MessageBox com essa mensagem.
+			//MessageBox.Show("Cliquei no Icon duas vezes");  
 		}
 	}
 }
