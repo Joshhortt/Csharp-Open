@@ -186,7 +186,11 @@ namespace AppWinforms
 		  // notifyIcon.ShowBalloonTip(10, "Notificação", txtResultado.Text, ToolTipIcon.Info); 
 
 			// Alerta de notificação do tipo erro no taskBar
-			notifyIcon.ShowBalloonTip(10, "Notificação", "Erro na aplicação", ToolTipIcon.Error);
+			//notifyIcon.ShowBalloonTip(10, "Notificação", "Erro na aplicação", ToolTipIcon.Error);
+
+			// Alerta de notificação do tipo warning no taskBar
+			notifyIcon.ShowBalloonTip(10, "Notificação", "Valide os campo\nNome, Telefone", ToolTipIcon.Warning);
+
 		}
 	}
 }
