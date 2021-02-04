@@ -168,5 +168,10 @@ namespace AppWinforms
 		   // notifyIcon.ShowBalloonTip(10, "Notificação", "Valide os campo\nNome, Telefone", ToolTipIcon.Warning);
 			notifyIcon.ShowBalloonTip(10, "Notificação", "Valide os campo\nNome, Telefone", ToolTipIcon.None);
 		}
+
+		private void button1_Click(object sender, EventArgs e)
+		{
+			new MDIParentPrincipal().Show(); // vai permitir abrir o MDI do botao do form principal
+		}
 	}
 }
