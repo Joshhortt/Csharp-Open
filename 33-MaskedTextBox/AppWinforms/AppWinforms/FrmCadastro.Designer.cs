@@ -85,7 +85,7 @@ namespace AppWinforms
 			// 
 			this.maskedTextBox1.BeepOnError = true;
 			this.maskedTextBox1.Location = new System.Drawing.Point(227, 35);
-			this.maskedTextBox1.Mask = "+00(00)00000-0000";
+			this.maskedTextBox1.Mask = "+000 000000000";
 			this.maskedTextBox1.Name = "maskedTextBox1";
 			this.maskedTextBox1.Size = new System.Drawing.Size(124, 20);
 			this.maskedTextBox1.TabIndex = 5;
