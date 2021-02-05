@@ -60,6 +60,24 @@ namespace AppWinforms
 				MessageBox.Show("todas as Excepções tratadas");  			                                                
 			}
 		}
+
+		private void maskedTextBox1_Leave(object sender, EventArgs e)
+		{   // Mostrando as duas validações
+			if (maskedTextBox1.MaskCompleted)
+			{
+				MessageBox.Show("Mascara completa!");
+			}
+			else
+			{
+				MessageBox.Show("Mascara incompleta!");
+			}
+
+			// Mostrando só a validação de mascara incompleta.
+			//if (!maskedTextBox1.MaskCompleted)
+			//{
+			//	MessageBox.Show("Mascara incompleta!");
+			//}
+		}
 	}
 	public class ErroDeProposito : Exception  
 	{
