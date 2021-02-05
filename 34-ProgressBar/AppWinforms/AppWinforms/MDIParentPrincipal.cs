@@ -83,5 +83,13 @@ namespace AppWinforms
 			form.MdiParent = this;
 			form.Show(); 
 		}
+
+		private void progressBarToolStripMenuItem_Click(object sender, EventArgs e)
+		{
+			/// Chama o progress Bar
+			var form = new FrmImportador();
+			form.MdiParent = this;
+			form.Show();
+		}
 	}
 }

@@ -32,13 +32,14 @@ namespace AppWinforms
 			this.progressBar = new System.Windows.Forms.ProgressBar();
 			this.label1 = new System.Windows.Forms.Label();
 			this.btnImportar = new System.Windows.Forms.Button();
+			this.txtLogs = new System.Windows.Forms.TextBox();
 			this.SuspendLayout();
 			// 
 			// progressBar
 			// 
 			this.progressBar.Location = new System.Drawing.Point(71, 108);
 			this.progressBar.Name = "progressBar";
-			this.progressBar.Size = new System.Drawing.Size(389, 110);
+			this.progressBar.Size = new System.Drawing.Size(389, 75);
 			this.progressBar.TabIndex = 0;
 			// 
 			// label1
@@ -54,18 +55,30 @@ namespace AppWinforms
 			// btnImportar
 			// 
 			this.btnImportar.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-			this.btnImportar.Location = new System.Drawing.Point(71, 244);
+			this.btnImportar.Location = new System.Drawing.Point(71, 417);
 			this.btnImportar.Name = "btnImportar";
-			this.btnImportar.Size = new System.Drawing.Size(389, 62);
+			this.btnImportar.Size = new System.Drawing.Size(389, 39);
 			this.btnImportar.TabIndex = 2;
 			this.btnImportar.Text = "Importar";
 			this.btnImportar.UseVisualStyleBackColor = true;
+			this.btnImportar.Click += new System.EventHandler(this.btnImportar_Click);
+			// 
+			// txtLogs
+			// 
+			this.txtLogs.Location = new System.Drawing.Point(71, 203);
+			this.txtLogs.Multiline = true;
+			this.txtLogs.Name = "txtLogs";
+			this.txtLogs.ReadOnly = true;
+			this.txtLogs.Size = new System.Drawing.Size(389, 193);
+			this.txtLogs.TabIndex = 3;
+			this.txtLogs.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
 			// 
 			// FrmImportador
 			// 
 			this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
 			this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-			this.ClientSize = new System.Drawing.Size(540, 450);
+			this.ClientSize = new System.Drawing.Size(540, 479);
+			this.Controls.Add(this.txtLogs);
 			this.Controls.Add(this.btnImportar);
 			this.Controls.Add(this.label1);
 			this.Controls.Add(this.progressBar);
@@ -82,5 +95,6 @@ namespace AppWinforms
 		private System.Windows.Forms.ProgressBar progressBar;
 		private System.Windows.Forms.Label label1;
 		private System.Windows.Forms.Button btnImportar;
+		private System.Windows.Forms.TextBox txtLogs;
 	}
 }

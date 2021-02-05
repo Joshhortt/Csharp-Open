@@ -11,8 +11,10 @@ using System.Windows.Forms;
 
 namespace AppWinforms
 {
+	
 	public partial class FrmImportador : Form
 	{
+		private string[] lines;   
 		public FrmImportador()
 		{
 			InitializeComponent();
@@ -20,21 +22,33 @@ namespace AppWinforms
 
 		private void FrmImportador_Load(object sender, EventArgs e)
 		{
-
-			//fonte: https://stackoverflow.com/questions/8037070/whats-the-fastest-way-to-read-a-text-file-line-by-line
 			string fileName = (@"D:\arquivos\dados_importados.txt");
 			using (var streamReader = File.OpenText(fileName))
 			{
-				var lines = streamReader.ReadToEnd().Split("\r\n".ToCharArray(), StringSplitOptions.RemoveEmptyEntries);
-				progressBar.Maximum = lines.Length;  //Maximo de linhas
-				progressBar.Minimum = 0;  // Minimo de linhas
-				//foreach (var line in lines)
-				for(var i = 0; i < lines.Length; i++)
-				{
-					var line = lines[i];
-					progressBar.Value = (i + 1);  // adiciona 1 ao zero para que o progress bar comece em 1
-				}
+				lines = streamReader.ReadToEnd().Split("\r\n".ToCharArray(), StringSplitOptions.RemoveEmptyEntries);
+				progressBar.Maximum = lines.Length; 
+				progressBar.Minimum = 0; 
 			}
+		}
+
+		private void btnImportar_Click(object sender, EventArgs e)
+		{
+			string todasLinhas = string.Empty;
+			for (var i = 0; i < lines.Length; i++)
+			{
+				var line = lines[i];
+				progressBar.Value = (i + 1);  
+
+				//txtLogs.Text += line + " - " + i + " - Importados\n";  
+				//txtLogs.Update();  // importas as linhas com prioridade, mesmo sendo enorme o Windows nao ira travar a importação
+                  todasLinhas += line + " - " + i + " - Importados\n";
+			}
+			txtLogs.Text = string.Join("\n", lines);
+		}
+
+		private void textBox1_TextChanged(object sender, EventArgs e)
+		{
+
 		}
 	}
 }
