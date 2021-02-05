@@ -38,17 +38,12 @@ namespace AppWinforms
 			{
 				var line = lines[i];
 				progressBar.Value = (i + 1);  
-
 				//txtLogs.Text += line + " - " + i + " - Importados\n";  
-				//txtLogs.Update();  // importas as linhas com prioridade, mesmo sendo enorme o Windows nao ira travar a importação
+				//txtLogs.Update();  
                   todasLinhas += line + " - " + i + " - Importados\n";
 			}
-			txtLogs.Text = string.Join("\n", lines);
-		}
-
-		private void textBox1_TextChanged(object sender, EventArgs e)
-		{
-
+			// txtLogs.Text = string.Join("\n", lines);
+			txtLogs.Text = "Todos os dados foram importados."; // mostra a mensagem sendo mais rapido que mostrando os logs na tela.
 		}
 	}
 }

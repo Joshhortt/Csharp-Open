@@ -71,7 +71,6 @@ namespace AppWinforms
 			this.txtLogs.ReadOnly = true;
 			this.txtLogs.Size = new System.Drawing.Size(389, 193);
 			this.txtLogs.TabIndex = 3;
-			this.txtLogs.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
 			// 
 			// FrmImportador
 			// 
