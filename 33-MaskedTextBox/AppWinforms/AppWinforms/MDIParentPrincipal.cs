@@ -81,7 +81,7 @@ namespace AppWinforms
 		{    // No Load do MDI Parent Principal ele carrega p formulario Cadastro dentro do MDI
 			var form = new FrmCadastro();
 			form.MdiParent = this;
-			form.Show();
+			form.Show(); 
 		}
 	}
 }

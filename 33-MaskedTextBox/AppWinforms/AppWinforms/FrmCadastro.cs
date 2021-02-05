@@ -78,7 +78,12 @@ namespace AppWinforms
 			//	MessageBox.Show("Mascara incompleta!");
 			//}
 		}
-	}
+
+		private void button1_Click(object sender, EventArgs e)
+		{
+			MessageBox.Show(maskedTextBox1.Text);		}
+	   }
+
 	public class ErroDeProposito : Exception  
 	{
 		public ErroDeProposito(string erro) : base(erro)  
