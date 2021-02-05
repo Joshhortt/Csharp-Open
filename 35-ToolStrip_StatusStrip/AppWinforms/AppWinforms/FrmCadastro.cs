@@ -82,7 +82,17 @@ namespace AppWinforms
 		private void button1_Click(object sender, EventArgs e)
 		{
 			MessageBox.Show(maskedTextBox1.Text);		}
-	   }
+
+		private void toolStripButton1_Click(object sender, EventArgs e)
+		{
+			//MessageBox.Show("Estou buscando no banco de dados com o termo: " + txtBuscaTool.Text);
+		}
+
+		private void toolStripButton1_Click_1(object sender, EventArgs e)
+		{
+			MessageBox.Show("Estou buscando no banco de dados com o termo: " + txtBuscaTool.Text);
+		}
+	}
 
 	public class ErroDeProposito : Exception  
 	{
