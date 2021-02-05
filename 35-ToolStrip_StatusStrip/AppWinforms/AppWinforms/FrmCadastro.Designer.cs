@@ -48,8 +48,11 @@ namespace AppWinforms
 			this.menu2FilhoToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
 			this.menu2FilhoFilhoToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
 			this.toolStripComboBox1 = new System.Windows.Forms.ToolStripComboBox();
-			this.toolStripProgressBar1 = new System.Windows.Forms.ToolStripProgressBar();
+			this.statusStrip1 = new System.Windows.Forms.StatusStrip();
+			this.toolStripStatusLabel1 = new System.Windows.Forms.ToolStripStatusLabel();
+			this.toolStripProgressBar2 = new System.Windows.Forms.ToolStripProgressBar();
 			this.toolStrip1.SuspendLayout();
+			this.statusStrip1.SuspendLayout();
 			this.SuspendLayout();
 			// 
 			// txtNome
@@ -122,12 +125,11 @@ namespace AppWinforms
             this.txtBuscaTool,
             this.toolStripLabel1,
             this.toolStripDropDownButton1,
-            this.toolStripComboBox1,
-            this.toolStripProgressBar1});
+            this.toolStripComboBox1});
 			this.toolStrip1.Location = new System.Drawing.Point(0, 0);
 			this.toolStrip1.Name = "toolStrip1";
 			this.toolStrip1.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
-			this.toolStrip1.Size = new System.Drawing.Size(910, 25);
+			this.toolStrip1.Size = new System.Drawing.Size(740, 25);
 			this.toolStrip1.TabIndex = 7;
 			this.toolStrip1.Text = "toolStrip1";
 			// 
@@ -210,17 +212,35 @@ namespace AppWinforms
 			this.toolStripComboBox1.Name = "toolStripComboBox1";
 			this.toolStripComboBox1.Size = new System.Drawing.Size(121, 25);
 			// 
-			// toolStripProgressBar1
+			// statusStrip1
 			// 
-			this.toolStripProgressBar1.Name = "toolStripProgressBar1";
-			this.toolStripProgressBar1.Size = new System.Drawing.Size(100, 22);
-			this.toolStripProgressBar1.Value = 50;
+			this.statusStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.toolStripStatusLabel1,
+            this.toolStripProgressBar2});
+			this.statusStrip1.Location = new System.Drawing.Point(0, 462);
+			this.statusStrip1.Name = "statusStrip1";
+			this.statusStrip1.Size = new System.Drawing.Size(740, 22);
+			this.statusStrip1.TabIndex = 8;
+			this.statusStrip1.Text = "statusStrip1";
+			// 
+			// toolStripStatusLabel1
+			// 
+			this.toolStripStatusLabel1.Name = "toolStripStatusLabel1";
+			this.toolStripStatusLabel1.Size = new System.Drawing.Size(129, 17);
+			this.toolStripStatusLabel1.Text = "@JoshHortt Unipessoal";
+			// 
+			// toolStripProgressBar2
+			// 
+			this.toolStripProgressBar2.Name = "toolStripProgressBar2";
+			this.toolStripProgressBar2.Size = new System.Drawing.Size(100, 16);
+			this.toolStripProgressBar2.Value = 50;
 			// 
 			// FrmCadastro
 			// 
 			this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
 			this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-			this.ClientSize = new System.Drawing.Size(910, 484);
+			this.ClientSize = new System.Drawing.Size(740, 484);
+			this.Controls.Add(this.statusStrip1);
 			this.Controls.Add(this.toolStrip1);
 			this.Controls.Add(this.button1);
 			this.Controls.Add(this.maskedTextBox1);
@@ -233,6 +253,8 @@ namespace AppWinforms
 			this.Text = "FrmCadastro";
 			this.toolStrip1.ResumeLayout(false);
 			this.toolStrip1.PerformLayout();
+			this.statusStrip1.ResumeLayout(false);
+			this.statusStrip1.PerformLayout();
 			this.ResumeLayout(false);
 			this.PerformLayout();
 
@@ -258,6 +280,8 @@ namespace AppWinforms
 		private System.Windows.Forms.ToolStripMenuItem menu2FilhoFilhoToolStripMenuItem;
 		private System.Windows.Forms.ToolStripMenuItem menu3ToolStripMenuItem;
 		private System.Windows.Forms.ToolStripComboBox toolStripComboBox1;
-		private System.Windows.Forms.ToolStripProgressBar toolStripProgressBar1;
+		private System.Windows.Forms.StatusStrip statusStrip1;
+		private System.Windows.Forms.ToolStripStatusLabel toolStripStatusLabel1;
+		private System.Windows.Forms.ToolStripProgressBar toolStripProgressBar2;
 	}
 }
