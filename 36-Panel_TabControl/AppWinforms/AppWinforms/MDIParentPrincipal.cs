@@ -91,5 +91,15 @@ namespace AppWinforms
 			form.MdiParent = this;
 			form.Show();
 		}
+
+		private void panelTabControlToolStripMenuItem_Click(object sender, EventArgs e)
+		{
+			new FrmPanel().Show();  // Adicionar a ação show to formulario
+		}
+
+		private void tabControlToolStripMenuItem_Click(object sender, EventArgs e)
+		{
+			new FrmTabControl().Show();  // Adicionar a ação show to formulario
+		}
 	}
 }

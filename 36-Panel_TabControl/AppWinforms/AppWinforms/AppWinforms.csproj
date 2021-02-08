@@ -85,6 +85,12 @@
     <Compile Include="FrmLicenca.Designer.cs">
       <DependentUpon>FrmLicenca.cs</DependentUpon>
     </Compile>
+    <Compile Include="FrmPanel.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmPanel.Designer.cs">
+      <DependentUpon>FrmPanel.cs</DependentUpon>
+    </Compile>
     <Compile Include="FrmShow.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -96,6 +102,12 @@
     </Compile>
     <Compile Include="FrmSobre.Designer.cs">
       <DependentUpon>FrmSobre.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmTabControl.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmTabControl.Designer.cs">
+      <DependentUpon>FrmTabControl.cs</DependentUpon>
     </Compile>
     <Compile Include="FrmTexto.cs">
       <SubType>Form</SubType>
