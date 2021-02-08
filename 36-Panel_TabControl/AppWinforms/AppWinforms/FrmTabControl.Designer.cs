@@ -48,6 +48,9 @@ namespace AppWinforms
 			this.label8 = new System.Windows.Forms.Label();
 			this.label7 = new System.Windows.Forms.Label();
 			this.textBox7 = new System.Windows.Forms.TextBox();
+			this.btnTab1 = new System.Windows.Forms.Button();
+			this.btnTab2 = new System.Windows.Forms.Button();
+			this.btnTab3 = new System.Windows.Forms.Button();
 			this.tabControl.SuspendLayout();
 			this.tabPage1.SuspendLayout();
 			this.tabPage2.SuspendLayout();
@@ -236,12 +239,45 @@ namespace AppWinforms
 			this.textBox7.Size = new System.Drawing.Size(432, 20);
 			this.textBox7.TabIndex = 15;
 			// 
+			// btnTab1
+			// 
+			this.btnTab1.Location = new System.Drawing.Point(19, 485);
+			this.btnTab1.Name = "btnTab1";
+			this.btnTab1.Size = new System.Drawing.Size(75, 23);
+			this.btnTab1.TabIndex = 10;
+			this.btnTab1.Text = "Tab 1";
+			this.btnTab1.UseVisualStyleBackColor = true;
+			this.btnTab1.Click += new System.EventHandler(this.btnTab1_Click);
+			// 
+			// btnTab2
+			// 
+			this.btnTab2.Location = new System.Drawing.Point(121, 485);
+			this.btnTab2.Name = "btnTab2";
+			this.btnTab2.Size = new System.Drawing.Size(75, 23);
+			this.btnTab2.TabIndex = 11;
+			this.btnTab2.Text = "Tab 2";
+			this.btnTab2.UseVisualStyleBackColor = true;
+			this.btnTab2.Click += new System.EventHandler(this.btnTab2_Click);
+			// 
+			// btnTab3
+			// 
+			this.btnTab3.Location = new System.Drawing.Point(231, 485);
+			this.btnTab3.Name = "btnTab3";
+			this.btnTab3.Size = new System.Drawing.Size(75, 23);
+			this.btnTab3.TabIndex = 12;
+			this.btnTab3.Text = "Tab 3";
+			this.btnTab3.UseVisualStyleBackColor = true;
+			this.btnTab3.Click += new System.EventHandler(this.btnTab3_Click);
+			// 
 			// FrmTabControl
 			// 
 			this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
 			this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
 			this.ClientSize = new System.Drawing.Size(865, 510);
+			this.Controls.Add(this.btnTab3);
 			this.Controls.Add(this.tabControl);
+			this.Controls.Add(this.btnTab2);
+			this.Controls.Add(this.btnTab1);
 			this.Name = "FrmTabControl";
 			this.Text = "FrmTabControl";
 			this.Load += new System.EventHandler(this.FrmTabControl_Load);
@@ -277,5 +313,8 @@ namespace AppWinforms
 		private System.Windows.Forms.Label label7;
 		private System.Windows.Forms.TextBox textBox8;
 		private System.Windows.Forms.Label label8;
+		private System.Windows.Forms.Button btnTab1;
+		private System.Windows.Forms.Button btnTab2;
+		private System.Windows.Forms.Button btnTab3;
 	}
 }
