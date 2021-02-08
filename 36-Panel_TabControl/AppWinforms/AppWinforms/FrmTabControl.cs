@@ -16,5 +16,10 @@ namespace AppWinforms
 		{
 			InitializeComponent();
 		}
+
+		private void FrmTabControl_Load(object sender, EventArgs e)
+		{
+			tabControl.SelectTab("tabPage3");  // Vai abrir a Tab Dados Pagamentos por default
+		}
 	}
 }

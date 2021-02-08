@@ -29,7 +29,7 @@ namespace AppWinforms
 		/// </summary>
 		private void InitializeComponent()
 		{
-			this.tabControl1 = new System.Windows.Forms.TabControl();
+			this.tabControl = new System.Windows.Forms.TabControl();
 			this.tabPage1 = new System.Windows.Forms.TabPage();
 			this.tabPage2 = new System.Windows.Forms.TabPage();
 			this.tabPage3 = new System.Windows.Forms.TabPage();
@@ -48,22 +48,22 @@ namespace AppWinforms
 			this.label8 = new System.Windows.Forms.Label();
 			this.label7 = new System.Windows.Forms.Label();
 			this.textBox7 = new System.Windows.Forms.TextBox();
-			this.tabControl1.SuspendLayout();
+			this.tabControl.SuspendLayout();
 			this.tabPage1.SuspendLayout();
 			this.tabPage2.SuspendLayout();
 			this.tabPage3.SuspendLayout();
 			this.SuspendLayout();
 			// 
-			// tabControl1
+			// tabControl
 			// 
-			this.tabControl1.Controls.Add(this.tabPage1);
-			this.tabControl1.Controls.Add(this.tabPage2);
-			this.tabControl1.Controls.Add(this.tabPage3);
-			this.tabControl1.Location = new System.Drawing.Point(12, 39);
-			this.tabControl1.Name = "tabControl1";
-			this.tabControl1.SelectedIndex = 0;
-			this.tabControl1.Size = new System.Drawing.Size(841, 444);
-			this.tabControl1.TabIndex = 0;
+			this.tabControl.Controls.Add(this.tabPage1);
+			this.tabControl.Controls.Add(this.tabPage2);
+			this.tabControl.Controls.Add(this.tabPage3);
+			this.tabControl.Location = new System.Drawing.Point(12, 39);
+			this.tabControl.Name = "tabControl";
+			this.tabControl.SelectedIndex = 0;
+			this.tabControl.Size = new System.Drawing.Size(841, 444);
+			this.tabControl.TabIndex = 0;
 			// 
 			// tabPage1
 			// 
@@ -241,10 +241,11 @@ namespace AppWinforms
 			this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
 			this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
 			this.ClientSize = new System.Drawing.Size(865, 510);
-			this.Controls.Add(this.tabControl1);
+			this.Controls.Add(this.tabControl);
 			this.Name = "FrmTabControl";
 			this.Text = "FrmTabControl";
-			this.tabControl1.ResumeLayout(false);
+			this.Load += new System.EventHandler(this.FrmTabControl_Load);
+			this.tabControl.ResumeLayout(false);
 			this.tabPage1.ResumeLayout(false);
 			this.tabPage1.PerformLayout();
 			this.tabPage2.ResumeLayout(false);
@@ -257,7 +258,7 @@ namespace AppWinforms
 
 		#endregion
 
-		private System.Windows.Forms.TabControl tabControl1;
+		private System.Windows.Forms.TabControl tabControl;
 		private System.Windows.Forms.TabPage tabPage1;
 		private System.Windows.Forms.TabPage tabPage2;
 		private System.Windows.Forms.TabPage tabPage3;
