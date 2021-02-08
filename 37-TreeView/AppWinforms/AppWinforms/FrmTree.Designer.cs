@@ -47,6 +47,7 @@ namespace AppWinforms
             treeNode8});
 			System.Windows.Forms.TreeNode treeNode10 = new System.Windows.Forms.TreeNode("Node10");
 			this.treeView1 = new System.Windows.Forms.TreeView();
+			this.btnChecados = new System.Windows.Forms.Button();
 			this.SuspendLayout();
 			// 
 			// treeView1
@@ -82,11 +83,22 @@ namespace AppWinforms
 			this.treeView1.TabIndex = 0;
 			this.treeView1.AfterSelect += new System.Windows.Forms.TreeViewEventHandler(this.treeView1_AfterSelect);
 			// 
+			// btnChecados
+			// 
+			this.btnChecados.Location = new System.Drawing.Point(21, 475);
+			this.btnChecados.Name = "btnChecados";
+			this.btnChecados.Size = new System.Drawing.Size(75, 23);
+			this.btnChecados.TabIndex = 1;
+			this.btnChecados.Text = "Checados";
+			this.btnChecados.UseVisualStyleBackColor = true;
+			this.btnChecados.Click += new System.EventHandler(this.btnChecados_Click);
+			// 
 			// FrmTree
 			// 
 			this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
 			this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
 			this.ClientSize = new System.Drawing.Size(825, 510);
+			this.Controls.Add(this.btnChecados);
 			this.Controls.Add(this.treeView1);
 			this.Name = "FrmTree";
 			this.Text = "FrmTree";
@@ -98,5 +110,6 @@ namespace AppWinforms
 		#endregion
 
 		private System.Windows.Forms.TreeView treeView1;
+		private System.Windows.Forms.Button btnChecados;
 	}
 }
