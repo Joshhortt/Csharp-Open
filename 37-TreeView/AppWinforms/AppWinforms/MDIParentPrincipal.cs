@@ -100,5 +100,10 @@ namespace AppWinforms
 		{
 			new FrmTabControl().Show();  
 		}
+
+		private void treeViewToolStripMenuItem_Click(object sender, EventArgs e)
+		{
+			new FrmTree().Show();  // Chama o o novo formulario FrmTree.
+		}
 	}
 }

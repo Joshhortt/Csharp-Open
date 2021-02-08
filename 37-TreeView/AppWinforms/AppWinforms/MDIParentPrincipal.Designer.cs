@@ -39,6 +39,7 @@ namespace AppWinforms
 			this.exitToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
 			this.panelTabControlToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
 			this.tabControlToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+			this.treeViewToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
 			this.menuStrip.SuspendLayout();
 			this.SuspendLayout();
 			// 
@@ -47,7 +48,8 @@ namespace AppWinforms
 			this.menuStrip.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.fileMenu,
             this.panelTabControlToolStripMenuItem,
-            this.tabControlToolStripMenuItem});
+            this.tabControlToolStripMenuItem,
+            this.treeViewToolStripMenuItem});
 			this.menuStrip.Location = new System.Drawing.Point(0, 0);
 			this.menuStrip.Name = "menuStrip";
 			this.menuStrip.Size = new System.Drawing.Size(632, 24);
@@ -122,6 +124,13 @@ namespace AppWinforms
 			this.tabControlToolStripMenuItem.Text = "Tab Control";
 			this.tabControlToolStripMenuItem.Click += new System.EventHandler(this.tabControlToolStripMenuItem_Click);
 			// 
+			// treeViewToolStripMenuItem
+			// 
+			this.treeViewToolStripMenuItem.Name = "treeViewToolStripMenuItem";
+			this.treeViewToolStripMenuItem.Size = new System.Drawing.Size(68, 20);
+			this.treeViewToolStripMenuItem.Text = "Tree View";
+			this.treeViewToolStripMenuItem.Click += new System.EventHandler(this.treeViewToolStripMenuItem_Click);
+			// 
 			// MDIParentPrincipal
 			// 
 			this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -153,6 +162,7 @@ namespace AppWinforms
 		private System.Windows.Forms.ToolStripMenuItem progressBarToolStripMenuItem;
 		private System.Windows.Forms.ToolStripMenuItem panelTabControlToolStripMenuItem;
 		private System.Windows.Forms.ToolStripMenuItem tabControlToolStripMenuItem;
+		private System.Windows.Forms.ToolStripMenuItem treeViewToolStripMenuItem;
 	}
 }
 
