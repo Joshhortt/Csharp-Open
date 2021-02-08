@@ -148,6 +148,9 @@
     <EmbeddedResource Include="FrmSobre.resx">
       <DependentUpon>FrmSobre.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="FrmTabControl.resx">
+      <DependentUpon>FrmTabControl.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="FrmTexto.resx">
       <DependentUpon>FrmTexto.cs</DependentUpon>
     </EmbeddedResource>
