@@ -16,5 +16,15 @@ namespace AppWinforms
 		{
 			InitializeComponent();
 		}
+
+		private void btnAlerta_Click(object sender, EventArgs e)
+		{
+			MessageBox.Show("O nome digitado é: " + txtNome.Text);
+		}
+
+		private void btnShowCadastro_Click(object sender, EventArgs e)
+		{
+			pnlCadastro.Visible = true;
+		}
 	}
 }

@@ -139,6 +139,9 @@
     <EmbeddedResource Include="FrmLicenca.resx">
       <DependentUpon>FrmLicenca.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="FrmPanel.resx">
+      <DependentUpon>FrmPanel.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="FrmShow.resx">
       <DependentUpon>FrmShow.cs</DependentUpon>
     </EmbeddedResource>
