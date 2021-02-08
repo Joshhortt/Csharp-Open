@@ -24,7 +24,11 @@ namespace AppWinforms
 
 		private void btnShowCadastro_Click(object sender, EventArgs e)
 		{
-			pnlCadastro.Visible = true;  // ao clicar no botão 'Mostrar Cadastro', aparece visivel o label, input e botao Ok.
+			// Mostrar tudo referente a Cadastro e esconde tudo referente a Lista
+			pnlCadastro.Visible = true; 
+			pnlLista.Visible = false;
+			//btnShowLista.Visible = false;
+			//btnShowCadastro.Visible = true;
 		}
 
 		private void FrmPanel_Load(object sender, EventArgs e)
@@ -35,7 +39,11 @@ namespace AppWinforms
 
 		private void btnShowLista_Click(object sender, EventArgs e)
 		{
-			pnlLista.Visible = true; // ao clicar no botão 'Mostrar Lista', aparece visivel dataGridView com os estados.
+			// Mostrar tudo referente a Lista e esconde tudo referente a Cadastro
+			pnlLista.Visible = true; 
+			pnlCadastro.Visible = false;
+			//btnShowLista.Visible = true;
+			//btnShowCadastro.Visible = false;
 		}
 	}
 }
