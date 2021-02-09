@@ -86,6 +86,7 @@ namespace AppWinforms
 			this.Controls.Add(this.webBrowser);
 			this.Name = "FrmWebBrowser";
 			this.Text = "FrmWebBrowser";
+			this.Load += new System.EventHandler(this.FrmWebBrowser_Load);
 			this.ResumeLayout(false);
 
 		}

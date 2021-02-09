@@ -31,5 +31,12 @@ namespace AppWinforms
 		{
 			this.Close();  // Botao que encerra o Web Browser
 		}
+
+		private void FrmWebBrowser_Load(object sender, EventArgs e)
+		{
+			this.TopMost = true;
+			this.WindowState = FormWindowState.Maximized;  // No load desse formulario fica maximizado
+			this.FormBorderStyle = FormBorderStyle.None;  // Sem borda a volta do formulario, impedindo de encerrar clicando no canto superior direito.
+		}
 	}
 }
