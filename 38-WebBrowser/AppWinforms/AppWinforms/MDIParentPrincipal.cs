@@ -105,5 +105,10 @@ namespace AppWinforms
 		{
 			new FrmTree().Show();
 		}
+
+		private void webBrowserToolStripMenuItem_Click(object sender, EventArgs e)
+		{
+			new FrmWebBrowser().Show();    // Mostra o formulario
+		}
 	}
 }

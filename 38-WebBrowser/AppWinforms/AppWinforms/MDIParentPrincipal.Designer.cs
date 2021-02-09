@@ -40,6 +40,7 @@ namespace AppWinforms
 			this.panelTabControlToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
 			this.tabControlToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
 			this.treeViewToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+			this.webBrowserToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
 			this.menuStrip.SuspendLayout();
 			this.SuspendLayout();
 			// 
@@ -49,7 +50,8 @@ namespace AppWinforms
             this.fileMenu,
             this.panelTabControlToolStripMenuItem,
             this.tabControlToolStripMenuItem,
-            this.treeViewToolStripMenuItem});
+            this.treeViewToolStripMenuItem,
+            this.webBrowserToolStripMenuItem});
 			this.menuStrip.Location = new System.Drawing.Point(0, 0);
 			this.menuStrip.Name = "menuStrip";
 			this.menuStrip.Size = new System.Drawing.Size(632, 24);
@@ -131,6 +133,13 @@ namespace AppWinforms
 			this.treeViewToolStripMenuItem.Text = "Tree View";
 			this.treeViewToolStripMenuItem.Click += new System.EventHandler(this.treeViewToolStripMenuItem_Click);
 			// 
+			// webBrowserToolStripMenuItem
+			// 
+			this.webBrowserToolStripMenuItem.Name = "webBrowserToolStripMenuItem";
+			this.webBrowserToolStripMenuItem.Size = new System.Drawing.Size(88, 20);
+			this.webBrowserToolStripMenuItem.Text = "Web Browser";
+			this.webBrowserToolStripMenuItem.Click += new System.EventHandler(this.webBrowserToolStripMenuItem_Click);
+			// 
 			// MDIParentPrincipal
 			// 
 			this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -163,6 +172,7 @@ namespace AppWinforms
 		private System.Windows.Forms.ToolStripMenuItem panelTabControlToolStripMenuItem;
 		private System.Windows.Forms.ToolStripMenuItem tabControlToolStripMenuItem;
 		private System.Windows.Forms.ToolStripMenuItem treeViewToolStripMenuItem;
+		private System.Windows.Forms.ToolStripMenuItem webBrowserToolStripMenuItem;
 	}
 }
 
