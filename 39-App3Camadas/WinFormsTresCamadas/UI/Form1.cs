@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Business;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -15,6 +16,17 @@ namespace WinFormsTresCamadas
 		public Form1()
 		{
 			InitializeComponent();
+		}
+
+		private void btnGravar_Click(object sender, EventArgs e)  // METODO Gravar
+		{
+			var usuario = new Usuario();
+			usuario.Nome = txtNome.Text;
+			usuario.Telefone = txtTelefone.Text;
+			usuario.CC = txtCC.Text;
+			usuario.Gravar();
+
+			MessageBox.Show("Usuario salvo com sucesso"); 
 		}
 	}
 }
