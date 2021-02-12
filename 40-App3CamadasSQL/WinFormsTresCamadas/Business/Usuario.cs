@@ -1,4 +1,4 @@
-﻿using DataBase;
+﻿using DataBaseSQL;
 using System;
 using System.Collections.Generic;
 using System.Configuration;
@@ -10,7 +10,6 @@ using System.Threading.Tasks;
 namespace Business
 {
 		public class Usuario : Base
-		// public class Usuario : DataBase.Base  // Assim tb funciona com o using DataBase comentado
 	{
 		public Usuario(string nome, string telefone, string cc)
 		{
