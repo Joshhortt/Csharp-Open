@@ -84,6 +84,10 @@
       <Project>{f62ef911-e9f3-4c48-9d22-f82fec288c9d}</Project>
       <Name>Business</Name>
     </ProjectReference>
+    <ProjectReference Include="..\DatabaseSql\DatabaseSQL.csproj">
+      <Project>{f0602dde-cf10-44b0-b1ee-cecdac275d52}</Project>
+      <Name>DatabaseSQL</Name>
+    </ProjectReference>
     <ProjectReference Include="..\DataBase\DataBaseTXT.csproj">
       <Project>{04e85779-60d8-4d33-be3e-70dbd34a2dd7}</Project>
       <Name>DataBaseTXT</Name>

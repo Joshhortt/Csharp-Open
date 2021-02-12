@@ -3,6 +3,8 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Data.SqlClient; 
+using System.Configuration;  
 
 namespace DataBaseSQL
 {
@@ -28,6 +30,17 @@ namespace DataBaseSQL
 
 		public virtual void Gravar()
 		{
+			string connectionString = ConfigurationManager.AppSettings["sqlConnection"];
+			using (SqlConnection connection = new SqlConnection(
+			   connectionString))
+			{
+				string queryString = "insert into usuarios(nome,telefone,cc)values('" + this.Nome + "', '" + this.Telefone + "', '" + this.CC + "');";
+				//string queryString = "insert into " + this.GetType().Name + "s (nome,telefone,cc)values('" + this.Nome + "', '" + this.Telefone + "', '" + this.CC + "');";
+				SqlCommand command = new SqlCommand(queryString, connection);
+				command.Connection.Open();
+				command.ExecuteNonQuery();
+				
+			}
 			//this.GetType().Name;
 		}
 	}

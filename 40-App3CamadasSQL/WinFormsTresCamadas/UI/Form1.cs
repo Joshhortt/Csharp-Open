@@ -18,7 +18,7 @@ namespace WinFormsTresCamadas
 			InitializeComponent();
 		}
 
-		private void btnGravar_Click(object sender, EventArgs e)  // METODO Gravar
+		private void btnGravar_Click(object sender, EventArgs e)  
 		{
 			var usuario = new Usuario();
 			usuario.Nome = txtNome.Text;

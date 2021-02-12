@@ -80,9 +80,9 @@ namespace WinFormsTresCamadas
 			// 
 			this.txtTelefone.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
 			this.txtTelefone.Location = new System.Drawing.Point(143, 88);
-			this.txtTelefone.Mask = "(999)000000000";
+			this.txtTelefone.Mask = "000000000";
 			this.txtTelefone.Name = "txtTelefone";
-			this.txtTelefone.Size = new System.Drawing.Size(147, 29);
+			this.txtTelefone.Size = new System.Drawing.Size(108, 29);
 			this.txtTelefone.TabIndex = 5;
 			// 
 			// btnGravar
@@ -100,7 +100,7 @@ namespace WinFormsTresCamadas
 			// 
 			this.txtCC.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
 			this.txtCC.Location = new System.Drawing.Point(143, 125);
-			this.txtCC.Mask = "00000000-0";
+			this.txtCC.Mask = "000000000";
 			this.txtCC.Name = "txtCC";
 			this.txtCC.Size = new System.Drawing.Size(108, 29);
 			this.txtCC.TabIndex = 7;
