@@ -84,9 +84,9 @@
       <Project>{f62ef911-e9f3-4c48-9d22-f82fec288c9d}</Project>
       <Name>Business</Name>
     </ProjectReference>
-    <ProjectReference Include="..\DataBase\DataBase.csproj">
+    <ProjectReference Include="..\DataBase\DataBaseTXT.csproj">
       <Project>{04e85779-60d8-4d33-be3e-70dbd34a2dd7}</Project>
-      <Name>DataBase</Name>
+      <Name>DataBaseTXT</Name>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
