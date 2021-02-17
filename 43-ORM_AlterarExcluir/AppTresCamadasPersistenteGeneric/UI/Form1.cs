@@ -20,18 +20,13 @@ namespace AppTresCamadasPersistenteGeneric
 
         private void Form1_Load(object sender, EventArgs e)
         {
-            var fornecedore = new Fornecedore();
-            fornecedore.Nome = "Anormal";
-            fornecedore.Telefone = "9999999999";
-            fornecedore.Especialidades = "Musica";
-			fornecedore.Salvar();
-
             loadAll();
         }
 
         private void loadAll()
         {
-            cboUsuario.DataSource = cboUsuario.DataSource = cboComboBusca.DataSource = new Usuario().Todos();
+            dgUsuarios.AutoGenerateColumns = false;  // Não autogenerar colunas
+            dgUsuarios.DataSource = cboUsuario.DataSource = cboComboBusca.DataSource = new Usuario().Todos();
         }
 
         private void btnEndereco_Click(object sender, EventArgs e)
@@ -51,7 +46,7 @@ namespace AppTresCamadasPersistenteGeneric
         {
             var usuario = (Usuario)cboComboBusca.SelectedValue;
             lblNome.Text = "Nome: " + usuario.Nome;
-            lblTelefone.Text = "Telefone: " + usuario.Telefone;
+            lblTelefone.Text = "Teletone: " + usuario.Telefone;
             lblCPF.Text = "CPF: " + usuario.CPF;
             gridEnderecos.DataSource = usuario.Enderecos;
         }
@@ -61,7 +56,7 @@ namespace AppTresCamadasPersistenteGeneric
             var usuario = new Usuario();
             if (txtId.Text != "")
             {
-                usuario.Id = int.Parse(txtId.Text);
+                usuario.Id = int.Parse(txtId.Text);  // preenche o Id que estava vazio pelo metodo limpar campos
             }
             
             usuario.Nome = txtNome.Text;
@@ -70,6 +65,7 @@ namespace AppTresCamadasPersistenteGeneric
             usuario.Salvar();
             limparCampos();
             loadAll();
+
             MessageBox.Show("Usuário salvo com sucesso");
         }
 
@@ -79,17 +75,38 @@ namespace AppTresCamadasPersistenteGeneric
             txtNome.Text = usuario.Nome;
             txtTelefone.Text = usuario.Telefone;
             txtCPF.Text = usuario.CPF;
-            txtId.Text = usuario.Id.ToString();
+            txtId.Text = usuario.Id.ToString(); // colocar a conversão porque trata se de um 'int' e o form so recebe 'strings'.
             btnGravar.Text = "Alterar";
         }
 
-        private void limparCampos()
+        private void limparCampos()  // metodo limpar campos
         {
             txtNome.Text = string.Empty;
             txtTelefone.Text = string.Empty;
             txtCPF.Text = string.Empty;
             txtId.Text = string.Empty;
             btnGravar.Text = "Gravar";
+        }
+
+        private void btnExcluir_Click(object sender, EventArgs e)
+        {
+            var retorno = MessageBox.Show("Tem certeza que deseja excluir", "Excluir", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
+            if (retorno.Equals(DialogResult.Yes))
+            {
+                foreach (DataGridViewCell cell in dgUsuarios.SelectedCells)  // Excluir Linha completa selecionado so a celula.
+                {
+                    Usuario usuario = ((Usuario)dgUsuarios.Rows[cell.RowIndex].DataBoundItem);
+                    usuario.Excluir();
+                }
+
+                foreach (DataGridViewRow row in dgUsuarios.SelectedRows)  // Excluir Linha completa selecionado a linha completa.
+                {
+                    Usuario usuario = ((Usuario)row.DataBoundItem);
+                    usuario.Excluir();
+                }
+            }
+
+            loadAll();
         }
 	}
 }
