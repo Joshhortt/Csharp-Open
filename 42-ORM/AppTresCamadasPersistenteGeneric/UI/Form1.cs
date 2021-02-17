@@ -20,11 +20,11 @@ namespace AppTresCamadasPersistenteGeneric
 
         private void Form1_Load(object sender, EventArgs e)
         {
-            var fornecedor = new Fornecedor();
-            fornecedor.Nome = "fornecedor teste";
-            fornecedor.Telefone = "7898768967";
-            fornecedor.Especialidades = "este fornecedor arruma telefone";
-			fornecedor.Salvar();
+            var fornecedore = new Fornecedore();
+            fornecedore.Nome = "Anormal";
+            fornecedore.Telefone = "9999999999";
+            fornecedore.Especialidades = "Musica";
+			fornecedore.Salvar();
 
             loadAll();
         }
@@ -51,7 +51,7 @@ namespace AppTresCamadasPersistenteGeneric
         {
             var usuario = (Usuario)cboComboBusca.SelectedValue;
             lblNome.Text = "Nome: " + usuario.Nome;
-            lblTelefone.Text = "Teletone: " + usuario.Telefone;
+            lblTelefone.Text = "Telefone: " + usuario.Telefone;
             lblCPF.Text = "CPF: " + usuario.CPF;
             gridEnderecos.DataSource = usuario.Enderecos;
         }

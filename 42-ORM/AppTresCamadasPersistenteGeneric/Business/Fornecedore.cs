@@ -8,7 +8,7 @@ using Database;
 
 namespace Business
 {
-    public class Fornecedor : Base
+    public class Fornecedore : Base
     {
         [OpcoesBase(UsarNoBancoDeDados = true, UsarParaBuscar = true, ChavePrimaria = true, AutoIncrementar = true)]
         public int? Id { get; set; }
