@@ -58,14 +58,18 @@ namespace Database
                         }
                     }
                 }
-
-
+                /*
                 string queryString = "CREATE TABLE Pessoas(";
                 queryString += "PersonID int identity, ";
                 queryString += "LastName varchar(255), ";
                 queryString += "FirstName varchar(255), ";
                 queryString += "Address varchar(255), ";
                 queryString += "City varchar(255) ";
+                queryString += "); ";
+                */
+                string queryString = "CREATE TABLE " + this.GetType().Name + "s (";
+                queryString += chavePrimaria;
+                queryString += string.Join(",", campos.ToArray());
                 queryString += "); ";
 
 
