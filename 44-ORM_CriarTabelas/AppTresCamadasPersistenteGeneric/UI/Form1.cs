@@ -21,10 +21,9 @@ namespace AppTresCamadasPersistenteGeneric
         private void Form1_Load(object sender, EventArgs e)
         {
 
-            // Criar novos dados para inserir na Tabela Carros no SQL server
             var carro = new Carro();
 
-            carro.CriarTabela();
+            //carro.CriarTabela();  Se comentado. Vai inserir o registo sem apagar a tabela
             carro.Nome = "Fiesta";
             carro.Marca = "Ford";
             carro.Quantidade = 2;
