@@ -32,7 +32,23 @@ namespace Database
 
         private string tipoPropriedade(PropertyInfo pi)
         {
-            return "";
+            switch (pi.PropertyType.Name)
+            {
+                case "Int32":        //Inteiro 32 bits
+                    return "int";      
+                case "Int64":         //Inteiro 64 bits
+                    return "bigint"; 
+                case "Double":        //Decimal do tipo Double
+                    return "decimal(9, 2)";  
+                case "Single":          //Decimal do tipo float
+                    return "float";         
+                case "DateTime":         //Data e Hora
+                    return "datetime";  
+                case "Boolean":         // Booleano V e F
+                    return "tinyint";  
+                default:
+                    return "varchar(255)";  // se nao identifica entao retorna um varchar.
+            }
         }
 
         public virtual void CriarTabela()
