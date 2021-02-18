@@ -74,6 +74,14 @@ namespace Database
                         }
                     }
                 }
+                // Verificação se a tabela ja existe na BD. Se sim ele aciona o Drop table.
+                string tabelaExiste = "IF EXISTS (SELECT * FROM dbo.sysobjects WHERE id = OBJECT_ID(N'[dbo].[" + this.GetType().Name + "s]') AND OBJECTPROPERTY(id, N'IsUserTable') = 1)" +
+                                    "DROP TABLE " + this.GetType().Name + "s";
+                SqlCommand command = new SqlCommand(tabelaExiste, connection);
+                command.Connection.Open();
+                command.ExecuteNonQuery();
+
+
                 /*
                 string queryString = "CREATE TABLE Pessoas(";
                 queryString += "PersonID int identity, ";
@@ -88,8 +96,7 @@ namespace Database
                 queryString += string.Join(",", campos.ToArray());
                 queryString += "); ";
 
-
-                SqlCommand command = new SqlCommand(queryString, connection);
+                command = new SqlCommand(queryString, connection);
                 command.Connection.Open();
                 command.ExecuteNonQuery();
             }
