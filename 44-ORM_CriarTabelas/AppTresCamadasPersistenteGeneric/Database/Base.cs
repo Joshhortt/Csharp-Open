@@ -110,8 +110,15 @@ namespace Database
                             if (!pOpcoesBase.ChavePrimaria)
                             {
                                 campos.Add(pi.Name);
-                                valores.Add("'" + pi.GetValue(this) + "'");  // 
 
+                                if (pi.PropertyType.Name == "Double")
+                                {
+                                    valores.Add("'" + pi.GetValue(this).ToString().Replace(".", "").Replace(",", ".") + "'");
+                                }
+                                else
+                                {
+                                    valores.Add("'" + pi.GetValue(this) + "'");
+                                }
                             }
                         }
                         else
@@ -139,6 +146,7 @@ namespace Database
                 command.ExecuteNonQuery();
             }
         }
+
 
         public virtual void Excluir()
         {

@@ -20,7 +20,16 @@ namespace AppTresCamadasPersistenteGeneric
 
         private void Form1_Load(object sender, EventArgs e)
         {
-            new Carro().CriarTabela();
+
+            // Criar novos dados para inserir na Tabela Carros no SQL server
+            var carro = new Carro();
+
+            carro.CriarTabela();
+            carro.Nome = "Fiesta";
+            carro.Marca = "Ford";
+            carro.Quantidade = 2;
+            carro.Valor = 25000.50;
+            carro.Salvar();
 
             loadAll();
         }
