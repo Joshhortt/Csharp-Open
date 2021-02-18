@@ -29,78 +29,68 @@ namespace Database
                 return 0;
             }
         }
+        
+		private string tipoPropriedade(PropertyInfo pi)
+		{
+			switch (pi.PropertyType.Name)
+			{
+				case "Int32":
+					return "int";
+				case "Int64":
+					return "bigint";
+				case "Double":
+					return "decimal(9, 2)";
+				case "Single":
+					return "float";
+				case "DateTime":
+					return "datetime";
+				case "Boolean":
+					return "tinyint";
+				default:
+					return "varchar(255)";
+			}
+		}
+        
+		public virtual void CriarTabela()
+		{
+			using (SqlConnection connection = new SqlConnection(
+						 connectionString))
+			{
+				string chavePrimaria = "";
+				List<string> campos = new List<string>();
 
-        private string tipoPropriedade(PropertyInfo pi)
-        {
-            switch (pi.PropertyType.Name)
-            {
-                case "Int32":        //Inteiro 32 bits
-                    return "int";      
-                case "Int64":         //Inteiro 64 bits
-                    return "bigint"; 
-                case "Double":        //Decimal do tipo Double
-                    return "decimal(9, 2)";  
-                case "Single":          //Decimal do tipo float
-                    return "float";         
-                case "DateTime":         //Data e Hora
-                    return "datetime";  
-                case "Boolean":         // Booleano V e F
-                    return "tinyint";  
-                default:
-                    return "varchar(255)";  // se nao identifica entao retorna um varchar.
-            }
-        }
+				foreach (PropertyInfo pi in this.GetType().GetProperties(BindingFlags.Public | BindingFlags.Instance))
+				{
+					OpcoesBase pOpcoesBase = (OpcoesBase)pi.GetCustomAttribute(typeof(OpcoesBase));
+					if (pOpcoesBase != null && pOpcoesBase.UsarNoBancoDeDados && !pOpcoesBase.AutoIncrementar)
+					{
+						if (pOpcoesBase.ChavePrimaria)
+						{
+							chavePrimaria = pi.Name + " int identity, ";
+						}
+						else
+						{
+							campos.Add(pi.Name + " " + tipoPropriedade(pi) + " ");
+						}
+					}
+				}
 
-        public virtual void CriarTabela()
-        {
-            using (SqlConnection connection = new SqlConnection(
-                         connectionString))
-            {
-                string chavePrimaria = "";
-                List<string> campos = new List<string>();
+				string tabelaExiste = "IF EXISTS (SELECT * FROM dbo.sysobjects WHERE id = OBJECT_ID(N'[dbo].[" + this.GetType().Name + "s]') AND OBJECTPROPERTY(id, N'IsUserTable') = 1)" +
+									"DROP TABLE " + this.GetType().Name + "s";
 
-                foreach (PropertyInfo pi in this.GetType().GetProperties(BindingFlags.Public | BindingFlags.Instance))
-                {
-                    OpcoesBase pOpcoesBase = (OpcoesBase)pi.GetCustomAttribute(typeof(OpcoesBase));
-                    if (pOpcoesBase != null && pOpcoesBase.UsarNoBancoDeDados && !pOpcoesBase.AutoIncrementar)
-                    {
-                        if (pOpcoesBase.ChavePrimaria)
-                        {
-                            chavePrimaria = pi.Name + " int identity, ";
-                        }
-                        else
-                        {
-                            campos.Add(pi.Name + " " + tipoPropriedade(pi) + ", ");
-                        }
-                    }
-                }
-                // Verificação se a tabela ja existe na BD. Se sim ele aciona o Drop table.
-                string tabelaExiste = "IF EXISTS (SELECT * FROM dbo.sysobjects WHERE id = OBJECT_ID(N'[dbo].[" + this.GetType().Name + "s]') AND OBJECTPROPERTY(id, N'IsUserTable') = 1)" +
-                                    "DROP TABLE " + this.GetType().Name + "s";
-                SqlCommand command = new SqlCommand(tabelaExiste, connection);
-                command.Connection.Open();
-                command.ExecuteNonQuery();
+				SqlCommand command = new SqlCommand(tabelaExiste, connection);
+				command.Connection.Open();
+				command.ExecuteNonQuery();
 
+				string queryString = "CREATE TABLE " + this.GetType().Name + "s (";
+				queryString += chavePrimaria;
+				queryString += string.Join(",", campos.ToArray());
+				queryString += "); ";
 
-                /*
-                string queryString = "CREATE TABLE Pessoas(";
-                queryString += "PersonID int identity, ";
-                queryString += "LastName varchar(255), ";
-                queryString += "FirstName varchar(255), ";
-                queryString += "Address varchar(255), ";
-                queryString += "City varchar(255) ";
-                queryString += "); ";
-                */
-                string queryString = "CREATE TABLE " + this.GetType().Name + "s (";
-                queryString += chavePrimaria;
-                queryString += string.Join(",", campos.ToArray());
-                queryString += "); ";
-
-                command = new SqlCommand(queryString, connection);
-                command.Connection.Open();
-                command.ExecuteNonQuery();
-            }
-        }
+				command = new SqlCommand(queryString, connection);
+				command.ExecuteNonQuery();
+			}
+		}
 
         public virtual void Salvar()
         {
@@ -120,7 +110,8 @@ namespace Database
                             if (!pOpcoesBase.ChavePrimaria)
                             {
                                 campos.Add(pi.Name);
-                                valores.Add("'" + pi.GetValue(this) + "'");  
+                                valores.Add("'" + pi.GetValue(this) + "'");  // 
+
                             }
                         }
                         else
