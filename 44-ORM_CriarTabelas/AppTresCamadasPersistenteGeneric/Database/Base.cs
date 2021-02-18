@@ -29,7 +29,52 @@ namespace Database
                 return 0;
             }
         }
-       
+
+        private string tipoPropriedade(PropertyInfo pi)
+        {
+            return "";
+        }
+
+        public virtual void CriarTabela()
+        {
+            using (SqlConnection connection = new SqlConnection(
+                         connectionString))
+            {
+                string chavePrimaria = "";
+                List<string> campos = new List<string>();
+
+                foreach (PropertyInfo pi in this.GetType().GetProperties(BindingFlags.Public | BindingFlags.Instance))
+                {
+                    OpcoesBase pOpcoesBase = (OpcoesBase)pi.GetCustomAttribute(typeof(OpcoesBase));
+                    if (pOpcoesBase != null && pOpcoesBase.UsarNoBancoDeDados && !pOpcoesBase.AutoIncrementar)
+                    {
+                        if (pOpcoesBase.ChavePrimaria)
+                        {
+                            chavePrimaria = pi.Name + " int identity, ";
+                        }
+                        else
+                        {
+                            campos.Add(pi.Name + " " + tipoPropriedade(pi) + ", ");
+                        }
+                    }
+                }
+
+
+                string queryString = "CREATE TABLE Pessoas(";
+                queryString += "PersonID int identity, ";
+                queryString += "LastName varchar(255), ";
+                queryString += "FirstName varchar(255), ";
+                queryString += "Address varchar(255), ";
+                queryString += "City varchar(255) ";
+                queryString += "); ";
+
+
+                SqlCommand command = new SqlCommand(queryString, connection);
+                command.Connection.Open();
+                command.ExecuteNonQuery();
+            }
+        }
+
         public virtual void Salvar()
         {
             using (SqlConnection connection = new SqlConnection(
