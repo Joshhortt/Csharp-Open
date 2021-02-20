@@ -24,7 +24,7 @@ _Danilo Aparecido, formador de Programação em Linguagens (C#; PHP; RoR; JS ent
 ## Comece aqui 
 _Se prefere ir ao Github do 'Torne-se um Programador', tem aqui o link: https://github.com/Didox/torne-se-programador_<br/>
 _Para ver o código de uma lição específica, certifique-se de selecionar essa lição por Seções e acompanhe_<br/>
-_as video aulas gratis em https://www.torneseumprogramador.com.br/ ou na comunidade em https://cursos.torneseumprogramador.com.br/'_<br/>
+_as video aulas gratis em https://www.torneseumprogramador.com.br/ ou na comunidade em https://cursos.torneseumprogramador.com.br/_<br/>
 
 ### O Material de estudo é constituido por:
 _- Videos_<br/>
@@ -39,7 +39,7 @@ _Se prefere usar os codigos do meu Github poderá baixar fazendo Download._
 
 ## Setup/Instalação/Contribuir
 _Contribue para **Csharp-Open** ao clonar este repositório._<br/>
-_**PROBLEMAS**: https://github.com/Joshhortt/Csharp-Openr/issues._<br/>
+_**PROBLEMAS**: https://github.com/Joshhortt/Csharp-Openr/issues_<br/>
 _**URL**: https://github.com/Joshhortt/Csharp-Open_
 
 ## Suporte/Contacto
